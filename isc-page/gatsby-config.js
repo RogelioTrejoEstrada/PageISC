@@ -6,5 +6,18 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `notes`,
+        path: `${__dirname}/src/notes/`,
+      },
+    }
+  ],
+  siteMetadata: {
+    title: 'ISC UPA',
+    description: 'Página de Ingeniería en Sistemas Computacionales',
+    copyright: 'Este sitio es Copyright 2021 ISC UPA'
+  }
 }
