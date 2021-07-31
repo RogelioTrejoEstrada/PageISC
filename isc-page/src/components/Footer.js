@@ -5,11 +5,12 @@ import {footer} from '../styles/Footer.module.css'
 
 function Footer() {
     return (
-        <footer className={footer}>
+
+        <div className={footer}>
             <Container>
             <span className='text-muted'> This is the footer</span>
             </Container>
-        </footer>
+        </div>
     )
 }
 

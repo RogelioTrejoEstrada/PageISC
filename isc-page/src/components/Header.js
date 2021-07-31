@@ -14,8 +14,9 @@ export default function Header() {
         <Nav className='ml-auto'>
             <Link to='/'className={navbarLink}>Inicio</Link>
             <Link to='/about'className={navbarLink}>Nosotros</Link>
+            <Link to='/reconocimientos'className={navbarLink}>Reconocimientos</Link>
             <Link to='/instalaciones'className={navbarLink}>Instalaciones</Link>
-            <Link to='/mapa-curricular'className={navbarLink}>Mapa Curricular</Link>
+            <Link to='/mapaCurricular'className={navbarLink}>Mapa Curricular</Link>
 
         </Nav>
       </Navbar.Collapse>

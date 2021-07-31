@@ -1,1 +1,36 @@
 
+.tituloPrincipal {
+    font-weight: 400;
+    color: rgb(17, 57, 102);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    text-align: center;
+}
+
+.tituloPrincipal h1{
+    font-size: 1.5rem;
+}
+
+.tituloPrincipal h2{
+    font-size: 1.7rem;
+}
+
+.textoJustificado {
+    text-align: justify;
+}
+
+.layout {
+    background-color: #efefef;
+    margin: 0 auto;
+}
+.content{
+    background-color: #efefef;
+}
+.testRow{
+    background-color: red;
+
+}

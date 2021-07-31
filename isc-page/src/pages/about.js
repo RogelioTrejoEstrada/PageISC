@@ -1,12 +1,45 @@
+import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
-import { Container } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
+import Cabecera from '../components/Cabecera'
 import Layout from '../components/Layout'
 
 export default function About() {
   return (
     <Layout>
       <Container>
-        <h1>About</h1>
+        <Cabecera
+          titulo2="Nosotros"
+          titulo1="Ingeniería en Sistemas Computacionales"
+        />
+        <Row className="justify-content-md-center">
+          <Col md={6} className="m-auto">
+            <StaticImage src="../images/inicio.jpg" alt="UPA Logo" />
+          </Col>
+          <Col md={6}>
+            <div className="textoJustificado">
+              <h3>Misión</h3>
+              <p>
+                Formar profesionistas capaces de resolver problemas mediante el
+                pensamiento crítico, ético y novedoso, con un sistema integrado
+                de innovación tecnológica y de investigación a través de la
+                ingeniería de software y/o la gestión de redes de comunicación,
+                capaces de interactuar en proyectos multidisciplinarios
+                orientados a la adecuada toma de decisiones, ofreciendo
+                soluciones para la mejora de la comunidad y su entorno.
+              </p>
+              <h3>Visión</h3>
+              <p>
+                La carrera de ISC es reconocida como una comunidad profesional y
+                académica con altos estándares orientados a la vanguardia,
+                comprometidos con la investigación, el desarrollo tecnológico y
+                humano, en la búsqueda de la mejora de su entorno mediante una
+                formación por competencias.
+              </p>
+            </div>
+          </Col>
+        </Row>
+        
       </Container>
     </Layout>
   )
