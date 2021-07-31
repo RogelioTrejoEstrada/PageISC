@@ -1,15 +1,15 @@
 import React from "react"
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button } from "react-bootstrap";
 
+import { Container} from "react-bootstrap";
+import Layout from "../components/Layout";
 
  function Home() {
-  return ( 
-  <div>
-    Hello world!
-    <Button>Boton</Button>
-    </div>
-    
-    )
-}
-export default Home;
+   return (
+     <Layout>
+       <Container>
+         <h1>First Gatsby</h1>
+       </Container>
+     </Layout>
+   )
+ }
+ export default Home
