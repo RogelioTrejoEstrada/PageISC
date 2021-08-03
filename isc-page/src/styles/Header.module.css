@@ -1,5 +1,5 @@
 .navbarColor{
-    background-color: rgb(17, 57, 102);
+    background-color: #003464;
 }
 
 .navbarBrand{
@@ -8,18 +8,7 @@
 }
 
 
-.navbarLink {
-    font-weight: 400;
-    padding-bottom: 8px;
-    margin-left: 20px;
-    border-bottom: 3px solid transparent;
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
 .navbarLink:hover{
-    border-color: gray;
-    color: gray;
+    border-color: #dfdfdfbb;
     text-decoration: none;
 }

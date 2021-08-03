@@ -18,7 +18,7 @@ export default function Cabecera({titulo1, titulo2}) {
            </Col>
            <Col md={2}>
              <StaticImage
-               src="../images/ISEI Logo.png"
+               src="../images/ISEI_Logo.png"
                width={80}
                alt="UPA Logo"
              />

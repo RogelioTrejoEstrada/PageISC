@@ -6,6 +6,7 @@ import Layout from '../components/Layout'
 export default function MapaCurricular() {
     return (
         <Layout>
+          <div className='mapaCurricular'></div>
         <Container>
         <Cabecera
               titulo2="Mapa Curricular"

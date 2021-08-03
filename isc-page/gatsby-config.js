@@ -11,6 +11,7 @@
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     'gatsby-plugin-image',
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -18,11 +19,26 @@
         path: `${__dirname}/src/images/`,
       },
     },
+    {
+    resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'ISC-UPA',
+        short_name: 'ISC-UPA',
+        start_url: '/',
+        background_color: '#f7f0eb',
+        display: 'standalone',
+        icon: 'src/images/UPA_Logo.png',
+      },
+    }
   ],
   siteMetadata: {
-    title: 'Web Warrior',
-    description: 'web dev portfolio',
-    copyright: 'This website is copyright 2021 Web Warrior',
-    contact: 'me@thewebwarrioruk.co.uk',
+    title: 'Ingeniería en Sistemas Computacionales',
+    titleTemplate: "%s . UPA",
+    description: 'Sitio WEB del programa académico ISC de la Universidad Politécnica de Aguascalientes',
+    url: "http://isc.upa.edu.mx/",
+    copyright: 'Copyright 2021 ISC UPA',
+    contact: 'isei@upa.edu.mx',
+    image: '/images/UPA_Logo.png'
+
   },
 }

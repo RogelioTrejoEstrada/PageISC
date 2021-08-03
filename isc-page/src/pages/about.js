@@ -4,10 +4,11 @@ import { Col, Container, Row } from 'react-bootstrap'
 import Cabecera from '../components/Cabecera'
 import Layout from '../components/Layout'
 
-export default function About() {
+function About() {
   return (
     <Layout>
-      <Container>
+      <div className='nosotros'></div>
+      <Container className = 'mb-5'>
         <Cabecera
           titulo2="Nosotros"
           titulo1="Ingeniería en Sistemas Computacionales"
@@ -44,3 +45,5 @@ export default function About() {
     </Layout>
   )
 }
+
+export default About;

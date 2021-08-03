@@ -6,6 +6,7 @@ import Layout from '../components/Layout'
 export default function Instalaciones() {
   return (
     <Layout>
+      <div className='instalaciones'></div>
       <Container>
       <Cabecera
             titulo2="Instalaciones"

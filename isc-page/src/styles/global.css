@@ -1,7 +1,7 @@
 
 .tituloPrincipal {
     font-weight: 400;
-    color: rgb(17, 57, 102);
+    color: #003464;
     margin-top: 2rem;
     margin-bottom: 2rem;
     
@@ -33,4 +33,20 @@
 .testRow{
     background-color: red;
 
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: #fff;
+    font-weight: 400;
+    padding-bottom: 8px;
+    margin-left: 20px;
+    border-bottom: 3px solid transparent;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active{
+    border-color: gray;
+    text-decoration: none;
+    color: gray
 }

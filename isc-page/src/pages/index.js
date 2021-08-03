@@ -2,14 +2,13 @@ import React from "react"
 
 import { Col, Container, Row} from "react-bootstrap";
 import Layout from "../components/Layout";
-import Img from 'gatsby-image'
-import { graphql } from 'gatsby'
 import Cabecera from "../components/Cabecera";
 import { StaticImage } from "gatsby-plugin-image";
 
- export default function Home({data}) {
+ export default function Home() {
    return (
      <Layout>
+       <div className='inicio'></div>
        <Container>
          <Cabecera
            titulo2="Universidad Politécnica de Aguascalientes"
@@ -19,7 +18,8 @@ import { StaticImage } from "gatsby-plugin-image";
            <Col md={6}>
              <div className="textoJustificado">
                <p>
-                 El programa académico de Ingeniería en Sistemas Computacionales
+                 El programa académico de Ingeniería en Sistemas Computacionales es la renovación y
+                 actualización del programa anterior Ingeniería en Sistemas Estratégicos de Información, que
                  tiene como objetivo diseñar, desarrollar e implementar sistemas
                  informáticos en las organizaciones, aplicando las tecnologías
                  de información y de las comunicaciones para asegurar la
@@ -51,7 +51,7 @@ import { StaticImage } from "gatsby-plugin-image";
              <h3>Campo laboral</h3>
              <p className="textoJustificado">
                El Ingeniero o la Ingeniera en Sistemas Computacionales cuenta
-               con las competencias profesionales necesarias para su tener el
+               con las competencias profesionales necesarias para alcanzar el
                mejor desempeño en el campo laboral, en el ámbito local, nacional
                e internacional. Pudiendo desarrollarse como:
              </p>
@@ -104,13 +104,4 @@ import { StaticImage } from "gatsby-plugin-image";
  }
 
 
- export const query = graphql`
-  query Banner {
-    file(relativePath: {eq: "inicio.jpg"}) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }`
+ 

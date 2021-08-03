@@ -7,6 +7,7 @@ import Layout from '../components/Layout'
 export default function Reconocimientos() {
     return (
       <Layout>
+        <div className='reconocimientos'></div>
         <Container>
           <Cabecera
             titulo2="Reconocimientos"
