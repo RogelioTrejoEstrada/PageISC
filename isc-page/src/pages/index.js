@@ -4,16 +4,20 @@ import { Col, Container, Row} from "react-bootstrap";
 import Layout from "../components/Layout";
 import Cabecera from "../components/Cabecera";
 import { StaticImage } from "gatsby-plugin-image";
+import { graphql } from 'gatsby'
 
- export default function Home() {
+ export default function Home({data}) {
+   
    return (
      <Layout>
        <div className='inicio'></div>
-       <Container>
-         <Cabecera
+       <Cabecera
            titulo2="Universidad Politécnica de Aguascalientes"
            titulo1="Ingeniería en Sistemas Computacionales"
+           imagen = {data.file.childImageSharp.fluid}
          />
+       <Container>
+         
          <Row className="justify-content-md-center">
            <Col md={6}>
              <div className="textoJustificado">
@@ -103,5 +107,16 @@ import { StaticImage } from "gatsby-plugin-image";
    )
  }
 
+ export const query = graphql`
+ query bannerInicio{
+   file(relativePath: {eq: "inicio.jpg"}){
+     childImageSharp {
+       fluid(maxWidth: 1800) {
+         ...GatsbyImageSharpFluid
+       }
+     }
+   }
+ }
+`;
 
  

@@ -12,6 +12,7 @@
     'gatsby-plugin-sharp',
     'gatsby-plugin-image',
     `gatsby-plugin-react-helmet`,
+    
     {
       resolve: `gatsby-source-filesystem`,
       options: {

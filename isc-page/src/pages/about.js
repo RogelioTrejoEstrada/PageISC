@@ -3,16 +3,19 @@ import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import Cabecera from '../components/Cabecera'
 import Layout from '../components/Layout'
+import { graphql } from 'gatsby'
 
-function About() {
+function About({data}) {
   return (
     <Layout>
       <div className='nosotros'></div>
-      <Container className = 'mb-5'>
-        <Cabecera
+      <Cabecera
           titulo2="Nosotros"
           titulo1="Ingeniería en Sistemas Computacionales"
+          imagen = {data.file.childImageSharp.fluid}
         />
+      <Container className = 'mb-5'>
+
         <Row className="justify-content-md-center">
           <Col md={6} className="m-auto">
             <StaticImage src="../images/inicio.jpg" alt="UPA Logo" />
@@ -47,3 +50,15 @@ function About() {
 }
 
 export default About;
+
+export const query = graphql`
+query bannerAbout{
+  file(relativePath: {eq: "inicio.jpg"}){
+    childImageSharp {
+      fluid(maxWidth: 1800) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+}
+`;

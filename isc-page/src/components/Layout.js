@@ -10,12 +10,15 @@ export default function Layout({ children }) {
   return (
     <>
     <Seo />
-    <div className="layout">
+    <main className="layout">
       <Header pagina={pagina}/>
       <div className="content">{children}</div>
       
       <Footer />
-    </div>
+    </main>
     </>
   )
 }
+
+
+

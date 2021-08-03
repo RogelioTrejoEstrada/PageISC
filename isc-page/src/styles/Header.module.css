@@ -1,14 +1,14 @@
 .navbarColor{
-    background-color: #003464;
+    background-color: #eaeaea /*#003464;*/
 }
 
 .navbarBrand{
     font-size: 2rem;
-    color: white;
+    color: #003464;
 }
 
 
 .navbarLink:hover{
-    border-color: #dfdfdfbb;
+    border-color: #003464;
     text-decoration: none;
 }
