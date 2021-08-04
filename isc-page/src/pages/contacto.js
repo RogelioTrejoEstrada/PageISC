@@ -2,16 +2,19 @@ import React from 'react'
 import { Col, Container, Form, Row, Button} from 'react-bootstrap'
 import Cabecera from '../components/Cabecera'
 import Layout from '../components/Layout'
+import { graphql } from 'gatsby'
 
-export default function Contacto() {
+export default function Contacto({data}) {
     return (
       <Layout>
         <div className="contacto"></div>
-        <Container>
-          <Cabecera
+        <Cabecera
             titulo2="Contáctanos"
             titulo1="Ingeniería en Sistemas Computacionales"
+              imagen = {data.file.childImageSharp.fluid}
           />
+        <Container>
+          
         </Container>
         <Container>
           <Row className="mb-5">
@@ -47,3 +50,15 @@ export default function Contacto() {
       </Layout>
     )
 }
+
+export const query = graphql`
+ query bannerContacto{
+   file(relativePath: {eq: "inicio.jpg"}){
+     childImageSharp {
+       fluid(maxWidth: 1800) {
+         ...GatsbyImageSharpFluid
+       }
+     }
+   }
+ }
+`;

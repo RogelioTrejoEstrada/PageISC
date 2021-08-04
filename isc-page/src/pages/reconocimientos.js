@@ -3,16 +3,19 @@ import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import Cabecera from '../components/Cabecera'
 import Layout from '../components/Layout'
+import { graphql } from 'gatsby'
 
-export default function Reconocimientos() {
+export default function Reconocimientos({data}) {
+    
     return (
       <Layout>
         <div className='reconocimientos'></div>
-        <Container>
-          <Cabecera
+        <Cabecera
             titulo2="Reconocimientos"
             titulo1="Ingeniería en Sistemas Computacionales"
+            imagen = {data.file.childImageSharp.fluid}
           />
+        <Container>
           <Row className="justify-content-md-center">
             <Col md={6}>
               <div className="textoJustificado">
@@ -83,3 +86,15 @@ export default function Reconocimientos() {
       </Layout>
     )
 }
+
+export const query = graphql`
+ query bannerRecon{
+   file(relativePath: {eq: "inicio.jpg"}){
+     childImageSharp {
+       fluid(maxWidth: 1800) {
+         ...GatsbyImageSharpFluid
+       }
+     }
+   }
+ }
+`;

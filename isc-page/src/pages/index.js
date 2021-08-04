@@ -45,7 +45,7 @@ import { graphql } from 'gatsby'
            </Col>
            <Col md={6} className="m-auto">
              {/* <Img fluid={data.file.childImageSharp.fluid} /> */}
-             <StaticImage src="../images/inicio.jpg" alt="UPA Logo" />
+             <StaticImage src="../images/bienvenidos.JPG" alt="UPA Logo" />
            </Col>
          </Row>
        </Container>
@@ -109,7 +109,7 @@ import { graphql } from 'gatsby'
 
  export const query = graphql`
  query bannerInicio{
-   file(relativePath: {eq: "inicio.jpg"}){
+   file(relativePath: {eq: "upa_banner.JPG"}){
      childImageSharp {
        fluid(maxWidth: 1800) {
          ...GatsbyImageSharpFluid
