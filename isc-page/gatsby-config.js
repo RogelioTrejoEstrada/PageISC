@@ -21,6 +21,20 @@
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `thumbLabs`,
+        path: `${__dirname}/src/thumbLabs/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `thumbCampus`,
+        path: `${__dirname}/src/thumbCampus/`,
+      },
+    },
+    {
     resolve: `gatsby-plugin-manifest`,
       options: {
         name: 'ISC-UPA',

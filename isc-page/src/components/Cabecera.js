@@ -1,6 +1,5 @@
-import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
-import { Col, Jumbotron, Row } from 'react-bootstrap'
+import { Col, Row } from 'react-bootstrap'
 import BackgroundImage from 'gatsby-background-image'
 
 

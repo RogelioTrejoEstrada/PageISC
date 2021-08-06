@@ -77,3 +77,24 @@
     text-decoration: none;
     color: #003464
 }
+
+.cardImagen{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 0.5rem;
+    height: 10rem;
+}
+
+.cardImagen img{
+    border-radius: 0.5rem;
+}
+
+.subTitulo{
+    border-bottom: 2px solid ;
+    border-color: #003464;
+    color: #003464;
+}
+
+.subTitulo h3{
+    font-size: 2rem;
+    
+}

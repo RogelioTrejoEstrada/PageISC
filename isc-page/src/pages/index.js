@@ -45,7 +45,7 @@ import { graphql } from 'gatsby'
            </Col>
            <Col md={6} className="m-auto">
              {/* <Img fluid={data.file.childImageSharp.fluid} /> */}
-             <StaticImage src="../images/bienvenidos.JPG" alt="UPA Logo" />
+             <StaticImage src="../images/bienvenidos.JPG" alt="Bienvenidos" />
            </Col>
          </Row>
        </Container>
