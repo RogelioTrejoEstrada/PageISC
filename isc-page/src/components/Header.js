@@ -10,7 +10,7 @@ export default function Header({pagina}) {
   const [active, setActive] = useState(pagina);
   
   return (
-    <Navbar className={navbarColor} expand="lg" variant="dark">
+    <Navbar className={navbarColor} expand="lg" variant="light">
       <Navbar.Brand className={navbarBrand} style={{ color: "#fff" }}>
         <StaticImage src="../images/UPA_Logo.png" width={100} alt="UPA Logo" /> 
       </Navbar.Brand>

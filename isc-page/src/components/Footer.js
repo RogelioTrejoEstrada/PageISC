@@ -10,7 +10,7 @@ function Footer() {
       <div className={footer}>
         <Container>
           <Row className='mt-1 justify-content-center'>
-            <Col className="col-md-3 col-sm-6 ml-5">
+            <Col md={4} className="ml-4">
               <h6 className='text-center'>Contacto</h6>
               <ul className="list-unstyled pl-1">
                 <li><span><GeoAltFill /></span> Calle Paseo San Gerardo 207, San Gerardo</li>
@@ -20,9 +20,9 @@ function Footer() {
                 <li><span><Whatsapp /></span> 449 341 24 09</li>
               </ul>
             </Col>
-            <Col className="col-md-2 col-sm-6 ml-5">
+            <Col md={3} className="ml-4">
               <h6 className='text-center'>Mapa del sitio</h6>
-              <ul className="list-unstyled pl-1">
+              <ul className="list-unstyled pl-5">
                 <li><Link to='/'>Inicio</Link></li>
                 <li><Link to='/about'>Nosotros</Link></li>
                 <li><Link to='/instalaciones'>Instalaciones</Link> </li>
@@ -30,11 +30,11 @@ function Footer() {
                 <li><Link to='/contactanos'>Contáctanos</Link></li>
               </ul>
             </Col>
-            <Col className="col-md-2 col-sm-6 ml-5">
-              <h6 className='text-center'>Redes</h6>
+            <Col md={4} className="ml-4">
+              <h6 className='text-center'>Sitios amigos</h6>
               <ul className="list-unstyled pl-1">
-                <li><a href='https://www.facebook.com/ingenieria.isei' target='_blank' rel='noreferrer'><Facebook /> ISEI</a> </li>
-                <li><a href='https://www.facebook.com/UniversidadPolitecnicaAguascalientes' target='_blank' rel='noreferrer'><Facebook /> UPA</a></li>
+                <li><a href='https://www.facebook.com/ingenieria.isei' target='_blank' rel='noreferrer'><Facebook /> Ingeniería en Sistemas Computacionales</a> </li>
+                <li><a href='https://www.facebook.com/UniversidadPolitecnicaAguascalientes' target='_blank' rel='noreferrer'><Facebook /> Universidad Politécnica de Aguascalientes</a></li>
                 <li><a href='https://www.upa.edu.mx/' target='_blank' rel='noreferrer'>www.upa.edu.mx </a></li>
               </ul>
             </Col>

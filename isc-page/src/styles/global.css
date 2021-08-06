@@ -15,6 +15,7 @@
     margin-bottom: 3rem;
 }
 
+
 .black-overlay {
     display:-webkit-flex; /* Safari*/
     display: flex;
@@ -61,7 +62,7 @@
     background-color: red;
 
 }
-.navbar-dark .navbar-nav .nav-link{
+.navbar-light .navbar-nav .nav-link{
     color: #003464;
     font-weight: 400;
     padding-bottom: 8px;
@@ -71,8 +72,8 @@
     font-size: 1rem;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link.active{
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active{
     border-color: #003464;
     text-decoration: none;
     color: #003464

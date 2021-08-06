@@ -48,13 +48,14 @@ export default function Contacto({data}) {
             <Col className='p-3 text-center'>
               <h4>Ubicación</h4>
               <iframe
+                title= 'ubicacion'
                 width="100%"
                 height="400"
                 src="https://maps.google.com/maps?width=100%&height=600&hl=es&q=Universidad%20Polit%C3%A9cnica%20de%20Aguascalientes+(Mi%20nombre%20de%20egocios)&ie=UTF8&t=&z=17&iwloc=B&output=embed"
-                frameborder="0"
+                frameBorder="0"
                 scrolling="no"
-                marginheight="0"
-                marginwidth="0"
+                marginHeight="0"
+                marginWidth="0"
               ></iframe>
             </Col>
           </Row>
