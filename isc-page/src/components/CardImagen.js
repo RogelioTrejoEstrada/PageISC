@@ -8,14 +8,14 @@ function CardImagen({id, title, imagen}) {
     console.log(rutaImagen)
     return (
         <Col md={6} sm={12} className='mb-4 mt-4' key = {id}>
-            <h5>{title}</h5>
+            {/* <h5>{title}</h5>
             <div className="cardImagen">
               <StaticImage
-                src= {String(rutaImagen)}
+                src= //{String(rutaImagen)}
                 alt= {title}
                 
               />
-            </div>
+            </div> */}
           </Col>
     )
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Col, Container, Row, Button, Modal} from 'react-bootstrap'
+import { Col, Container, Row} from 'react-bootstrap'
 import Cabecera from '../components/Cabecera'
 import Layout from '../components/Layout'
 import { graphql } from 'gatsby'

@@ -23,7 +23,7 @@ import { graphql } from 'gatsby'
              <div className="textoJustificado">
                <p>
                  El programa académico de Ingeniería en Sistemas Computacionales es la renovación y
-                 actualización del programa anterior Ingeniería en Sistemas Estratégicos de Información, que
+                 actualización del programa anterior: Ingeniería en Sistemas Estratégicos de Información, que
                  tiene como objetivo diseñar, desarrollar e implementar sistemas
                  informáticos en las organizaciones, aplicando las tecnologías
                  de información y de las comunicaciones para asegurar la

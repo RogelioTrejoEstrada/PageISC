@@ -43,6 +43,12 @@ function About({data}) {
             </div>
           </Col>
         </Row>
+        <Row>
+          <Col>
+          <p>Como derivado el programa académico de Ingeniería en Sistemas Estratégicos de Información, el programa académico 
+            de ISC cuenta con los siguientes reconocimientos:        </p>
+          </Col>
+        </Row>
         
       </Container>
     </Layout>

@@ -35,6 +35,13 @@
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `materias`,
+        path: `${__dirname}/src/materias/`,
+      },
+    },
+    {
     resolve: `gatsby-plugin-manifest`,
       options: {
         name: 'ISC-UPA',

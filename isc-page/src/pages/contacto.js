@@ -1,8 +1,9 @@
 import React from 'react'
-import { Col, Container, Form, Row, Button} from 'react-bootstrap'
+import { Col, Container, Row} from 'react-bootstrap'
 import Cabecera from '../components/Cabecera'
 import Layout from '../components/Layout'
 import { graphql } from 'gatsby'
+import {Telephone, Envelope, Whatsapp} from 'react-bootstrap-icons'
 
 export default function Contacto({data}) {
     return (
@@ -16,37 +17,22 @@ export default function Contacto({data}) {
         <Container></Container>
         <Container>
           <Row className="mb-5">
-            <Col className="p-3">
-              <h4 className='text-center'>Envía tu mensaje</h4>
-              <Form>
-                <Form.Group className="mb-3" controlId="formEmail">
-                  <Form.Label>Correo:</Form.Label>
-                  <Form.Control
-                    type="email"
-                    placeholder="Ingresa tu correo"
-                    required
-                  />
-                  <Form.Text className="text-muted">
-                    No compartiremos tu correo{" "}
-                  </Form.Text>
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="formNombre">
-                  <Form.Label>Nombre:</Form.Label>
-                  <Form.Control
-                    type="input"
-                    placeholder="Ingresa tu nombre"
-                    required
-                  />
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="formTexto">
-                  <Form.Label>Mensaje</Form.Label>
-                  <Form.Control as="textarea" rows={3} required />
-                </Form.Group>
-                <Button type="submit">Enviar comentario</Button>
-              </Form>
+            <Col className="p-3 m-3 mapaCurricular"  md={6}>
+              <h4 className=' mapaCurricular-header'>Contacto</h4>
+              <br/>
+              <h5 className= 'texto-contacto'>Correo electrónico:</h5>
+              <h5 className= 'texto-contacto'><span><Envelope /></span> isei@upa.edu.mx</h5>
+              <br/>
+              <h5 className= 'texto-contacto'>Teléfono de oficina:</h5>
+              <h5 className= 'texto-contacto'><span><Telephone /></span> 449 442 14 00 ext 1426</h5>
+              <br/>
+              <h5 className= 'texto-contacto'>Whatsapp:</h5>
+              <h5 className= 'texto-contacto'><span><Whatsapp /></span> 449 341 24 09</h5>
+              
             </Col>
-            <Col className='p-3 text-center'>
-              <h4>Ubicación</h4>
+            
+            <Col className='p-3 m-3 text-center mapaCurricular'>
+              <h4 className= 'mapaCurricular-header'>Ubicación</h4>
               <iframe
                 title= 'ubicacion'
                 width="100%"

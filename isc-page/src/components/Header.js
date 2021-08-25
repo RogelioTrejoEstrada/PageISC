@@ -6,13 +6,16 @@ import { Nav, Navbar} from 'react-bootstrap'
 import {navbarBrand, navbarLink, navbarColor} from '../styles/Header.module.css'
 
 
+
+
 export default function Header({pagina}) {
   const [active, setActive] = useState(pagina);
-  
+
   return (
     <Navbar className={navbarColor} expand="lg" variant="light">
       <Navbar.Brand className={navbarBrand} style={{ color: "#fff" }}>
-        <StaticImage src="../images/UPA_Logo.png" width={100} alt="UPA Logo" /> 
+        <StaticImage src="../images/UPA_Logo.png" width={100} alt="UPA" /> 
+       
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
@@ -69,3 +72,4 @@ export default function Header({pagina}) {
     </Navbar>
   )
 }
+
