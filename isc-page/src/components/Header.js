@@ -35,14 +35,7 @@ export default function Header({pagina}) {
           >
             Nosotros
           </Nav.Link>
-          <Nav.Link
-            as={Link}
-            to={"/reconocimientos"}
-            className={navbarLink}
-            eventKey="reconocimientos"
-          >
-            Reconocimientos
-          </Nav.Link>
+          
           <Nav.Link
             as={Link}
             to={"/instalaciones"}

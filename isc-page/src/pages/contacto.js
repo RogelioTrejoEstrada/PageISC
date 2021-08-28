@@ -17,7 +17,7 @@ export default function Contacto({data}) {
         <Container></Container>
         <Container>
           <Row className="mb-5">
-            <Col className="p-3 m-3 mapaCurricular"  md={6}>
+            <Col className="p-3 m-3 mapaCurricular-tarjeta"  md={6}>
               <h4 className=' mapaCurricular-header'>Contacto</h4>
               <br/>
               <h5 className= 'texto-contacto'>Correo electrónico:</h5>
@@ -31,7 +31,7 @@ export default function Contacto({data}) {
               
             </Col>
             
-            <Col className='p-3 m-3 text-center mapaCurricular'>
+            <Col className='p-3 m-3 text-center mapaCurricular-tarjeta'>
               <h4 className= 'mapaCurricular-header'>Ubicación</h4>
               <iframe
                 title= 'ubicacion'

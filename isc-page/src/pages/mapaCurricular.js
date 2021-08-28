@@ -122,7 +122,7 @@ export default function MapaCurricular({data}) {
           </div>
         </Container>
         <Container className="mt-4 mb-4 text-center ">
-          <Row className="mapaCurricular">
+          <Row className="mapaCurricular-tarjeta">
             <Col md={12} sm={6} className="mapaCurricular-header">
               <h4>Primer Ciclo de Formación</h4>
             </Col>
@@ -147,7 +147,7 @@ export default function MapaCurricular({data}) {
               ))}
             </Col>
           </Row>
-          <Row className="mt-5 mapaCurricular">
+          <Row className="mt-5 mapaCurricular-tarjeta">
             <Col md={12} sm={6} className="mapaCurricular-header">
               <h4>Segundo Ciclo de Formación</h4>
             </Col>
@@ -172,7 +172,7 @@ export default function MapaCurricular({data}) {
               ))}
             </Col>
           </Row>
-          <Row className="mt-5 mapaCurricular">
+          <Row className="mt-5 mapaCurricular-tarjeta">
             <Col md={12} sm={6} className="mapaCurricular-header">
               <h4>Tercer Ciclo de Formación</h4>
             </Col>
