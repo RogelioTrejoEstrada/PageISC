@@ -3,7 +3,6 @@ import { Col, Container, Row} from 'react-bootstrap'
 import Cabecera from '../components/Cabecera'
 import Layout from '../components/Layout'
 import { graphql } from 'gatsby'
-import Img from 'gatsby-image'
 import { StaticImage } from 'gatsby-plugin-image'
 
 
