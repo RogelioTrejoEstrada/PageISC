@@ -2,7 +2,7 @@
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image';
 import React, { useState } from 'react'
-import { Nav, Navbar} from 'react-bootstrap'
+import { Container, Nav, Navbar} from 'react-bootstrap'
 import {navbarBrand, navbarLink, navbarColor} from '../styles/Header.module.css'
 
 
@@ -12,6 +12,7 @@ export default function Header({pagina}) {
   const [active, setActive] = useState(pagina);
 
   return (
+    <Container>
     <Navbar className={navbarColor} expand="lg" variant="light">
       <Navbar.Brand className={navbarBrand} style={{ color: "#fff" }}>
         <StaticImage src="../images/UPA_Logo.png" width={100} alt="UPA" /> 
@@ -63,6 +64,7 @@ export default function Header({pagina}) {
         </Nav>
       </Navbar.Collapse>
     </Navbar>
+    </Container>
   )
 }
 
