@@ -1,5 +1,5 @@
 .navbarColor{
-    background-color: #eaeaea /*#003464;*/
+    background-color: #efefef /*#003464;*/
 }
 
 .navbarBrand{
@@ -9,6 +9,6 @@
 
 
 .navbarLink:hover{
-    border-color: #003464;
+    border-color: #efefef;
     text-decoration: none;
 }

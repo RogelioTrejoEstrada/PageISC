@@ -52,7 +52,7 @@ export default function Contacto({data}) {
 
 export const query = graphql`
  query bannerContacto{
-   file(relativePath: {eq: "inicio.jpg"}){
+   file(relativePath: {eq: "bienvenidos.JPG"}){
      childImageSharp {
        fluid(maxWidth: 1800) {
          ...GatsbyImageSharpFluid

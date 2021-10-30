@@ -5,6 +5,7 @@
  */
 
  module.exports = {
+   
   /* Your site config here */
   plugins: [
     `gatsby-transformer-remark`,
@@ -17,7 +18,7 @@
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images/`,
+        path: `${__dirname}/src/images`,
       },
     },
     {
@@ -49,7 +50,7 @@
         start_url: '/',
         background_color: '#f7f0eb',
         display: 'standalone',
-        icon: 'src/images/UPA_Logo.png',
+        icon: 'src/images/fav.png',
       },
     }
   ],
@@ -59,8 +60,7 @@
     description: 'Sitio WEB del programa académico ISC de la Universidad Politécnica de Aguascalientes',
     url: "http://isc.upa.edu.mx/",
     copyright: 'Copyright 2021 ISC UPA',
-    contact: 'isei@upa.edu.mx',
+    contact: 'isc@upa.edu.mx',
     image: '/images/UPA_Logo.png'
-
   },
 }

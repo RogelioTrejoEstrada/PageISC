@@ -5,6 +5,7 @@ import Layout from "../components/Layout";
 import Cabecera from "../components/Cabecera";
 import { StaticImage } from "gatsby-plugin-image";
 import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
 
  export default function Home({data}) {
    
@@ -17,9 +18,8 @@ import { graphql } from 'gatsby'
            imagen = {data.file.childImageSharp.fluid}
          />
        <Container>
-         
          <Row className="justify-content-md-center">
-           <Col md={6}>
+           <Col md={12}>
              <div className="textoJustificado">
                <p>
                  El programa académico de Ingeniería en Sistemas Computacionales es la renovación y
@@ -29,7 +29,7 @@ import { graphql } from 'gatsby'
                  de información y de las comunicaciones para asegurar la
                  eficiencia en los procesos productivos.
                </p>
-               <p>
+               {/* <p>
                  Evaluada en el Nivel 1 por los Comités Interinstitucionales
                  para la Evaluación de la Educación Superior, A.C. (CIEES).
                </p>
@@ -40,13 +40,13 @@ import { graphql } from 'gatsby'
                <p>
                  También se encuentra incorporada al Padrón EGEL de Programas de
                  Alto Rendimiento Académico de parte del CENEVAL
-               </p>
+               </p> */}
              </div>
            </Col>
-           <Col md={6} className="m-auto">
-             {/* <Img fluid={data.file.childImageSharp.fluid} /> */}
-             <StaticImage src="../images/bienvenidos.JPG" alt="Bienvenidos" />
-           </Col>
+           {/* <Col md={6} className="m-auto">
+             
+             <StaticImage src="../images/bienvenidos.JPG" alt="Bienvenidos" placeholder="blurred" layout="fullWidth"/> 
+           </Col> */}
          </Row>
        </Container>
        <Container className="mt-3 mb-3">

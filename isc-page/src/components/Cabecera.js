@@ -9,8 +9,8 @@ function Cabecera(props) {
     return (
 
       <Container>
-      <BackgroundImage className="masthead" fluid={imagen} fadeIn>
-        <div className="black-overlay">
+       <BackgroundImage className="masthead" fluid={imagen} fadeIn>
+        {/* <div className="black-overlay">
           <Row className="justify-content-md-center tituloPrincipal mt-0 m-auto">
             
             <Col md={12} sm={4}>
@@ -19,8 +19,8 @@ function Cabecera(props) {
             </Col>
           
           </Row>
-        </div>
-      </BackgroundImage>
+        </div> */}
+      </BackgroundImage> 
       </Container>
     )
 }

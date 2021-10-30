@@ -17,10 +17,10 @@ function About({data}) {
       <Container className = 'mb-5'>
 
         <Row className="justify-content-md-center">
-          <Col md={6} className="m-auto">
+          {/* <Col md={6} className="m-auto">
             <StaticImage src="../images/inicio.jpg" alt="UPA Logo" />
-          </Col>
-          <Col md={6}>
+          </Col> */}
+          <Col md={12}>
             <div className="textoJustificado">
               <h3>Misión</h3>
               <p>

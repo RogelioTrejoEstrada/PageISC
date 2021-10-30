@@ -50,6 +50,16 @@
     text-align: justify;
 }
 
+@media screen and (max-width: 992px) {
+    .tituloPrincipal h1 {
+        font-size: 1rem;
+    }
+
+    .tituloPrincipal h2 {
+        font-size: 1rem;
+    }
+}
+
 .layout {
     background-color: #efefef;
     margin: 0 auto;
