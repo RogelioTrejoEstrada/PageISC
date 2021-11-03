@@ -4,7 +4,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 import React, { useState } from 'react'
 import { Container, Nav, Navbar} from 'react-bootstrap'
 import {navbarBrand, navbarLink, navbarColor} from '../styles/Header.module.css'
-import Logo from "../images/UPA_Logo.png"
+
 
 
 

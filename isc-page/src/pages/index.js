@@ -3,9 +3,9 @@ import React from "react"
 import { Col, Container, Row} from "react-bootstrap";
 import Layout from "../components/Layout";
 import Cabecera from "../components/Cabecera";
-import { StaticImage } from "gatsby-plugin-image";
+//import { StaticImage } from "gatsby-plugin-image";
 import { graphql } from 'gatsby'
-import Img from 'gatsby-image'
+//import Img from 'gatsby-image'
 
  export default function Home({data}) {
    

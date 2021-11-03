@@ -2,7 +2,7 @@ import React from 'react'
 import { Container, Button, Row, Col } from 'react-bootstrap'
 import Cabecera from '../components/Cabecera'
 import Layout from '../components/Layout'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 
 const materias = 
   {primer: [
@@ -122,6 +122,7 @@ export default function MapaCurricular({data}) {
               <h5>Primer Cuatrimestre</h5>
               {materias.primer.map(materia => (
                 <Button className={setColorMateria(materia.tipo)} key={materia.title}>
+                  {/* <a href = {`/materias/${materia.title}.pdf`} download> {materia.title}</a> */}
                   {materia.title}
                 </Button>
               ))}

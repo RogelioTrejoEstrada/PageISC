@@ -1,11 +1,11 @@
 import React from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
+import { Container} from 'react-bootstrap'
 import BackgroundImage from 'gatsby-background-image'
 
 
 function Cabecera(props) {
-   const {titulo1, titulo2, imagen} = props
-   
+   //const {titulo1, titulo2, imagen} = props
+   const {imagen} = props
     return (
 
       <Container>
