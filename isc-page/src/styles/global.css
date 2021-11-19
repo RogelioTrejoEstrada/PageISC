@@ -162,3 +162,13 @@
 .btn-ccbb {
     background-color: rgb(47, 46, 39);
 }
+
+.modalObjetivo {
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align:justify;
+}
+
+.modalObjetivo span {
+    font-weight: 600;
+}

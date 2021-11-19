@@ -2,13 +2,17 @@ import React from 'react'
 import { Container, Button, Row, Col } from 'react-bootstrap'
 import Cabecera from '../components/Cabecera'
 import Layout from '../components/Layout'
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
+import ModalMateria from '../components/ModalMateria'
+
+import materia from '../materias/materiasData.json'
+
 
 const materias = 
   {primer: [
     {title: 'Inglés I', tipo: 'IDI'},
     {title: 'Expresión Oral y Escrita',tipo: 'FIT'},
-    {title: 'Quimica Básica', tipo: 'CCBB'},
+    {title: 'Química Básica', tipo: 'CCBB'},
     {title: 'Álgebra Lineal',tipo: 'CCBB'},
     {title: 'Introducción a la Programación',tipo: 'ISC'},
     {title: 'Introducción a las Tecnologías de Información',tipo: 'ISC'},
@@ -88,7 +92,8 @@ octavo: [
 ]}
 
 export default function MapaCurricular({data}) {
-    function setColorMateria(tipo) {
+
+   function setColorMateria(tipo) {
         var valor = 'btn-materia'
       switch (tipo){
         case 'IDI': valor = 'btn-materia btn-idi'; break;
@@ -100,6 +105,19 @@ export default function MapaCurricular({data}) {
       return valor;
     }
 
+    const [modalShow, setModalShow] = React.useState(false);
+
+    const [datosModal, setDatosModal] = React.useState({title: "", tipo: "", creditos: "", objetivo: "", Unidades: ""})
+
+    
+
+    const DatosMateria = (nombre) => {
+      const materiaDatos = (nombre !== "") ? materia.find(dato => dato.title === nombre) : {title: "No encontrado"}
+      //console.log("Materia: ", materiaDatos)
+      setDatosModal(materiaDatos)
+      setModalShow(true)
+    }
+    
     return (
       <Layout>
         <div className="mapaCurricular"></div>
@@ -114,6 +132,10 @@ export default function MapaCurricular({data}) {
           </div>
         </Container>
         <Container className="mt-4 mb-4 text-center ">
+
+       
+          <ModalMateria show ={modalShow} onHide={()=> setModalShow(false)} materia = {datosModal}/>
+
           <Row className="mapaCurricular-tarjeta">
             <Col md={12} sm={6} className="mapaCurricular-header">
               <h4>Primer Ciclo de Formación</h4>
@@ -121,14 +143,13 @@ export default function MapaCurricular({data}) {
             <Col md={12} sm={8}>
               <h5>Primer Cuatrimestre</h5>
               {materias.primer.map(materia => (
-                <Button className={setColorMateria(materia.tipo)} key={materia.title}>
-                  {/* <a href = {`/materias/${materia.title}.pdf`} download> {materia.title}</a> */}
+                <Button className={setColorMateria(materia.tipo)} key={materia.title} onClick={() => DatosMateria(materia.title)} >
                   {materia.title}
                 </Button>
               ))}
               <h5>Segundo Cuatrimestre</h5>
               {materias.segundo.map(materia => (
-                <Button className={setColorMateria(materia.tipo)} key={materia.title}>
+                <Button className={setColorMateria(materia.tipo)} key={materia.title} onClick={() => DatosMateria(materia.title)} >
                   {materia.title}
                 </Button>
               ))}

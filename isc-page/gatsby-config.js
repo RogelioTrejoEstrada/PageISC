@@ -21,6 +21,7 @@
         path: `${__dirname}/src/images`,
       },
     },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -28,6 +29,7 @@
         path: `${__dirname}/src/thumbLabs/`,
       },
     },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -35,6 +37,7 @@
         path: `${__dirname}/src/thumbCampus/`,
       },
     },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -42,6 +45,7 @@
         path: `${__dirname}/src/materias/`,
       },
     },
+
     {
     resolve: `gatsby-plugin-manifest`,
       options: {
@@ -53,6 +57,7 @@
         icon: 'src/images/fav.png',
       },
     }
+
   ],
   siteMetadata: {
     title: 'Ingeniería en Sistemas Computacionales',
