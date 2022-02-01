@@ -4,7 +4,7 @@ import Cabecera from '../components/Cabecera'
 import Layout from '../components/Layout'
 import { graphql } from 'gatsby'
 import ModalMateria from '../components/ModalMateria'
-
+import Seo from '../components/Seo'
 import materia from '../materias/materiasData.json'
 
 
@@ -120,6 +120,7 @@ export default function MapaCurricular({data}) {
     
     return (
       <Layout>
+        <Seo title = "Mapa Curricular"/>
         <div className="mapaCurricular"></div>
         <Cabecera
           titulo2="Mapa Curricular"
@@ -155,7 +156,7 @@ export default function MapaCurricular({data}) {
               ))}
               <h5>Tercer Cuatrimestre</h5>
               {materias.tercer.map(materia => (
-                <Button className={setColorMateria(materia.tipo)} key={materia.title}>
+                <Button className={setColorMateria(materia.tipo)} key={materia.title} onClick={() => DatosMateria(materia.title)}>
                   {materia.title}
                 </Button>
               ))}
@@ -168,19 +169,19 @@ export default function MapaCurricular({data}) {
             <Col md={12} sm={8}>
               <h5>Cuarto Cuatrimestre</h5>
               {materias.cuarto.map(materia => (
-                <Button className={setColorMateria(materia.tipo)} key={materia.title}>
+                <Button className={setColorMateria(materia.tipo)} key={materia.title} onClick={() => DatosMateria(materia.title)}>
                   {materia.title}
                 </Button>
               ))}
               <h5>Quinto Cuatrimestre</h5>
               {materias.quinto.map(materia => (
-                <Button className={setColorMateria(materia.tipo)} key={materia.title}>
+                <Button className={setColorMateria(materia.tipo)} key={materia.title} onClick={() => DatosMateria(materia.title)}>
                   {materia.title}
                 </Button>
               ))}
               <h5>Sexto Cuatrimestre</h5>
               {materias.sexto.map(materia => (
-                <Button className={setColorMateria(materia.tipo)} key={materia.title}>
+                <Button className={setColorMateria(materia.tipo)} key={materia.title} onClick={() => DatosMateria(materia.title)}>
                   {materia.title}
                 </Button>
               ))}
@@ -193,19 +194,19 @@ export default function MapaCurricular({data}) {
             <Col md={12} sm={8}>
               <h5>Séptimo Cuatrimestre</h5>
               {materias.septimo.map(materia => (
-                <Button className={setColorMateria(materia.tipo)} key={materia.title}>
+                <Button className={setColorMateria(materia.tipo)} key={materia.title} onClick={() => DatosMateria(materia.title)}>
                 {materia.title}
               </Button>
               ))}
               <h5>Octavo Cuatrimestre</h5>
               {materias.octavo.map(materia => (
-                <Button className={setColorMateria(materia.tipo)} key={materia.title}>
+                <Button className={setColorMateria(materia.tipo)} key={materia.title} onClick={() => DatosMateria(materia.title)}>
                 {materia.title}
               </Button>
               ))}
               <h5>Noveno Cuatrimestre</h5>
               {materias.noveno.map(materia => (
-                <Button className={setColorMateria(materia.tipo)} key={materia.title}>
+                <Button className={setColorMateria(materia.tipo)} key={materia.title} onClick={() => DatosMateria(materia.title)}>
                 {materia.title}
               </Button>
               ))}

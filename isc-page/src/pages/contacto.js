@@ -4,10 +4,12 @@ import Cabecera from '../components/Cabecera'
 import Layout from '../components/Layout'
 import { graphql } from 'gatsby'
 import {Telephone, Envelope, Whatsapp} from 'react-bootstrap-icons'
+import Seo from '../components/Seo'
 
 export default function Contacto({data}) {
     return (
       <Layout>
+        <Seo title = "Contacto"/>
         <div className="contacto"></div>
         <Cabecera
           titulo2="Contáctanos"

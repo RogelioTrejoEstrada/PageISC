@@ -3,7 +3,7 @@ title: Laboratorios de cómputo
 stack: Computo
 slug: laboratorio-redes
 date: 2021-01-01T00:00:00+00:00
-thumb: ../images/infraestructura/redes.png
+thumb: ../images/upa_banner.JPG
 featuredImg: ../images/inicio.jpg
 ---
 

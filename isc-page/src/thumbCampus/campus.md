@@ -7,3 +7,7 @@ thumb: ../images/infraestructura/redes.png
 featuredImg: ../images/inicio.jpg
 ---
 
+```grid|2
+![](../images/infraestructura/redes.png)
+![](../images/infraestructura/redes.png)
+```

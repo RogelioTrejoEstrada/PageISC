@@ -4,16 +4,16 @@
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
 
- module.exports = {
-   
+module.exports = {
+
   /* Your site config here */
   plugins: [
-    `gatsby-transformer-remark`,
+
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     'gatsby-plugin-image',
     `gatsby-plugin-react-helmet`,
-    
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -47,7 +47,25 @@
     },
 
     {
-    resolve: `gatsby-plugin-manifest`,
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [
+          {
+            resolve: "gatsby-remark-images-grid",
+            options: {
+              
+            },
+          },
+        ],
+      },
+    },
+
+
+
+
+
+    {
+      resolve: `gatsby-plugin-manifest`,
       options: {
         name: 'ISC-UPA',
         short_name: 'ISC-UPA',

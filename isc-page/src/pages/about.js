@@ -4,10 +4,12 @@ import { Col, Container, Row } from 'react-bootstrap'
 import Cabecera from '../components/Cabecera'
 import Layout from '../components/Layout'
 import { graphql } from 'gatsby'
+import Seo from '../components/Seo'
 
 function About({data}) {
   return (
     <Layout>
+      <Seo title = "Nosotros"/>
       <div className='nosotros'></div>
       <Cabecera
           titulo2="Nosotros"
