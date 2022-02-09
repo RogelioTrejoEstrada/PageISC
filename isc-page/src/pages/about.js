@@ -5,6 +5,7 @@ import Cabecera from '../components/Cabecera'
 import Layout from '../components/Layout'
 import { graphql } from 'gatsby'
 import Seo from '../components/Seo'
+import { StaticImage } from 'gatsby-plugin-image'
 
 function About({data}) {
   return (
@@ -69,7 +70,19 @@ function About({data}) {
                 <li>ANUIES</li>
               </ul>
             </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+          <div className="textoJustificado">
+          <h4>Academias</h4>
+          <p>El programa académico participa activamente con las académias de CISCO Academy y 
+            Huawei ICT, impartiendo cursos para certificación en estas tecnologías. </p>
 
+            <StaticImage src="../images/huawei.jpg" alt="Huawei Logo" width={200}/>
+            {/*Poner una imagen de cisco academy y centrar ambas imagenes */}
+            <StaticImage src="../images/huawei.jpg" alt="Huawei Logo" width={200}/>
+            </div>
           </Col>
         </Row>
         

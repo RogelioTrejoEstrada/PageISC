@@ -3,7 +3,7 @@ import { Col, Container, Row} from 'react-bootstrap'
 import Cabecera from '../components/Cabecera'
 import Layout from '../components/Layout'
 import { graphql } from 'gatsby'
-import { StaticImage } from 'gatsby-plugin-image'
+
 
 
 export default function NotFound({data}) {
@@ -17,9 +17,7 @@ export default function NotFound({data}) {
         />
         <Container className="mb-5">
           <Row className="justify-content-md-center">
-            <Col md={6} className="m-auto">
-              <StaticImage src="../images/inicio.jpg" alt="UPA Logo" />
-            </Col>
+            
             <Col md={6}>
               <div className="textoJustificado">
                 <h3>Página no encontrada</h3>
