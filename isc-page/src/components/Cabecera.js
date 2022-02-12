@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container} from 'react-bootstrap'
 import BackgroundImage from 'gatsby-background-image'
+//import {GatsbyImage} from 'gatsby-plugin-image'
 
 
 function Cabecera(props) {
@@ -21,6 +22,7 @@ function Cabecera(props) {
           </Row>
         </div> */}
       </BackgroundImage> 
+      {/* <GatsbyImage className = "masthead" image = {imagen} /> */}
       </Container>
     )
 }
