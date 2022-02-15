@@ -74,18 +74,23 @@ function About({data}) {
         </Row>
         <Row>
           <Col>
-          <div className="textoJustificado">
-          <h4>Academias</h4>
-          <p>El programa académico participa activamente con las académias de CISCO Academy y 
-            Huawei ICT, impartiendo cursos para certificación en estas tecnologías. </p>
-
-            <StaticImage src="../images/huawei.jpg" alt="Huawei Logo" width={200}/>
-            {/*Poner una imagen de cisco academy y centrar ambas imagenes */}
-            <StaticImage src="../images/huawei.jpg" alt="Huawei Logo" width={200}/>
+            <div className="textoJustificado">
+              <h4>Academias</h4>
+              <p>El programa académico participa activamente con las académias de CISCO Academy y
+                Huawei ICT, impartiendo cursos para certificación en estas tecnologías. </p>
             </div>
           </Col>
+
+         
         </Row>
-        
+        <Row>
+            <Col>
+              <StaticImage src="../images/huawei.png" alt="Huawei Logo" width={150}/>
+            </Col>
+            <Col>
+              <StaticImage src="../images/descarga.png" alt="Netacad Logo" height={150} />
+            </Col>
+          </Row>
       </Container>
     </Layout>
   )
