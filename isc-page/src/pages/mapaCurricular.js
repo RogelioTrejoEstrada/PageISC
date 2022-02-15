@@ -10,8 +10,8 @@ import materia from '../materias/materiasData.json'
 
 const materias = 
   {primer: [
-    {title: 'Inglés I', tipo: 'IDI'},
-    {title: 'Expresión Oral y Escrita',tipo: 'FIT'},
+    {title: 'Inglés I', tipo: 'IDI', archivo: 'inglesI.pdf'},
+    {title: 'Expresión Oral y Escrita',tipo: 'FIT', archivo: 'eoye.pdf'},
     {title: 'Química Básica', tipo: 'CCBB'},
     {title: 'Álgebra Lineal',tipo: 'CCBB'},
     {title: 'Introducción a la Programación',tipo: 'ISC'},
@@ -118,6 +118,10 @@ export default function MapaCurricular({data}) {
       setModalShow(true)
     }
     
+    const AtribucionesMateria = (nombre) => {
+      console.log(nombre)
+    }
+
     return (
       <Layout>
         <Seo title = "Mapa Curricular"/>
@@ -144,7 +148,8 @@ export default function MapaCurricular({data}) {
             <Col md={12} sm={8}>
               <h5>Primer Cuatrimestre</h5>
               {materias.primer.map(materia => (
-                <Button className={setColorMateria(materia.tipo)} key={materia.title} onClick={() => DatosMateria(materia.title)} >
+                <Button className={setColorMateria(materia.tipo)} key={materia.title} onClick={() => DatosMateria(materia.title)}
+                  onMouseOver = {() => AtribucionesMateria(materia.title)} >
                   {materia.title}
                 </Button>
               ))}

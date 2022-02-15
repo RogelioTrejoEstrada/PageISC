@@ -3,10 +3,11 @@ import { Modal } from 'react-bootstrap';
 
 
 function ModalMateria(props){
-
+    console.log(props)
     return (
       <Modal
         {...props}
+        
         size="lg"
         aria-labelledby="contained-modal-title-vcenter"
         centered
@@ -23,6 +24,7 @@ function ModalMateria(props){
           <ul>
              { (props.materia.Unidades !== "") && props.materia.Unidades.map( unidad => (<li key = {unidad}>{unidad}</li>)) }  
           </ul> 
+         <a href={`'/ruta/' props.materia.archivo.pdf`} > {props.materia.tittle}</a>  
         </Modal.Body>
         {/*           <Modal.Footer>
             <Button onClick={props.onHide}>Cerrar</Button>
