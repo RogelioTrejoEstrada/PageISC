@@ -3,7 +3,6 @@ import { Modal } from 'react-bootstrap';
 
 
 function ModalMateria(props){
-    console.log(props)
     return (
       <Modal
         {...props}

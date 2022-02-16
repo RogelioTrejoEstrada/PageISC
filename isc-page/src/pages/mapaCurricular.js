@@ -35,24 +35,40 @@ export default function MapaCurricular({data}) {
     }
     
     const agregarClase = (nombre) => {
-      console.log(nombre)
-      let contribuye = document.getElementById('Herramientas Ofimáticas')
-      contribuye.classList.add('btn-contribuye')
+      const materiaExtras = (nombre !== "") ? materia.find(dato => dato.title === nombre) : {title: "No encontrado"}
+      //console.log("atrobuptp_ ", materiaExtras.contribuye)
+      let contribuye = ""
+      let atribucion = ""
+      if(materiaExtras.hasOwnProperty('contribuye')){
+        materiaExtras.contribuye.forEach(mat => {
+          contribuye = document.getElementById(mat)
+          //console.log(contribuye)
+          contribuye.classList.add('btn-contribuye')
+        })
+      }
 
-      let test = document.getElementById('Introducción a la Programación')
-      test.classList.add('btn-atribuye')
+      if(materiaExtras.hasOwnProperty('atribucion')){
+        materiaExtras.atribucion.forEach(mat => {
+          atribucion = document.getElementById(mat)
+          //console.log(atribucion)
+          atribucion.classList.add('btn-atribuye')
+        })
+      }
     }
-
+     
     //Elimina las clases de contribución y atribución a
     const eliminarClase = () => {
       let contribuidores = document.getElementsByClassName('btn-contribuye')
-      Array.prototype.forEach.call(contribuidores, function(element){
-        element.classList.remove('btn-contribuye')
-      })
+
+
+      while (contribuidores.length > 0)
+        contribuidores[0].classList.remove('btn-contribuye')
+
       let atribuidores = document.getElementsByClassName('btn-atribuye')
-      Array.prototype.forEach.call(atribuidores, function(element){
-        element.classList.remove('btn-atribuye')
-      })
+      while (atribuidores.length > 0)
+        atribuidores[0].classList.remove('btn-atribuye')
+  
+
       let actual = document.getElementsByClassName('btn-actual')
       Array.prototype.forEach.call(actual, function(element){
         element.classList.remove('btn-atribuye')
@@ -92,13 +108,15 @@ export default function MapaCurricular({data}) {
               ))}
               <h5>Segundo Cuatrimestre</h5>
               {materias.segundo.map(materia => (
-                <Button className={setColorMateria(materia.tipo)} key={materia.title} id={materia.title} onClick={() => DatosMateria(materia.title)} >
+                <Button className={setColorMateria(materia.tipo)} key={materia.title} id={materia.title} onClick={() => DatosMateria(materia.title)} 
+                onMouseOver = {()=> agregarClase(materia.title)} onMouseLeave = {() => eliminarClase()}>
                   {materia.title}
                 </Button>
               ))}
               <h5>Tercer Cuatrimestre</h5>
               {materias.tercer.map(materia => (
-                <Button className={setColorMateria(materia.tipo)} key={materia.title} onClick={() => DatosMateria(materia.title)}>
+                <Button className={setColorMateria(materia.tipo)} key={materia.title} id={materia.title} onClick={() => DatosMateria(materia.title)} 
+                onMouseOver = {()=> agregarClase(materia.title)} onMouseLeave = {() => eliminarClase()}>
                   {materia.title}
                 </Button>
               ))}
@@ -111,19 +129,22 @@ export default function MapaCurricular({data}) {
             <Col md={12} sm={8}>
               <h5>Cuarto Cuatrimestre</h5>
               {materias.cuarto.map(materia => (
-                <Button className={setColorMateria(materia.tipo)} key={materia.title} onClick={() => DatosMateria(materia.title)}>
+                <Button className={setColorMateria(materia.tipo)} id={materia.title} key={materia.title} onClick={() => DatosMateria(materia.title)}
+                onMouseOver = {()=> agregarClase(materia.title)} onMouseLeave = {() => eliminarClase()}>
                   {materia.title}
                 </Button>
               ))}
               <h5>Quinto Cuatrimestre</h5>
               {materias.quinto.map(materia => (
-                <Button className={setColorMateria(materia.tipo)} key={materia.title} onClick={() => DatosMateria(materia.title)}>
+                <Button className={setColorMateria(materia.tipo)} id={materia.title}  key={materia.title} onClick={() => DatosMateria(materia.title)}
+                onMouseOver = {()=> agregarClase(materia.title)} onMouseLeave = {() => eliminarClase()}>
                   {materia.title}
                 </Button>
               ))}
               <h5>Sexto Cuatrimestre</h5>
               {materias.sexto.map(materia => (
-                <Button className={setColorMateria(materia.tipo)} key={materia.title} onClick={() => DatosMateria(materia.title)}>
+                <Button className={setColorMateria(materia.tipo)} id={materia.title} key={materia.title} onClick={() => DatosMateria(materia.title)}
+                onMouseOver = {()=> agregarClase(materia.title)} onMouseLeave = {() => eliminarClase()}>
                   {materia.title}
                 </Button>
               ))}
@@ -136,21 +157,24 @@ export default function MapaCurricular({data}) {
             <Col md={12} sm={8}>
               <h5>Séptimo Cuatrimestre</h5>
               {materias.septimo.map(materia => (
-                <Button className={setColorMateria(materia.tipo)} key={materia.title} onClick={() => DatosMateria(materia.title)}>
-                {materia.title}
-              </Button>
+                <Button className={setColorMateria(materia.tipo)} id={materia.title} key={materia.title} onClick={() => DatosMateria(materia.title)}
+                onMouseOver = {()=> agregarClase(materia.title)} onMouseLeave = {() => eliminarClase()}>
+                  {materia.title}
+                </Button>
               ))}
               <h5>Octavo Cuatrimestre</h5>
               {materias.octavo.map(materia => (
-                <Button className={setColorMateria(materia.tipo)} key={materia.title} onClick={() => DatosMateria(materia.title)}>
-                {materia.title}
-              </Button>
+                <Button className={setColorMateria(materia.tipo)} id={materia.title} key={materia.title} onClick={() => DatosMateria(materia.title)}
+                onMouseOver = {()=> agregarClase(materia.title)} onMouseLeave = {() => eliminarClase()}>
+                  {materia.title}
+                </Button>
               ))}
               <h5>Noveno Cuatrimestre</h5>
               {materias.noveno.map(materia => (
-                <Button className={setColorMateria(materia.tipo)} key={materia.title} onClick={() => DatosMateria(materia.title)}>
-                {materia.title}
-              </Button>
+               <Button className={setColorMateria(materia.tipo)} id={materia.title} key={materia.title} onClick={() => DatosMateria(materia.title)}
+               onMouseOver = {()=> agregarClase(materia.title)} onMouseLeave = {() => eliminarClase()}>
+                 {materia.title}
+               </Button>
               ))}
               <h5>Décimo Cuatrimestre</h5>
               <Button className="btn-materia">Estadía</Button>

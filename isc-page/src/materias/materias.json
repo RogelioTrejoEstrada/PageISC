@@ -17,7 +17,7 @@
   {"title": "Arquitectura de Computadoras","tipo": "ISC"}
 ],
 "tercer": [
-  {"title": "Inglés III","tipo": "IDI"},
+  {"title": "Inglés III","tipo": "IDI", "archivo": "inglesIII.pdf"},
   {"title": "Inteligencia Emocional","tipo": "FIT"},
   {"title": "Cálculo Diferencial","tipo": "CCBB"},
   {"title": "Probabilidad y Estadística","tipo": "CCBB"},
