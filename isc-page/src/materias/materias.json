@@ -4,7 +4,7 @@
   {"title": "Química Básica", "tipo": "CCBB"},
   {"title": "Álgebra Lineal","tipo": "CCBB"},
   {"title": "Introducción a la Programación","tipo": "ISC"},
-  {"title": "Introducción a las Tecnologías de Información","tipo": "ISC"},
+  {"title": "Introducción a las TI","tipo": "ISC"},
   {"title": "Herramientas Ofimáticas","tipo": "ISC"}
 ],
 "segundo":[
@@ -54,7 +54,7 @@
 ],
 "septimo": [
 {"title": "Inglés VII","tipo": "IDI"},
-{"title": "Liderazgo de Equipos de Alto Desempeño","tipo": "FIT"},
+{"title": "Liderazgo de Equipos","tipo": "FIT"},
 {"title": "Formulación de Proyectos de TI","tipo": "ISC"},
 {"title": "Lenguajes y Autómatas","tipo": "ISC"},
 {"title": "Programación WEB","tipo": "ISC"},
