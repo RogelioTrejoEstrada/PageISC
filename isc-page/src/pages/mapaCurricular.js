@@ -6,90 +6,8 @@ import { graphql } from 'gatsby'
 import ModalMateria from '../components/ModalMateria'
 import Seo from '../components/Seo'
 import materia from '../materias/materiasData.json'
+import materias from '../materias/materias.json'
 
-
-const materias = 
-  {primer: [
-    {title: 'Inglés I', tipo: 'IDI', archivo: 'inglesI.pdf'},
-    {title: 'Expresión Oral y Escrita',tipo: 'FIT', archivo: 'eoye.pdf'},
-    {title: 'Química Básica', tipo: 'CCBB'},
-    {title: 'Álgebra Lineal',tipo: 'CCBB'},
-    {title: 'Introducción a la Programación',tipo: 'ISC'},
-    {title: 'Introducción a las Tecnologías de Información',tipo: 'ISC'},
-    {title: 'Herramientas Ofimáticas',tipo: 'ISC'}
-  ],
-  segundo:[
-    {title: 'Inglés II', tipo: 'IDI'},
-    {title: 'Desarrollo Humano y Valores',tipo: 'FIT'},
-    {title: 'Funciones Matemáticas',tipo: 'CCBB'},
-    {title: 'Física',tipo: 'CCBB'},
-    {title: 'Electricidad y Magnetismo',tipo: 'CCBB'},
-    {title: 'Matemáticas Básicas para Computación',tipo: 'ISC'},
-    {title: 'Arquitectura de Computadoras',tipo: 'ISC'},
-  ],
-  tercer: [
-    {title: 'Inglés III',tipo: 'IDI'},
-    {title: 'Inteligencia Emocional',tipo: 'FIT'},
-    {title: 'Cálculo Diferencial',tipo: 'CCBB'},
-    {title: 'Probabilidad y Estadística',tipo: 'CCBB'},
-    {title: 'Programación',tipo: 'ISC'},
-    {title: 'Introducción a Redes',tipo: 'ISC'},
-    {title: 'Mantenimiento a Equipo de Cómputo',tipo: 'ISC'},
-  ],
- cuarto: [
-  {title: 'Inglés IV',tipo: 'IDI'},
-  {title: 'Habilidades Cognitivas y Creatividad',tipo: 'FIT'},
-  {title: 'Cálculo Integral',tipo: 'CCBB'},
-  {title: 'Ingeniería de Software',tipo: 'ISC'},
-  {title: 'Estructura de Datos',tipo: 'ISC'},
-  {title: 'Ruteo y Conmutación',tipo: 'ISC'},
-  {title: 'Estancia I',tipo: 'ISC'},
-],
-quinto :[
-  {title: 'Inglés V',tipo: 'IDI'},
-  {title: 'Ética Profesional',tipo: 'FIT'},
-  {title: 'Matemáticas para Ingeniería I',tipo: 'CCBB'},
-  {title: 'Física para Ingeniería',tipo: 'CCBB'},
-  {title: 'Fundamentos de POO',tipo: 'ISC'},
-  {title: 'Escalamiento de Redes',tipo: 'ISC'},
-  {title: 'Base de Datos',tipo: 'ISC'},
-],
- sexto:[
-  {title: 'Inglés VI',tipo: 'IDI'},
-  {title: 'Habilidades Gerenciales',tipo: 'FIT'},
-  {title: 'Matemáticas para Ingeniería II',tipo: 'CCBB'},
-  {title: 'Sistemas Operativos',tipo: 'ISC'},
-  {title: 'Programación Orientada a Objetos',tipo: 'ISC'},
-  {title: 'Interconexión de Redes',tipo: 'ISC'},
-  {title: 'Administración de Base de Datos',tipo: 'ISC'},
-],
-septimo: [
-  {title: 'Inglés VII',tipo: 'IDI'},
-  {title: 'Liderazgo de Equipos de Alto Desempeño',tipo: 'FIT'},
-  {title: 'Formulación de Proyectos de TI',tipo: 'ISC'},
-  {title: 'Lenguajes y Autómatas',tipo: 'ISC'},
-  {title: 'Programación WEB',tipo: 'ISC'},
-  {title: 'Ingeniería de Requisitos',tipo: 'ISC'},
-  {title: 'Estancia II',tipo: 'ISC'},
-],
-octavo: [
-  {title: 'Inglés VIII',tipo: 'IDI'},
-  {title: 'Tecnologías de Virtualización',tipo: 'ISC'},
-  {title: 'Admon. de Proyectos de TI',tipo: 'ISC'},
-  {title: 'Tecnologías y Aplicaciones en Internet',tipo: 'ISC'},
-  {title: 'Diseño de Interfaces',tipo: 'ISC'},
-  {title: 'Sistemas Inteligentes',tipo: 'ISC'},
-  {title: 'Gestión de Desarrollo de SW',tipo: 'ISC'},
-],
- noveno: [
-  {title: 'Inglés IX',tipo: 'IDI'},
-  {title: 'Inteligencia de Negocios',tipo: 'ISC'},
-  {title: 'Desarrollo de Negocios para TI',tipo: 'ISC'},
-  {title: 'Sistemas Embebidos',tipo: 'ISC'},
-  {title: 'Programación Móvil',tipo: 'ISC'},
-  {title: 'Seguridad Informática',tipo: 'ISC'},
-  {title: 'Expresión Oral y Escrita II',tipo: 'ISC'},
-]}
 
 export default function MapaCurricular({data}) {
 
@@ -109,8 +27,6 @@ export default function MapaCurricular({data}) {
 
     const [datosModal, setDatosModal] = React.useState({title: "", tipo: "", creditos: "", objetivo: "", Unidades: ""})
 
-    
-
     const DatosMateria = (nombre) => {
       const materiaDatos = (nombre !== "") ? materia.find(dato => dato.title === nombre) : {title: "No encontrado"}
       //console.log("Materia: ", materiaDatos)
@@ -118,8 +34,29 @@ export default function MapaCurricular({data}) {
       setModalShow(true)
     }
     
-    const AtribucionesMateria = (nombre) => {
+    const agregarClase = (nombre) => {
       console.log(nombre)
+      let contribuye = document.getElementById('Herramientas Ofimáticas')
+      contribuye.classList.add('btn-contribuye')
+
+      let test = document.getElementById('Introducción a la Programación')
+      test.classList.add('btn-atribuye')
+    }
+
+    //Elimina las clases de contribución y atribución a
+    const eliminarClase = () => {
+      let contribuidores = document.getElementsByClassName('btn-contribuye')
+      Array.prototype.forEach.call(contribuidores, function(element){
+        element.classList.remove('btn-contribuye')
+      })
+      let atribuidores = document.getElementsByClassName('btn-atribuye')
+      Array.prototype.forEach.call(atribuidores, function(element){
+        element.classList.remove('btn-atribuye')
+      })
+      let actual = document.getElementsByClassName('btn-actual')
+      Array.prototype.forEach.call(actual, function(element){
+        element.classList.remove('btn-atribuye')
+      })
     }
 
     return (
@@ -148,14 +85,14 @@ export default function MapaCurricular({data}) {
             <Col md={12} sm={8}>
               <h5>Primer Cuatrimestre</h5>
               {materias.primer.map(materia => (
-                <Button className={setColorMateria(materia.tipo)} key={materia.title} onClick={() => DatosMateria(materia.title)}
-                  onMouseOver = {() => AtribucionesMateria(materia.title)} >
+                <Button className={setColorMateria(materia.tipo)} key={materia.title} id={materia.title} onClick={() => DatosMateria(materia.title)}
+                  onMouseOver = {()=> agregarClase(materia.title)} onMouseLeave = {() => eliminarClase()}>
                   {materia.title}
                 </Button>
               ))}
               <h5>Segundo Cuatrimestre</h5>
               {materias.segundo.map(materia => (
-                <Button className={setColorMateria(materia.tipo)} key={materia.title} onClick={() => DatosMateria(materia.title)} >
+                <Button className={setColorMateria(materia.tipo)} key={materia.title} id={materia.title} onClick={() => DatosMateria(materia.title)} >
                   {materia.title}
                 </Button>
               ))}
@@ -218,12 +155,14 @@ export default function MapaCurricular({data}) {
               <h5>Décimo Cuatrimestre</h5>
               <Button className="btn-materia">Estadía</Button>
             </Col>
-          </Row>
+          </Row> 
          
         </Container>
       </Layout>
     )
 }
+
+
 
 export const query = graphql`
  query bannerMapa{

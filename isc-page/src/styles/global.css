@@ -171,7 +171,7 @@
 .btn-materia{
     color: white;
     background-color: #506f8f;
-    border-color: #6589ac;
+    border-color: #506f8f;
     margin: 0.5rem 0.5rem;
     width: 8rem;
     height: 4rem;
@@ -185,14 +185,29 @@
 
 .btn-idi {
     background-color: rgb(56, 75, 75);
+    border-color: rgb(56, 75, 75);
 }
 
 .btn-fit {
     background-color: rgb(94, 102, 51);
+    border-color: rgb(94, 102, 51);
 }
 
 .btn-ccbb {
     background-color: rgb(47, 46, 39);
+    border-color:  rgb(47, 46, 39);;
+}
+
+.btn-contribuye {
+    background-color: rgb(108, 216, 104);
+    border-color: rgb(108, 216, 104);
+    color: black;
+}
+
+.btn-atribuye {
+    background-color: rgb(17, 40, 104);
+    border-color: rgb(17, 40, 104);
+    color: white;
 }
 
 .btn-actual{
