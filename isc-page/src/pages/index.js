@@ -63,9 +63,10 @@ import { graphql } from 'gatsby'
              </p>
            </Col>
          </Row>
-         <ul>
-           <Row>
-             <Col>
+
+         <Row className="justify-content-md-center">
+           <Col md={6}>
+             <ul className="no-bullet">
                <li>Administrador de Bases de Datos</li>
                <li>
                  Administrador de Calidad de Servicios de TI
@@ -78,9 +79,10 @@ import { graphql } from 'gatsby'
                <li>Analista de sistemas</li>
                <li>Arquitecto de redes de computadoras</li>
                <li>Arquitecto de software</li>
-
-             </Col>
-             <Col>
+             </ul>
+           </Col>
+           <Col md={4}>
+             <ul className="no-bullet">
                <li>Director de innovación en TI</li>
                <li>Diseñador web</li>
                <li>Documentador de procesos</li>
@@ -90,9 +92,10 @@ import { graphql } from 'gatsby'
                <li>
                  Gerente del departamento de TI
                </li>
-
-             </Col>
-             <Col>
+             </ul>
+           </Col>
+           <Col md={4}>
+             <ul className="no-bullet">
                <li>Consultor en nuevas TI</li>
                <li>Consultor de servicios de TI</li>
                <li>Desarrollador de software</li>
@@ -100,9 +103,9 @@ import { graphql } from 'gatsby'
                <li>Programador</li>
                <li>Tester</li>
                <li> Desarrollador de proyectos de TI propios </li>
-               </Col>
-           </Row>
-         </ul>
+             </ul>
+           </Col>
+         </Row>
        </Container>
      </Layout>
    )
