@@ -252,3 +252,7 @@
 .modalObjetivo span {
     font-weight: 600;
 }
+
+ul li {
+    margin-bottom: 0.5rem;
+}
