@@ -16,7 +16,7 @@ export default function Header({pagina}) {
       
       <Navbar className={navbarColor} expand="lg">
         <Navbar.Brand className={navbarBrand} style={{ color: "#fff" }}>
-          <StaticImage src="../images/UPA_Logo.png" width={100} alt="UPA"
+          <StaticImage src="../images/netacad.png" width={100} alt="UPA"
           placeholder="tracedSVG" />
 
         </Navbar.Brand>
