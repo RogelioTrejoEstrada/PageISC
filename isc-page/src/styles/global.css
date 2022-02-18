@@ -266,3 +266,24 @@ ul li {
 .no-bullet{
     list-style-type:disc;
 }
+
+.caja-atribucion{
+    background-color: rgb(17, 40, 104);
+    margin: 0 10px;
+    overflow: hidden;
+    padding: 1px 10px;
+}
+
+.caja-contribucion{
+    background-color: rgb(108, 216, 104);
+    margin: 0 10px;
+    overflow: hidden;
+    padding: 1px 10px;
+}
+
+.caja-actual{
+    background-color: gray;
+    margin: 0 10px;
+    overflow: hidden;
+    padding: 1px 10px;
+}

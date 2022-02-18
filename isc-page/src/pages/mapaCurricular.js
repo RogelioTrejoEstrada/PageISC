@@ -88,6 +88,11 @@ export default function MapaCurricular({ data }) {
         <div className="subTitulo">
           <h3>Plan de estudios 2020</h3>
         </div>
+        <Row className='mt-1'>
+          <Col> <span className='caja-atribucion'></span>Materias que le contribuye(n)</Col>
+          <Col> <span className='caja-actual'></span>Materia actual</Col>
+          <Col> <span className='caja-contribucion'></span>Materias a la(s) que contribuye</Col>
+        </Row>
       </Container>
       <Container className="mt-4 mb-4 text-center ">
 
@@ -95,73 +100,73 @@ export default function MapaCurricular({ data }) {
         <ModalMateria show={modalShow} onHide={() => setModalShow(false)} materia={datosModal} />
       
         <Container fluid="md">
-        <Row>
-          {/*Primer ciclo */}
-          <Col  md>
-            <Row>
-            <h5>Primer Ciclo</h5>
-              <Col xs = {12} md={4} >
-                {materias.primer.map(materia => (
-                  <Button className={setColorMateria(materia.tipo)} key={materia.title} id={materia.title} onClick={() => DatosMateria(materia.title)}
-                    onMouseOver={() => agregarClase(materia.title)} onMouseLeave={() => eliminarClase()}>
-                    {materia.title}
-                  </Button>
-                ))}
-              </Col>
-              <Col xs={12} md={4}>
-                {materias.segundo.map(materia => (
-                  <Button className={setColorMateria(materia.tipo)} key={materia.title} id={materia.title} onClick={() => DatosMateria(materia.title)}
-                    onMouseOver={() => agregarClase(materia.title)} onMouseLeave={() => eliminarClase()}>
-                    {materia.title}
-                  </Button>
-                ))}
-              </Col>
-              <Col xs={12} md={4}>
-                {materias.tercer.map(materia => (
-                  <Button className={setColorMateria(materia.tipo)} key={materia.title} id={materia.title} onClick={() => DatosMateria(materia.title)}
-                    onMouseOver={() => agregarClase(materia.title)} onMouseLeave={() => eliminarClase()}>
-                    {materia.title}
-                  </Button>
-                ))}
-              </Col>
-            </Row>
-          </Col>
-
-          {/*Segundo ciclo */}
-          <Col  md>
-            <Row>
-            <h5>Segundo Ciclo</h5>
-              <Col xs={12} md={4}>
-                {materias.cuarto.map(materia => (
-                  <Button className={setColorMateria(materia.tipo)} key={materia.title} id={materia.title} onClick={() => DatosMateria(materia.title)}
-                    onMouseOver={() => agregarClase(materia.title)} onMouseLeave={() => eliminarClase()}>
-                    {materia.title}
-                  </Button>
-                ))}
-              </Col>
-              <Col xs={12} md={4}>
-                {materias.quinto.map(materia => (
-                  <Button className={setColorMateria(materia.tipo)} key={materia.title} id={materia.title} onClick={() => DatosMateria(materia.title)}
-                    onMouseOver={() => agregarClase(materia.title)} onMouseLeave={() => eliminarClase()}>
-                    {materia.title}
-                  </Button>
-                ))}
-              </Col>
-              <Col xs={12} md={4}>
-                {materias.sexto.map(materia => (
-                  <Button className={setColorMateria(materia.tipo)} key={materia.title} id={materia.title} onClick={() => DatosMateria(materia.title)}
-                    onMouseOver={() => agregarClase(materia.title)} onMouseLeave={() => eliminarClase()}>
-                    {materia.title}
-                  </Button>
-                ))}
-              </Col>
-            </Row>
-          </Col>
-
-          {/*Tercer ciclo */}
+          <Row>
+            {/*Primer ciclo */}
             <Col md>
               <Row>
-              <h5>Tercer Ciclo</h5>
+                <h5>Primer Ciclo</h5>
+                <Col xs={12} md={4} >
+                  {materias.primer.map(materia => (
+                    <Button className={setColorMateria(materia.tipo)} key={materia.title} id={materia.title} onClick={() => DatosMateria(materia.title)}
+                      onMouseOver={() => agregarClase(materia.title)} onMouseLeave={() => eliminarClase()}>
+                      {materia.title}
+                    </Button>
+                  ))}
+                </Col>
+                <Col xs={12} md={4}>
+                  {materias.segundo.map(materia => (
+                    <Button className={setColorMateria(materia.tipo)} key={materia.title} id={materia.title} onClick={() => DatosMateria(materia.title)}
+                      onMouseOver={() => agregarClase(materia.title)} onMouseLeave={() => eliminarClase()}>
+                      {materia.title}
+                    </Button>
+                  ))}
+                </Col>
+                <Col xs={12} md={4}>
+                  {materias.tercer.map(materia => (
+                    <Button className={setColorMateria(materia.tipo)} key={materia.title} id={materia.title} onClick={() => DatosMateria(materia.title)}
+                      onMouseOver={() => agregarClase(materia.title)} onMouseLeave={() => eliminarClase()}>
+                      {materia.title}
+                    </Button>
+                  ))}
+                </Col>
+              </Row>
+            </Col>
+
+            {/*Segundo ciclo */}
+            <Col md>
+              <Row>
+                <h5>Segundo Ciclo</h5>
+                <Col xs={12} md={4}>
+                  {materias.cuarto.map(materia => (
+                    <Button className={setColorMateria(materia.tipo)} key={materia.title} id={materia.title} onClick={() => DatosMateria(materia.title)}
+                      onMouseOver={() => agregarClase(materia.title)} onMouseLeave={() => eliminarClase()}>
+                      {materia.title}
+                    </Button>
+                  ))}
+                </Col>
+                <Col xs={12} md={4}>
+                  {materias.quinto.map(materia => (
+                    <Button className={setColorMateria(materia.tipo)} key={materia.title} id={materia.title} onClick={() => DatosMateria(materia.title)}
+                      onMouseOver={() => agregarClase(materia.title)} onMouseLeave={() => eliminarClase()}>
+                      {materia.title}
+                    </Button>
+                  ))}
+                </Col>
+                <Col xs={12} md={4}>
+                  {materias.sexto.map(materia => (
+                    <Button className={setColorMateria(materia.tipo)} key={materia.title} id={materia.title} onClick={() => DatosMateria(materia.title)}
+                      onMouseOver={() => agregarClase(materia.title)} onMouseLeave={() => eliminarClase()}>
+                      {materia.title}
+                    </Button>
+                  ))}
+                </Col>
+              </Row>
+            </Col>
+
+            {/*Tercer ciclo */}
+            <Col md>
+              <Row>
+                <h5>Tercer Ciclo</h5>
                 <Col xs={12} md={4}>
                   {materias.septimo.map(materia => (
                     <Button className={setColorMateria(materia.tipo)} key={materia.title} id={materia.title} onClick={() => DatosMateria(materia.title)}
@@ -190,13 +195,13 @@ export default function MapaCurricular({ data }) {
             </Col>
           </Row>
           <Row>
-          <Col md={12}>
-            <Button className="btn-materia btn-estadia">Estadía</Button>
-          </Col>
+            <Col md={12}>
+              <Button className="btn-materia btn-estadia">Estadía</Button>
+            </Col>
           </Row>
         </Container>
 
-        
+
         {/* 
         <Row className="mt-5 mapaCurricular-tarjeta">
           <Col md={12} sm={6} className="mapaCurricular-header">
