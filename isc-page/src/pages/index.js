@@ -51,12 +51,32 @@ import { graphql } from 'gatsby'
            </Col> */}
          </Row>
        </Container>
+
+       <Container className="mt-3 mb-3">
+         <Row className="justify-content-md-center">
+           <Col md={11} className="text-center">
+             <h3>Perfil de egreso</h3>
+             <p className="textoJustificado">
+               
+               El Ingeniero o Ingeniera en Sistemas Computacionales es un 
+             profesionista competente que podrá insertarse en los sectores industrial, 
+             comercial y de servicios para proporcionar soporte a procesos informáticos
+            (programación, instalación y mantenimiento), así como administrar, desarrollar 
+            y actualizar bases de datos y redes de comunicaciones, proponiendo estrategias
+             y soluciones integrales de TIC´s.
+             </p>
+           </Col>
+         </Row>
+
+         
+       </Container>
+
        <Container className="mt-3 mb-3">
          <Row className="justify-content-md-center">
            <Col md={11} className="text-center">
              <h3>Campo laboral</h3>
              <p className="textoJustificado">
-               El Ingeniero o la Ingeniera en Sistemas Computacionales cuenta
+             El Ingeniero o la Ingeniera en Sistemas Computacionales cuenta
                con las competencias profesionales necesarias para alcanzar el
                mejor desempeño en el campo laboral, en el ámbito local, nacional
                e internacional. Pudiendo desarrollarse como:
