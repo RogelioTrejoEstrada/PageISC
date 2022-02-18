@@ -5,13 +5,25 @@
     padding-top: 2rem;
     color: #dfdfdf;
     padding-bottom: 1rem;
-    font-size: 0.8rem;
+    font-size: 10px;
 }
 
 .copyright{
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
+
 
 .footer li a{
     color: #dfdfdf;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+.footer h6{
+    font-size: 0.9rem;
+}
+
+.footer li{
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
 }

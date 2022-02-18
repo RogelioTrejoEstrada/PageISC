@@ -68,40 +68,39 @@ import { graphql } from 'gatsby'
              <Col>
                <li>Administrador de Bases de Datos</li>
                <li>
-                 Administrador de Calidad de Servicios de Tecnologías de la
-                 Información
+                 Administrador de Calidad de Servicios de TI
                </li>
                <li>
-                 Administrador de proyectos de Tecnologías de la Información
+                 Administrador de proyectos de TI
                </li>
                <li>Administrador de Redes</li>
                <li>Analista de procesos</li>
                <li>Analista de sistemas</li>
                <li>Arquitecto de redes de computadoras</li>
                <li>Arquitecto de software</li>
-               <li>Consultor en nuevas Tecnologías de la Información</li>
-               <li>Consultor de servicios de Tecnologías de la Información</li>
-               <li>Desarrollador de software</li>
+
              </Col>
              <Col>
-               <li>Director de innovación en Tecnologías de la Información</li>
+               <li>Director de innovación en TI</li>
                <li>Diseñador web</li>
                <li>Documentador de procesos</li>
                <li>Gerente de sistemas</li>
-               <li>Gestor de proyectos de Tecnologías de la Información</li>
+               <li>Gestor de proyectos de TI</li>
                <li>Gerente de mantenimiento y soporte técnico</li>
                <li>
-                 Gerente del departamento de Tecnologías de la Información
+                 Gerente del departamento de TI
                </li>
-               <li>Líder de proyectos en Tecnologías de la Información</li>
+
+             </Col>
+             <Col>
+               <li>Consultor en nuevas TI</li>
+               <li>Consultor de servicios de TI</li>
+               <li>Desarrollador de software</li>
+               <li>Líder de proyectos en TI</li>
                <li>Programador</li>
                <li>Tester</li>
-               <li>Web master</li>
-               <li>
-                 Desarrollador de proyectos de Tecnologías de Información
-                 propios
-               </li>
-             </Col>
+               <li> Desarrollador de proyectos de TI propios </li>
+               </Col>
            </Row>
          </ul>
        </Container>
