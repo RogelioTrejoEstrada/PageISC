@@ -6,7 +6,8 @@ import Header from './Header'
 
 
 export default function Layout({ children }) {
-  const pagina = children[0].props.className
+  const pagina = children[0].props.title
+  
   return (
     <>
     <main className="layout">

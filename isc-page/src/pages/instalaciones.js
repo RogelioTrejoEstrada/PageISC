@@ -12,7 +12,7 @@ export default function Instalaciones({data}) {
   const tarjetasLabs = data.thumbLabs.nodes
   const tarjetasCampus = data.thumbCampus.nodes
 
-  console.log(data)
+  //console.log(data)
 
   return (
     <Layout>
@@ -42,7 +42,7 @@ export default function Instalaciones({data}) {
                   fluid={tarjeta.frontmatter.thumb.childImageSharp.fluid}
                   alt={tarjeta.frontmatter.stack}
                   className="image-zoom"
-                  style={{ height: "100%", width: "100%" }}
+                  style={{ height: "10rem", width: "100%" }}
                 />
               </div>
             </Col>
@@ -80,7 +80,7 @@ export default function Instalaciones({data}) {
                   fluid={tarjeta.frontmatter.thumb.childImageSharp.fluid}
                   alt={tarjeta.frontmatter.stack}
                   className="image-zoom"
-                  style={{ height: "100%", width: "100%" }}
+                  style={{ height: "10rem", width: "100%" }}
                 />
               </div>
             </Col>
