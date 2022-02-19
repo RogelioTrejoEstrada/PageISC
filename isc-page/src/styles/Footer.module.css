@@ -27,3 +27,36 @@
     font-size: 0.8rem;
     margin-bottom: 0.5rem;
 }
+
+
+@media screen and (max-width: 768px) {
+    .footer {
+        bottom: 0;
+        font-size: 0.7rem;
+    }
+    
+    .copyright{
+        font-size: 0.7rem;
+    }
+    
+    
+    .footer li a{
+        color: #dfdfdf;
+        font-size: 0.6rem;
+        text-decoration: none;
+    }
+
+    .footer svg{
+        font-size: 0.7rem;
+    }
+    
+    .footer h6{
+        font-size: 0.8rem;
+    }
+    
+    .footer li{
+        font-size: 0.6rem;
+        margin-bottom: 0.5rem;
+    }
+
+}
