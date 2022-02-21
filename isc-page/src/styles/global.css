@@ -2,6 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap');
 
+:root{
+    --bg-idi-color: #0F0F0F;
+    --bg-fit-color: #2F2F2F;
+    --bg-ccbb-color: #274276;
+    --bg-materia-color: #365CA8;
+    --bg-atribuye-color: #8FD680;
+    --bg-contribuye-color: #d4d24f;
+}
+
 * {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
@@ -176,9 +185,9 @@
 
 
 .btn-materia{
-    color: white;
-    background-color: #7197ff;
-    border-color: #7197ff;
+    color: #c1c2c5;
+    background-color: var(--bg-materia-color);
+    border-color: var(--bg-materia-color);
     margin: 0.3rem 0.1rem;
     width: 100%;
     height: 4rem;
@@ -191,29 +200,31 @@
 }
 
 .btn-idi {
-    background-color: rgb(0 ,0 ,0);
-    border-color: rgb(0, 0, 0);
+    background-color: var(--bg-idi-color);  
+    border-color: var(--bg-idi-color);
 }
 
 .btn-fit {
-    background-color: rgb(25, 20, 100);
-    border-color: rgb(25, 20, 100);
+    background-color: var(--bg-fit-color);
+    border-color: var(--bg-fit-color);
+    
 }
 
 .btn-ccbb {
-    background-color: rgb(74, 61, 194);
-    border-color:  rgb(74, 61, 194);;
+    background-color: var(--bg-ccbb-color);
+    border-color: var(--bg-ccbb-color);
+    
 }
 
 .btn-contribuye {
-    background-color: rgb(21, 250, 0);
-    border-color: rgb(21, 250, 0);
+    background-color: var(--bg-atribuye-color);
+    border-color: var(--bg-atribuye-color);
     color: black;
 }
 
 .btn-atribuye {
-    background-color: rgb(221, 0, 255);
-    border-color: rgb(221, 0, 255);
+    background-color: var(--bg-contribuye-color);
+    border-color: var(--bg-contribuye-color);
     color: rgb(0 ,0 ,0);
 }
 
@@ -253,14 +264,14 @@ ul li {
 }
 
 .caja-atribucion{
-    background-color: rgb(221, 0, 255);
+    background-color: var(--bg-contribuye-color);
     margin: 0 10px;
     overflow: hidden;
     padding: 1px 10px;
 }
 
 .caja-contribucion{
-    background-color: rgb(21, 250, 0);
+    background-color: var(--bg-atribuye-color);
     margin: 0 10px;
     overflow: hidden;
     padding: 1px 10px;
