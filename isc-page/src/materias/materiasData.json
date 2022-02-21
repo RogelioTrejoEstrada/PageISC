@@ -159,8 +159,8 @@
 
 {"title": "Estancia I",
 "tipo": "ISC", 
-"objetivo" : "",
-"Unidades": [""]},
+"objetivo" : "El alumno aplicará los conocimientos adquiridos durante el primer ciclo de formación.",
+"Unidades": ["Diseño del proyecto", "Implementación del proyecto", "Evaluación del proyecto"]},
 
 {"title": "Inglés V",
 "tipo": "IDI", 
@@ -264,8 +264,8 @@
 
 {"title": "Estancia II",
 "tipo": "ISC",
-"objetivo" : "",
-"Unidades": [""]},
+"objetivo" : "El alumno aplicará los conocimientos adquiridos durante el segundo ciclo de formación.",
+"Unidades": ["Diseño del proyecto", "Implementación del proyecto", "Evaluación del proyecto"]},
 
 {"title": "Inglés VIII",
 "tipo": "IDI",
@@ -336,7 +336,13 @@
 {"title": "Expresión Oral y Escrita II",
 "tipo": "ISC",
 "objetivo" : "El alumno sustentará proyectos escritos y orales con base en el proceso de la comunicación, la argumentación y los tipos de textos y documentos acorde al Nivel B2 del Marco Común Europeo de Referencia para lograr la comunicación efectiva en un contexto profesional y sociocultural.",
-"Unidades": ["El proceso de la comunicación", "La comunicación efectiva en las organizaciones"]}
+"Unidades": ["El proceso de la comunicación", "La comunicación efectiva en las organizaciones"]},
+
+{"title": "Estadía",
+  "tipo": "ISC",
+  "objetivo" : "El alumno aplicará los conocimientos adquiridos durante el tercer ciclo de formación",
+  "Unidades": ["Diseño del proyecto", "Implementación del proyecto", "Evaluación del proyecto"]}
+
 ]
 
 

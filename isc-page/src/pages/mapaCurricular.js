@@ -209,7 +209,11 @@ export default function MapaCurricular({ data }) {
                 </Col>
                 <Col xs={12} md={1} className='columna-materia'>
                   <p>Décimo</p>
-                  <Button className="btn-materia btn-estadia"><span className='txt-estadia'>Estadía</span></Button>
+                  <Button className="btn-materia btn-estadia"
+                  key = 'Estadia' id= 'Estadia' onClick={() => DatosMateria('Estadía')}
+                  onMouseOver={() => agregarClase('Estadía')} onMouseLeave={() => eliminarClase()}
+                  ><span className='txt-estadia'>Estadía</span></Button>
+                  
                 </Col>
               </Row>
             </Col>
