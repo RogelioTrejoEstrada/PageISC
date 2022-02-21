@@ -23,7 +23,7 @@ function ModalMateria(props){
           <ul>
              { (props.materia.Unidades !== "") && props.materia.Unidades.map( unidad => (<li key = {unidad}>{unidad}</li>)) }  
           </ul> 
-         <a href={`'/ruta/' props.materia.archivo.pdf`} > {props.materia.tittle}</a>  
+         <a className = "modalObjetivo" href={'../pdf/'+props.materia.title+'.pdf'} > {props.materia.title}</a>  
         </Modal.Body>
         {/*           <Modal.Footer>
             <Button onClick={props.onHide}>Cerrar</Button>
