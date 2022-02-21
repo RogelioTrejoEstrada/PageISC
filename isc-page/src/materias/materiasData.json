@@ -9,38 +9,42 @@
   {"title": "Expresión Oral y Escrita",
     "tipo": "FIT",
     "objetivo": "El alumno redactará proyectos basados en el Nivel B2 del Marco Común Europeo de Referencia, considerando las bases gramaticales, la organización y estructuración de ideas, la expresión de puntos de vista y posturas propias y de otros autores, para contribuir a solucionar problemáticas actuales vinculadas a su contexto profesional y sociocultural.",
-    "Unidades": ["Bases gramaticales para la construcción de ideas", "Organización y estructuración de ideas", "Introducción a la redacción"]
+    "Unidades": ["Bases gramaticales para la construcción de ideas", "Organización y estructuración de ideas", "Introducción a la redacción"],
+    "contribuye": ["Expresión Oral y Escrita II"]
   },
 
   {"title": "Química Básica",
     "tipo": "CCBB",
     "objetivo" : "El alumno interpretará fenómenos químicos con base en las leyes, teorías y técnicas de la química para contribuir al desarrollo de los procesos industriales.",
     "Unidades": ["Principios básicos de Química", "Nomenclatura de compuestos químicos y estequiometría", "Soluciones y cinética química", "Electroquímica y termoquímica"],
-    "contribuye": ["Física","Electricidad y Magnetismo"]
+    "contribuye": ["Física", "Electricidad y Magnetismo", "Mantenimiento a Equipo de Cómputo", "Física para Ingeniería"]
   },
    
   {"title": "Álgebra Lineal",
     "tipo": "CCBB",
     "objetivo" : "El alumno resolverá problemas matemáticos a través del uso del álgebra, matrices y sistemas de ecuaciones para contribuir en la toma de decisiones en su entorno profesional y cotidiano.",
-    "Unidades": ["Sistemas de numeración", "Álgebra", "Ecuaciones e inecuaciones", "Álgebra lineal"]
+    "Unidades": ["Sistemas de numeración", "Álgebra", "Ecuaciones e inecuaciones", "Álgebra lineal"],
+    "contribuye": ["Funciones Matemáticas", "Cálculo Diferencial","Cálculo Integral", "Matemáticas para Ingeniería I" ,"Matemáticas para Ingeniería II"]
   },
 
   {"title": "Introducción a la Programación",
     "tipo": "ISC",
-"objetivo" : "El alumno implementará programas mediante metodologías y herramientas de programación para visualizar las aplicaciones de tecnologías de la información en la solución de problemas.",
-    "Unidades": ["Algoritmos", "Estructuras de control en algoritmos", "Metodología del desarrollo de programas"]
+    "objetivo" : "El alumno implementará programas mediante metodologías y herramientas de programación para visualizar las aplicaciones de tecnologías de la información en la solución de problemas.",
+    "Unidades": ["Algoritmos", "Estructuras de control en algoritmos", "Metodología del desarrollo de programas"],
+    "contribuye": ["Matemáticas Básicas para Computación", "Programación" , "Estructura de Datos", "Fundamentos de POO", "Programación Orientada a Objetos", "Lenguajes y Autómatas", "Programación WEB", "Tecnologías y Aplicaciones en Internet", "Diseño de Interfaces" , "Gestión de Desarrollo de SW", "Sistemas Embebidos" , "Programación Móvil"]
   },
 
 
   {"title": "Introducción a las TI",
     "tipo": "ISC",
- "objetivo" : "El alumno visualizará la pertinencia de las tecnologías de la información, a través de los componentes de un sistema de información, tecnologías emergentes, campos profesionales y certificaciones tecnológicas, para proponer un plan de desarrollo profesional propio y contribuir al fortalecimiento de las Tecnologías de la Información a nivel regional y nacional.",
-    "Unidades": ["Fundamentos de Tecnologías de la Información (TI).", "Tecnologías emergentes.", "Pertinencia de profesionalización en TI."]
+    "objetivo" : "El alumno visualizará la pertinencia de las tecnologías de la información, a través de los componentes de un sistema de información, tecnologías emergentes, campos profesionales y certificaciones tecnológicas, para proponer un plan de desarrollo profesional propio y contribuir al fortalecimiento de las Tecnologías de la Información a nivel regional y nacional.",
+    "Unidades": ["Fundamentos de Tecnologías de la Información (TI).", "Tecnologías emergentes.", "Pertinencia de profesionalización en TI."],
+    "contribuye": ["Arquitectura de Computadoras", "Introducción a Redes", "Mantenimiento a Equipo de Cómputo", "Sistemas Operativos", "Tecnologías de Virtualización", "Sistemas Embebidos" ,"Seguridad Informática"]
   },
 
   {"title": "Herramientas Ofimáticas",
     "tipo": "ISC",
- "objetivo" : "El alumno generará soluciones a necesidades informáticas mediante herramientas ofimáticas e Internet, para el tratamiento de la información. ",
+    "objetivo" : "El alumno generará soluciones a necesidades informáticas mediante herramientas ofimáticas e Internet, para el tratamiento de la información. ",
     "Unidades": ["Interfaz de usuario.", "Ofimática", "Internet"]
   },
 
@@ -55,37 +59,48 @@
   {"title": "Desarrollo Humano y Valores",
     "tipo": "FIT",
     "objetivo" : "El alumno determinará el curso de sus acciones con base en la reflexión, un sistema de valores personal, profesional y social, con responsabilidad social y el respeto a la diversidad y los derechos humanos, para contribuir a su desarrollo humano y el mejoramiento de su entorno.",
-    "Unidades": ["Desarrollo humano y axiología", "Derechos Humanos y diversidad"]
+    "Unidades": ["Desarrollo humano y axiología", "Derechos Humanos y diversidad"],
+    "contribuye": ["Inteligencia Emocional", "Habilidades Cognitivas y Creatividad", "Ética Profesional", "Habilidades Gerenciales", "Liderazgo de Equipos"]
   },
 
   {"title": "Funciones Matemáticas",
     "tipo": "CCBB",
     "objetivo" : "El alumno desarrollará modelos matemáticos empleando las herramientas de geometría, trigonometría, geometría analítica y álgebra vectorial para contribuir a la solución de problemas de su entorno y las ciencias básicas.",
-    "Unidades": ["Geometría y Trigonometría", "Geometría Analítica", "Funciones", "Álgebra Vectorial"]
+    "Unidades": ["Geometría y Trigonometría", "Geometría Analítica", "Funciones", "Álgebra Vectorial"],
+    "atribucion": ["Álgebra Lineal"],
+    "contribuye": ["Cálculo Diferencial", "Cálculo Integral", "Matemáticas para Ingeniería I", "Matemáticas para Ingeniería II"]
   },
 
   {"title": "Física",
     "tipo": "CCBB",
     "objetivo" : "El alumno interpretará fenómenos físicos que representan un proceso, con base en la metodología científica y las leyes y teorías de la física, para determinar su comportamiento.",
-    "Unidades": ["Introducción a la Física", "Estática", "Dinámica y Cinemática"]
+    "Unidades": ["Introducción a la Física", "Estática", "Dinámica y Cinemática"],
+    "atribucion": ["Química Básica"],
+    "contribuye": ["Electricidad y Magnetismo", "Mantenimiento a Equipo de Cómputo", "Física para Ingeniería"]
   },
 
   {"title": "Electricidad y Magnetismo",
-"tipo": "CCBB",
-"objetivo" : "El alumno describirá el comportamiento de fenómenos eléctricos y magnéticos con base en las leyes y teorías de la física que los sustentan para comprender los principios de operación de los sistemas eléctricos.",
-"Unidades": ["Principios de electricidad y magnetismo", "Electrostática", "Electrocinética", "Fuentes de campo magnético"]
+    "tipo": "CCBB",
+    "objetivo" : "El alumno describirá el comportamiento de fenómenos eléctricos y magnéticos con base en las leyes y teorías de la física que los sustentan para comprender los principios de operación de los sistemas eléctricos.",
+    "Unidades": ["Principios de electricidad y magnetismo", "Electrostática", "Electrocinética", "Fuentes de campo magnético"],
+    "atribucion": ["Química Básica"],
+    "contribuye": ["Física", "Mantenimiento a Equipo de Cómputo", "Física para Ingeniería"]
   },
 
   {"title": "Matemáticas Básicas para Computación",
-"tipo": "ISC",
-"objetivo" : "El alumno evaluará modelos abstractos de objetos y problemas reales mediante principios y teoremas de lógica computacional para la validación y solución de problemas computacionales.",
-"Unidades": ["Introducción a las matemáticas para Computación", "Álgebra Booleana", "Lógica", "Métodos demostrativos"]
+    "tipo": "ISC",
+    "objetivo" : "El alumno evaluará modelos abstractos de objetos y problemas reales mediante principios y teoremas de lógica computacional para la validación y solución de problemas computacionales.",
+    "Unidades": ["Introducción a las matemáticas para Computación", "Álgebra Booleana", "Lógica", "Métodos demostrativos"],
+    "atribucion": ["Introducción a la Programación"],
+    "contribuye": ["Programación", "Estructura de Datos", "Fundamentos de POO", "Programación Orientada a Objetos", "Lenguajes y Autómatas", "Programación WEB", "Tecnologías y Aplicaciones en Internet", "Diseño de Interfaces", "Gestión de Desarrollo de SW", "Sistemas Embebidos", "Programación Móvil"]
   },
 
   {"title": "Arquitectura de Computadoras",
-"tipo": "ISC",
-"objetivo" : "El alumno determinará arquitecturas de equipos de cómputo  mediante  el análisis de  componentes y periféricos  para satisfacer requerimientos de funcionalidad",
-"Unidades": ["Introducción a la Electrónica Digital", "Electrónica digital aplicada a computadoras", "Organización de la Computadora", "Periféricos", "Arquitectura de procesadores"]
+    "tipo": "ISC",
+    "objetivo" : "El alumno determinará arquitecturas de equipos de cómputo  mediante  el análisis de  componentes y periféricos  para satisfacer requerimientos de funcionalidad",
+    "Unidades": ["Introducción a la Electrónica Digital", "Electrónica digital aplicada a computadoras", "Organización de la Computadora", "Periféricos", "Arquitectura de procesadores"],
+    "atribucion": ["Introducción a las TI"],
+    "contribuye": ["Introducción a Redes", "Mantenimiento a Equipo de Cómputo" ,"Sistemas Operativos", "Tecnologías de Virtualización", "Sistemas Embebidos", "Seguridad Informática"]
   },
 
   {"title": "Inglés III",
@@ -97,252 +112,396 @@
   },
 
   {"title": "Inteligencia Emocional",
-"tipo": "FIT", 
-"objetivo" : "El alumno planeará el logro de sus objetivos y metas personales, mediante los principios teóricos de la motivación, la Inteligencia emocional, solución de conflictos para contribur a su desarrollo personal y social.",
-    "Unidades": ["Ciclo vital y motivación", "Inteligencia emocional", "Comunicación asertiva y manejo de conflictos"]
+    "tipo": "FIT", 
+    "objetivo" : "El alumno planeará el logro de sus objetivos y metas personales, mediante los principios teóricos de la motivación, la Inteligencia emocional, solución de conflictos para contribur a su desarrollo personal y social.",
+    "Unidades": ["Ciclo vital y motivación", "Inteligencia emocional", "Comunicación asertiva y manejo de conflictos"],
+    "atribucion": ["Desarrollo Humano y Valores"],
+    "contribuye": ["Habilidades Cognitivas y Creatividad", "Ética Profesional", "Habilidades Gerenciales", "Liderazgo de Equipos"]
   },
 
   {"title": "Cálculo Diferencial",
-"tipo": "CCBB", 
-"objetivo" : "El alumno determinará la razón de cambio y la solución óptima en problemas de su entorno, a través del cálculo diferencial para contribuir a la toma de decisiones en el manejo eficiente de los recursos.",
-"Unidades": ["Límites y continuidad", "La derivada", "Optimización"]},
+    "tipo": "CCBB", 
+    "objetivo" : "El alumno determinará la razón de cambio y la solución óptima en problemas de su entorno, a través del cálculo diferencial para contribuir a la toma de decisiones en el manejo eficiente de los recursos.",
+    "Unidades": ["Límites y continuidad", "La derivada", "Optimización"],
+    "atribucion": ["Álgebra Lineal", "Funciones Matemáticas"],
+    "contribuye": ["Cálculo Integral", "Matemáticas para Ingeniería I", "Matemáticas para Ingeniería II"]
+  },
 
   {"title": "Probabilidad y Estadística",
-"tipo": "CCBB", 
-"objetivo" : "El alumno resolverá problemas estadísticos mediante el procesamiento de datos, así como el análisis y estimación de parámetros para fundamentar la toma de decisiones.",
-"Unidades": ["Estadística Descriptiva", "Probabilidad", "Estadística Inferencial"]},
+    "tipo": "CCBB", 
+    "objetivo" : "El alumno resolverá problemas estadísticos mediante el procesamiento de datos, así como el análisis y estimación de parámetros para fundamentar la toma de decisiones.",
+    "Unidades": ["Estadística Descriptiva", "Probabilidad", "Estadística Inferencial"],
+    "atribucion": [],
+    "contribuye": []
+  },
 
   {"title": "Programación",
-"tipo": "ISC", 
-"objetivo" : "El alumno codificará programas computacionales a través de operaciones del paradigma de programación estructurada para resolver problemas.",
-"Unidades": [" Introducción a la programación estructurada.", "Estructuras de control", "Subprogramas y recursividad", "Arreglos y archivos"]},
+    "tipo": "ISC", 
+    "objetivo" : "El alumno codificará programas computacionales a través de operaciones del paradigma de programación estructurada para resolver problemas.",
+    "Unidades": [" Introducción a la programación estructurada.", "Estructuras de control", "Subprogramas y recursividad", "Arreglos y archivos"],
+    "atribucion": ["Introducción a la Programación", "Matemáticas Básicas para Computación"],
+    "contribuye": ["Estructura de Datos", "Fundamentos de POO", "Programación Orientada a Objetos", "Lenguajes y Autómatas", "Programación WEB", "Tecnologías y Aplicaciones en Internet", "Diseño de Interfaces", "Gestión de Desarrollo de SW", "Sistemas Embebidos", "Programación Móvil"]
+  },
 
   {"title": "Introducción a Redes",
-"tipo": "ISC",
-"objetivo" : "El alumno diseñará redes de datos de área local a través de la configuración de equipo de redes y normas de conectividad para establecer los servicios de conexión.",
-"Unidades": ["Fundamentos de redes de datos", "Infraestructura de cableado en redes de área local", "Configuración de redes de área local."]},
+    "tipo": "ISC",
+    "objetivo" : "El alumno diseñará redes de datos de área local a través de la configuración de equipo de redes y normas de conectividad para establecer los servicios de conexión.",
+    "Unidades": ["Fundamentos de redes de datos", "Infraestructura de cableado en redes de área local", "Configuración de redes de área local."],
+    "atribucion": ["Introducción a las TI", "Arquitectura de Computadoras"],
+    "contribuye": ["Introducción a Redes", "Mantenimiento a Equipo de Cómputo", "Ruteo y Conmutación", "Escalamiento de Redes", "Sistemas Operativos", "Interconexión de Redes", "Tecnologías de Virtualización", "Sistemas Embebidos", "Seguridad Informática"]
+  },
 
   {"title": "Mantenimiento a Equipo de Cómputo",
-"tipo": "ISC", 
-"objetivo" : "El alumno realizará mantenimiento y soporte técnico a equipos de cómputo a través de procedimientos de mantenimiento, configuración y seguridad, considerando el plan de mantenimiento e implementando buenas prácticas para  asegurar su funcionamiento.",
-"Unidades": ["Procesos de control administrativo", "Fundamentos de mantenimiento", "Instalación y mantenimiento", "Soporte técnico"]},
+    "tipo": "ISC", 
+    "objetivo" : "El alumno realizará mantenimiento y soporte técnico a equipos de cómputo a través de procedimientos de mantenimiento, configuración y seguridad, considerando el plan de mantenimiento e implementando buenas prácticas para  asegurar su funcionamiento.",
+    "Unidades": ["Procesos de control administrativo", "Fundamentos de mantenimiento", "Instalación y mantenimiento", "Soporte técnico"],
+    "atribucion": ["Química Básica", "Introducción a las TI", "Física", "Electricidad y Magnetismo", "Arquitectura de Computadoras"],
+    "contribuye": ["Introducción a Redes", "Física para Ingeniería", "Sistemas Operativos", "Tecnologías de Virtualización", "Sistemas Embebidos", "Seguridad Informática"]
+},
 
 {"title": "Inglés IV",
-"tipo": "IDI", 
-"objetivo" : "El alumno será capaz de abordar textos propios de su área de estudio, laboral y cultural a partir de su contexto inmediato, narrando, estableciendo planes y hablando de eventos en diferentes etapas de su vida. Así como dando consejos a terceros y hablando de situaciones reales e irreales; para comunicarse en un idioma extranjero. (A nivel A2 de acuerdo al Marco Común Europeo)",
-"Unidades": ["Conversaciones comunes en el ámbito social y laboral.", "Descripciones del ámbito laboral y académico", "Retransmisión de textos orales y escritos."]},
+  "tipo": "IDI", 
+  "objetivo" : "El alumno será capaz de abordar textos propios de su área de estudio, laboral y cultural a partir de su contexto inmediato, narrando, estableciendo planes y hablando de eventos en diferentes etapas de su vida. Así como dando consejos a terceros y hablando de situaciones reales e irreales; para comunicarse en un idioma extranjero. (A nivel A2 de acuerdo al Marco Común Europeo)",
+  "Unidades": ["Conversaciones comunes en el ámbito social y laboral.", "Descripciones del ámbito laboral y académico", "Retransmisión de textos orales y escritos."],
+  "atribucion": ["Inglés I", "Inglés II", "Inglés III"],
+  "contribuye": ["Inglés V", "Inglés VI", "Inglés VII", "Inglés VIII", "Inglés IX"]
+},
 
 {"title": "Habilidades Cognitivas y Creatividad",
-"tipo": "FIT", 
-"objetivo" : "El alumno desarrollará habilidades del pensamiento mediante técnicas de la creatividad y la innovación para generar, mejorar o solucionar problemas, productos o servicios.",
-"Unidades": ["Habilidades del pensamiento", "Creatividad e innovación"]},
+  "tipo": "FIT", 
+  "objetivo" : "El alumno desarrollará habilidades del pensamiento mediante técnicas de la creatividad y la innovación para generar, mejorar o solucionar problemas, productos o servicios.",
+  "Unidades": ["Habilidades del pensamiento", "Creatividad e innovación"],
+  "atribucion": ["Desarrollo Humano y Valores", "Inteligencia Emocional"],
+  "contribuye": ["Ética Profesional", "Habilidades Gerenciales", "Liderazgo de Equipos"]
+},
 
 {"title": "Cálculo Integral",
 "tipo": "CCBB", 
 "objetivo" : "El alumno resolverá problemas de cálculo integral a través de las herramientas y métodos de integración, sucesiones y series para contribuir a la solución de situaciones de ingeniería.",
-"Unidades": ["Integral indefinida", "Integral definida", "Series y sucesiones"]},
+"Unidades": ["Integral indefinida", "Integral definida", "Series y sucesiones"],
+"atribucion": ["Álgebra Lineal", "Funciones Matemáticas", "Cálculo Diferencial"],
+"contribuye": ["Matemáticas para Ingeniería I", "Matemáticas para Ingeniería II"]
+},
 
 {"title": "Ingeniería de Software",
 "tipo": "ISC", 
 "objetivo" : "El alumno desarrollará software empleando metodologías tradicionales y ágiles, cumpliendo con estándares de calidad para cubrir las necesidades de la organización.",
-"Unidades": ["Fundamentos de ingeniería de software", "Análisis de requisitos", " Diseño de software", "Desarrollo de software"]},
+"Unidades": ["Fundamentos de ingeniería de software", "Análisis de requisitos", " Diseño de software", "Desarrollo de software"],
+"atribucion": [],
+"contribuye": ["Fundamentos de POO", "Programación Orientada a Objetos", "Formulación de Proyectos de TI", "Lenguajes y Autómatas", "Programación WEB", "Ingeniería de Requisitos", "Admon. de Proyectos de TI", "Tecnologías y Aplicaciones en Internet", "Gestión de Desarrollo de SW", "Desarrollo de Negocios para TI", "Sistemas Embebidos", "Programación Móvil"]
+},
 
 {"title": "Estructura de Datos",
-"tipo": "ISC",
-"objetivo" : "El alumno codificará estructuras de datos y métodos de ordenamiento y búsqueda a partir del cálculo de factibilidad computacional para la gestión de datos.",
-"Unidades": ["Introducción a la estructura de datos", "Tipología y administración de estructuras de datos", "Ordenamiento y búsqueda de datos", "Análisis de complejidad"]},
+  "tipo": "ISC",
+  "objetivo" : "El alumno codificará estructuras de datos y métodos de ordenamiento y búsqueda a partir del cálculo de factibilidad computacional para la gestión de datos.",
+  "Unidades": ["Introducción a la estructura de datos", "Tipología y administración de estructuras de datos", "Ordenamiento y búsqueda de datos", "Análisis de complejidad"],
+  "atribucion": ["Introducción a la Programación", "Matemáticas Básicas para Computación", "Programación"],
+  "contribuye": ["Fundamentos de POO", "Programación Orientada a Objetos", "Lenguajes y Autómatas", "Programación WEB", "Tecnologías y Aplicaciones en Internet", "Diseño de Interfaces", "Gestión de Desarrollo de SW", "Sistemas Embebidos", "Programación Móvil"]
+},
 
 {"title": "Ruteo y Conmutación",
-"tipo": "ISC", 
-"objetivo" : "El alumno diseñará  soluciones de  redes conmutadas y enrutadas en base a los protocolos de direccionamiento de Internet, técnicas de virtualización de redes y protocolos de seguridad para satisfacer los requerimientos de interconexión de datos y transferencia de información en las organizaciones.",
-"Unidades": ["Redes Conmutadas", "Redes Virtuales Guiadas e Inalámbricas", "Redes Erutadas y Seguridad"]},
+  "tipo": "ISC", 
+  "objetivo" : "El alumno diseñará  soluciones de  redes conmutadas y enrutadas en base a los protocolos de direccionamiento de Internet, técnicas de virtualización de redes y protocolos de seguridad para satisfacer los requerimientos de interconexión de datos y transferencia de información en las organizaciones.",
+  "Unidades": ["Redes Conmutadas", "Redes Virtuales Guiadas e Inalámbricas", "Redes Erutadas y Seguridad"],
+  "atribucion": ["Introducción a Redes"],
+  "contribuye": ["Escalamiento de Redes", "Interconexión de Redes", "Seguridad Informática"]
+},
 
 {"title": "Estancia I",
-"tipo": "ISC", 
-"objetivo" : "El alumno aplicará los conocimientos adquiridos durante el primer ciclo de formación.",
-"Unidades": ["Diseño del proyecto", "Implementación del proyecto", "Evaluación del proyecto"]},
+  "tipo": "ISC", 
+  "objetivo" : "",
+  "Unidades": [""],
+  "atribucion": ["Inglés I", "Inglés II", "Inglés III", "Química Básica", "Desarrollo Humano y Valores", "Inteligencia Emocional", "Álgebra Lineal", "Funciones Matemáticas", "Cálculo Diferencial", "Introducción a la Programación", "Física", "Probabilidad y Estadística", "Introducción a las TI", "Electricidad y Magnetismo", "Programación", "Herramientas Ofimáticas", "Matemáticas Básicas para Computación", "Introducción a Redes", "Expresión Oral y Escrita", "Arquitectura de Computadoras", "Mantenimiento a Equipo de Cómputo"],
+  "contribuye": ["Estancia II"]
+},
 
 {"title": "Inglés V",
-"tipo": "IDI", 
-"objetivo" : "El alumno será capaz de expresar  sus propios puntos de vista y reportar la opinión de terceras personas sobre temas diversos, señales internacionales y de costumbres para abordar en su conversación diversos temas culturales.",
-"Unidades": ["Países anglosajones: cultural, educación, ámbito laboral y de costumbres de países anglosajones.", "Señalizaciones, recomendaciones, mandatos y prohibiciones", "Escribiendo acerca de los países anglosajones.", "Interpretación de  ideas centrales de mensajes orales y escritos"]},
+  "tipo": "IDI", 
+  "objetivo" : "El alumno será capaz de expresar  sus propios puntos de vista y reportar la opinión de terceras personas sobre temas diversos, señales internacionales y de costumbres para abordar en su conversación diversos temas culturales.",
+  "Unidades": ["Países anglosajones: cultural, educación, ámbito laboral y de costumbres de países anglosajones.", "Señalizaciones, recomendaciones, mandatos y prohibiciones", "Escribiendo acerca de los países anglosajones.", "Interpretación de  ideas centrales de mensajes orales y escritos"],
+  "atribucion": ["Inglés I", "Inglés II", "Inglés III", "Inglés IV"],
+  "contribuye": ["Inglés VI", "Inglés VII", "Inglés VIII", "Inglés IX"]
+},
 
 {"title": "Ética Profesional",
-"tipo": "FIT",
-"objetivo" : "El alumno escalará  soluciones de  redes  enrutadas con base en protocolos de direccionamiento de Internet, técnicas de simulación de redes, protocolos de árbol de expansión, protocolos de seguridad, requerimientos de movilidad  y disponibilidad de acceso a la información,  para satisfacer los requerimientos de interconexión de datos y transferencia de información de manera guiada e inalámbrica en las organizaciones.",
-"Unidades": ["Fundamentos de escalamiento de redes de datos", "Agregación de enlaces de redes", "Fundamentos de redes inalámbricas"]},
+  "tipo": "FIT",
+  "objetivo" : "El alumno escalará  soluciones de  redes  enrutadas con base en protocolos de direccionamiento de Internet, técnicas de simulación de redes, protocolos de árbol de expansión, protocolos de seguridad, requerimientos de movilidad  y disponibilidad de acceso a la información,  para satisfacer los requerimientos de interconexión de datos y transferencia de información de manera guiada e inalámbrica en las organizaciones.",
+  "Unidades": ["Fundamentos de escalamiento de redes de datos", "Agregación de enlaces de redes", "Fundamentos de redes inalámbricas"],
+  "atribucion": ["Desarrollo Humano y Valores", "Inteligencia Emocional", "Habilidades Cognitivas y Creatividad"],
+  "contribuye": ["Habilidades Gerenciales", "Liderazgo de Equipos"]
+},
 
 {"title": "Matemáticas para Ingeniería I",
-"tipo": "CCBB",
-"objetivo" : "Plantear y solucionar problemas con base en los principios y teorías de física, química y matemáticas, a través del método científico para sustentar la toma de decisiones en los ámbitos científico y tecnológico.",
-"Unidades": ["Funciones de varias variables", "Derivadas parciales", "Integral múltiple"]},
+  "tipo": "CCBB",
+  "objetivo" : "Plantear y solucionar problemas con base en los principios y teorías de física, química y matemáticas, a través del método científico para sustentar la toma de decisiones en los ámbitos científico y tecnológico.",
+  "Unidades": ["Funciones de varias variables", "Derivadas parciales", "Integral múltiple"],
+  "atribucion": ["Álgebra Lineal", "Funciones Matemáticas", "Cálculo Diferencial", "Cálculo Integral"],
+  "contribuye": ["Matemáticas para Ingeniería II"]
+},
 
 {"title": "Física para Ingeniería",
-"tipo": "CCBB", 
-"objetivo" : "El alumno interpretará fenómenos acústicos, ópticos y cuánticos con base a las leyes de la Física Clásica y Moderna para describir el comportamiento de procesos físicos.",
-"Unidades": [" Acústica", "Óptica", "Introducción a la Física Moderna"]},
+  "tipo": "CCBB", 
+  "objetivo" : "El alumno interpretará fenómenos acústicos, ópticos y cuánticos con base a las leyes de la Física Clásica y Moderna para describir el comportamiento de procesos físicos.",
+  "Unidades": [" Acústica", "Óptica", "Introducción a la Física Moderna"],
+  "atribucion": ["Química Básica", "Física", "Electricidad y Magnetismo", "Mantenimiento a Equipo de Cómputo"],
+  "contribuye": []
+},
 
 {"title": "Fundamentos de POO",
-"tipo": "ISC",
-"objetivo" : "El alumno codificará algoritmos computacionales a través del paradigma de programación orientado a objetos para resolver problemas del ámbito cotidiano.",
-"Unidades": ["Fundamentos del paradigma de Programación Orientado a Objetos", "Análisis y diseño orientado a objetos", "Desarrollo de clases y métodos"]},
+  "tipo": "ISC",
+  "objetivo" : "El alumno codificará algoritmos computacionales a través del paradigma de programación orientado a objetos para resolver problemas del ámbito cotidiano.",
+  "Unidades": ["Fundamentos del paradigma de Programación Orientado a Objetos", "Análisis y diseño orientado a objetos", "Desarrollo de clases y métodos"],
+  "atribucion": ["Introducción a la Programación", "Matemáticas Básicas para Computación", "Programación", "Ingeniería de Software", "Estructura de Datos"],
+  "contribuye": ["Programación Orientada a Objetos", "Formulación de Proyectos de TI", "Lenguajes y Autómatas", "Programación WEB", "Admon. de Proyectos de TI", "Tecnologías y Aplicaciones en Internet", "Diseño de Interfaces", "Gestión de Desarrollo de SW", "Desarrollo de Negocios para TI", "Sistemas Embebidos", "Programación Móvil"]
+},
 
 {"title": "Escalamiento de Redes",
-"tipo": "ISC",
-"objetivo" : "El alumno escalará  soluciones de  redes  enrutadas con base en protocolos de direccionamiento de Internet, técnicas de simulación de redes, protocolos de árbol de expansión, protocolos de seguridad, requerimientos de movilidad  y disponibilidad de acceso a la información,  para satisfacer los requerimientos de interconexión de datos y transferencia de información de manera guiada e inalámbrica en las organizaciones",
-"Unidades": ["Fundamentos de escalamiento de redes de datos", " Agregación de enlaces de redes", "Fundamentos de redes inalámbricas"]},
+  "tipo": "ISC",
+  "objetivo" : "El alumno escalará  soluciones de  redes  enrutadas con base en protocolos de direccionamiento de Internet, técnicas de simulación de redes, protocolos de árbol de expansión, protocolos de seguridad, requerimientos de movilidad  y disponibilidad de acceso a la información,  para satisfacer los requerimientos de interconexión de datos y transferencia de información de manera guiada e inalámbrica en las organizaciones",
+  "Unidades": ["Fundamentos de escalamiento de redes de datos", " Agregación de enlaces de redes", "Fundamentos de redes inalámbricas"],
+  "atribucion": ["Introducción a Redes", "Ruteo y Conmutación"],
+  "contribuye": ["Interconexión de Redes", "Seguridad Informática"]
+},
 
 {"title": "Base de Datos",
-"tipo": "ISC",
-"objetivo" : "El alumno elaborará bases de datos utilizando modelos y lenguajes de consulta estructurada para satisfacer las necesidades de la organización",
-"Unidades": ["Fundamentos de bases de datos", "Modelado de base de datos", "Construcción de base de datos", "Lenguaje estructurado de consulta"]},
+  "tipo": "ISC",
+  "objetivo" : "El alumno elaborará bases de datos utilizando modelos y lenguajes de consulta estructurada para satisfacer las necesidades de la organización",
+  "Unidades": ["Fundamentos de bases de datos", "Modelado de base de datos", "Construcción de base de datos", "Lenguaje estructurado de consulta"],
+  "atribucion": [],
+  "contribuye": ["Administración de Base de Datos", "Formulación de Proyectos de TI", "Admon. de Proyectos de TI", "Inteligencia de Negocios", "Desarrollo de Negocios para TI"]
+},
 
 {"title": "Inglés VI",
-"tipo": "IDI",
-"objetivo" : "El alumno  será capaz de entablar comunicación usando estructuras más complejas de la lengua y aplicando el registro propio del ámbito académico, social y laboral para comunicarse de manera efectiva con sus interlocutores en distintas áreas a nivel A2 de acuerdo al Marco Común Europeo.",
-"Unidades": ["Diálogos del ámbito social, académico y laboral.", "Identificación de vocabulario e ideas centrales de textos", "Identificación de ideas centrales en un evento", "Reporte de mensajes"]},
+  "tipo": "IDI",
+  "objetivo" : "El alumno  será capaz de entablar comunicación usando estructuras más complejas de la lengua y aplicando el registro propio del ámbito académico, social y laboral para comunicarse de manera efectiva con sus interlocutores en distintas áreas a nivel A2 de acuerdo al Marco Común Europeo.",
+  "Unidades": ["Diálogos del ámbito social, académico y laboral.", "Identificación de vocabulario e ideas centrales de textos", "Identificación de ideas centrales en un evento", "Reporte de mensajes"],
+  "atribucion": ["Inglés I", "Inglés II", "Inglés III", "Inglés IV", "Inglés V"],
+  "contribuye": ["Inglés VII", "Inglés VIII", "Inglés IX"]
+},
 
 {"title": "Habilidades Gerenciales",
-"tipo": "FIT",
-"objetivo" : "El alumno planificará sus aspiraciones, propósitos y metas, mediante estrategias de planeación, herramientas de calidad y técnicas de negociación, para el cumplimiento de su plan de vida y el desarrollo de sus habilidades gerenciales",
-"Unidades": ["Bases del proceso administrativo y la planeación estratégica", "Fundamentos de la negociación"]},
+  "tipo": "FIT",
+  "objetivo" : "El alumno planificará sus aspiraciones, propósitos y metas, mediante estrategias de planeación, herramientas de calidad y técnicas de negociación, para el cumplimiento de su plan de vida y el desarrollo de sus habilidades gerenciales",
+  "Unidades": ["Bases del proceso administrativo y la planeación estratégica", "Fundamentos de la negociación"],
+  "atribucion": ["Desarrollo Humano y Valores", "Inteligencia Emocional", "Habilidades Cognitivas y Creatividad", "Ética Profesional"],
+  "contribuye": ["Liderazgo de Equipos"]
+},
 
 {"title": "Matemáticas para Ingeniería II",
-"tipo": "CCBB",
-"objetivo" : "El alumno resolverá ecuaciones diferenciales a través de métodos analíticos, transformadas de Laplace y métodos numéricos para contribuir a la solución de problemas en ingeniería.",
-"Unidades": ["Ecuaciones diferenciales", "Transformadas de Laplace", "Métodos numéricos"]},
+  "tipo": "CCBB",
+  "objetivo" : "El alumno resolverá ecuaciones diferenciales a través de métodos analíticos, transformadas de Laplace y métodos numéricos para contribuir a la solución de problemas en ingeniería.",
+  "Unidades": ["Ecuaciones diferenciales", "Transformadas de Laplace", "Métodos numéricos"],
+  "atribucion":["Álgebra Lineal", "Funciones Matemáticas", "Cálculo Diferencial", "Cálculo Integral", "Matemáticas para Ingeniería I"],
+  "contribuye":[]
+},
 
 {"title": "Sistemas Operativos",
-"tipo": "ISC",
-"objetivo" : "El alumno administrará sistemas operativos a través de la interfaz de línea de comando y herramientas administrativas, de diseño y simulación para cumplir con requerimientos específicos de la organización.",
-"Unidades": ["Componentes del sistema, Manipulación de Archivos y Directorios", "Herramientas del Sistema Operativo", "Administración básica del Sistema Operativo"]},
+  "tipo": "ISC",
+  "objetivo" : "El alumno administrará sistemas operativos a través de la interfaz de línea de comando y herramientas administrativas, de diseño y simulación para cumplir con requerimientos específicos de la organización.",
+  "Unidades": ["Componentes del sistema, Manipulación de Archivos y Directorios", "Herramientas del Sistema Operativo", "Administración básica del Sistema Operativo"],
+  "atribucion": ["Introducción a las TI", "Arquitectura de Computadoras", "Introducción a Redes", "Mantenimiento a Equipo de Cómputo"],
+  "contribuye": ["Tecnologías de Virtualización", "Sistemas Embebidos", "Seguridad Informática"]
+},
 
 {"title": "Programación Orientada a Objetos",
-"tipo": "ISC",
-"objetivo" : "El alumno codificará algoritmos computacionales de acuerdo al paradigma de programación orientado a objetos para resolver problemas.",
-"Unidades": ["Manejo de Errores y Excepciones", "Manejo de objetos gráficos", "Concurrencia", "Programación para red"]},
+  "tipo": "ISC",
+  "objetivo" : "El alumno codificará algoritmos computacionales de acuerdo al paradigma de programación orientado a objetos para resolver problemas.",
+  "Unidades": ["Manejo de Errores y Excepciones", "Manejo de objetos gráficos", "Concurrencia", "Programación para red"],
+  "atribucion": ["Introducción a la Programación", "Matemáticas Básicas para Computación", "Programación", "Ingeniería de Software" ,"Estructura de Datos", "Fundamentos de POO"],
+  "contribuye": ["Formulación de Proyectos de TI", "Lenguajes y Autómatas", "Programación WEB", "Tecnologías y Aplicaciones en Internet", "Diseño de Interfaces", "Gestión de Desarrollo de SW" , "Desarrollo de Negocios para TI" ,"Sistemas Embebidos", "Programación Móvil"]
+},
 
 {"title": "Interconexión de Redes",
-"tipo": "ISC",
-"objetivo" : "El alumno interconectará redes de datos extendidas con base en protocolos de direccionamiento de Internet, técnicas de monitoreo, técnicas de soporte de redes y, procedimientos de administración de sistemas operativos de dispositivos activos de red para satisfacer los requerimientos de transferencia de información en la organización.",
-"Unidades": ["Administración del sistema operativo de los dispositivos activos de red", " Jerarquía en redes de datos", "Protocolos y Pruebas en redes de banda ancha"]},
+  "tipo": "ISC",
+  "objetivo" : "El alumno interconectará redes de datos extendidas con base en protocolos de direccionamiento de Internet, técnicas de monitoreo, técnicas de soporte de redes y, procedimientos de administración de sistemas operativos de dispositivos activos de red para satisfacer los requerimientos de transferencia de información en la organización.",
+  "Unidades": ["Administración del sistema operativo de los dispositivos activos de red", " Jerarquía en redes de datos", "Protocolos y Pruebas en redes de banda ancha"],
+  "atribucion": ["Introducción a Redes", "Ruteo y Conmutación", "Escalamiento de Redes"],
+  "contribuye": ["Seguridad Informática"]
+},
 
 {"title": "Administración de Base de Datos",
-"tipo": "ISC",
-"objetivo" : "El alumno administrará los elementos de bases de datos a través del lenguaje estructurado de consulta para la recuperación de información, gestión de usuarios y eficiencia de recursos. Gestionar sistemas de bases de datos utilizando técnicas, métodos y herramientas de desarrollo de bases de datos para garantizar la seguridad de la información y consistencia de los datos.",
-"Unidades": ["Administración de usuarios", "Automatización de tareas en bases de datos", " Migración y seguridad de Base de Datos", "Mantenimiento de base de datos"]},
+  "tipo": "ISC",
+  "objetivo" : "El alumno administrará los elementos de bases de datos a través del lenguaje estructurado de consulta para la recuperación de información, gestión de usuarios y eficiencia de recursos. Gestionar sistemas de bases de datos utilizando técnicas, métodos y herramientas de desarrollo de bases de datos para garantizar la seguridad de la información y consistencia de los datos.",
+  "Unidades": ["Administración de usuarios", "Automatización de tareas en bases de datos", " Migración y seguridad de Base de Datos", "Mantenimiento de base de datos"],
+  "atribucion":["Base de Datos"],
+  "contribuye": ["Formulación de Proyectos de TI", "Admon. de Proyectos de TI", "Inteligencia de Negocios", "Desarrollo de Negocios para TI"]
+},
 
 {"title": "Inglés VII",
-"tipo": "IDI",
-"objetivo" : "El alumno expresará órdenes e instrucciones, información adicional, ventajas y desventajas de productos y servicios, situaciones hipotéticas y la relación entre dos situaciones a través de las técnicas de redacción y narración para justificar decisiones, redactar textos formales así como manuales detallados y complejos de su área de especialidad.",
-"Unidades": ["Relative clauses, comparative patterns and causatives", "Voz pasiva, conjunciones y condicionales combinados en la narrativa."]},
+  "tipo": "IDI",
+  "objetivo" : "El alumno expresará órdenes e instrucciones, información adicional, ventajas y desventajas de productos y servicios, situaciones hipotéticas y la relación entre dos situaciones a través de las técnicas de redacción y narración para justificar decisiones, redactar textos formales así como manuales detallados y complejos de su área de especialidad.",
+  "Unidades": ["Relative clauses, comparative patterns and causatives", "Voz pasiva, conjunciones y condicionales combinados en la narrativa."],
+  "atribucion": ["Inglés I", "Inglés II", "Inglés III", "Inglés IV", "Inglés V", "Inglés VI"],
+  "contribuye": ["Inglés VIII", "Inglés IX"]
+},
 
 {"title": "Liderazgo de Equipos",
-"tipo": "FIT",
-"objetivo" : "El alumno integrará equipos de trabajo de alto desempeño mediante las estrategias de liderazgo, de decisiones, motivación, técnicas de integración de equipos de trabajo, asignación de roles y resolución de conflictos, para el alcance exitoso de los objetivos planteados a nivel organizacional, profesional y personal.",
-"Unidades": ["Introducción a las relaciones humanas y Liderazgo", "Liderazgo y trabajo en equipo"]},
+  "tipo": "FIT",
+  "objetivo" : "El alumno integrará equipos de trabajo de alto desempeño mediante las estrategias de liderazgo, de decisiones, motivación, técnicas de integración de equipos de trabajo, asignación de roles y resolución de conflictos, para el alcance exitoso de los objetivos planteados a nivel organizacional, profesional y personal.",
+  "Unidades": ["Introducción a las relaciones humanas y Liderazgo", "Liderazgo y trabajo en equipo"],
+  "atribucion": ["Desarrollo Humano y Valores", "Inteligencia Emocional" ,"Habilidades Cognitivas y Creatividad", "Ética Profesional", "Habilidades Gerenciales"],
+  "contribuye": []
+},
 
 {"title": "Formulación de Proyectos de TI",
-"tipo": "ISC",
-"objetivo" : "El alumno propondrá proyectos de TI mediante el diseño de objetivos, determinación de factibilidad y buenas prácticas de la metodología PMBOK  para  solucionar problemas que impliquen investigación, desarrollo e innovación.",
-"Unidades": ["Inducción a proyectos de TI", "Investigación, desarrollo e innovación (observacion en materia)", "Planteamiento del problema", "Factibilidad del proyecto"]},
+  "tipo": "ISC",
+  "objetivo" : "El alumno propondrá proyectos de TI mediante el diseño de objetivos, determinación de factibilidad y buenas prácticas de la metodología PMBOK  para  solucionar problemas que impliquen investigación, desarrollo e innovación.",
+  "Unidades": ["Inducción a proyectos de TI", "Investigación, desarrollo e innovación (observacion en materia)", "Planteamiento del problema", "Factibilidad del proyecto"],
+  "atribucion": ["Introducción a la Programación", "Programación", "Ingeniería de Software", "Estructura de Datos", "Fundamentos de POO", "Base de Datos", "Programación Orientada a Objetos", "Administración de Base de Datos"],
+  "contribuye": ["Admon. de Proyectos de TI", "Desarrollo de Negocios para TI"]
+},
 
 {"title": "Lenguajes y Autómatas",
-"tipo": "ISC",
-"objetivo" : "El alumno implementará gramáticas independientes del contexto a partir de expresiones regulares para construir analizadores léxicos de lenguaje.",
-"Unidades": ["Teoría de grafos", "Lenguajes regulares", "Lenguajes independientes del contexto"]},
+  "tipo": "ISC",
+  "objetivo" : "El alumno implementará gramáticas independientes del contexto a partir de expresiones regulares para construir analizadores léxicos de lenguaje.",
+  "Unidades": ["Teoría de grafos", "Lenguajes regulares", "Lenguajes independientes del contexto"],
+  "atribucion": ["Introducción a la Programación", "Matemáticas Básicas para Computación", "Programación", "Ingeniería de Software", "Estructura de Datos", "Fundamentos de POO", "Programación Orientada a Objetos"],
+  "contribuye":["Programación WEB", "Tecnologías y Aplicaciones en Internet", "Diseño de Interfaces", "Gestión de Desarrollo de SW", "Sistemas Embebidos"]
+},
 
 {"title": "Programación WEB",
-"tipo": "ISC",
-"objetivo" : "El alumno implementará sistemas empleando tecnologías web para extender la disponibilidad y alcances de los servicios de la organización.",
-"Unidades": ["Introducción a los sistemas web", "Programación del lado del cliente", " Programación del lado del servidor", " Autenticación de usuarios"]},
+  "tipo": "ISC",
+  "objetivo" : "El alumno implementará sistemas empleando tecnologías web para extender la disponibilidad y alcances de los servicios de la organización.",
+  "Unidades": ["Introducción a los sistemas web", "Programación del lado del cliente", " Programación del lado del servidor", " Autenticación de usuarios"],
+  "atribucion": ["Introducción a la Programación", "Matemáticas Básicas para Computación", "Programación", "Ingeniería de Software", "Estructura de Datos", "Fundamentos de POO", "Programación Orientada a Objetos"],
+  "contribuye": ["Lenguajes y Autómatas", "Tecnologías y Aplicaciones en Internet", "Diseño de Interfaces", "Gestión de Desarrollo de SW", "Sistemas Embebidos", "Programación Móvil"]
+},
 
 {"title": "Ingeniería de Requisitos",
-"tipo": "ISC",
-"objetivo" : "El alumno obtendrá los requisitos de los sistemas informáticos mediante técnicas de obtención, modelación, prototipado y validación de requisitos para ser desarrollados con base en la necesidad real del usuario.",
-"Unidades": ["Fundamentos de Ingeniería de Requisitos", "Obtención y Análisis de Requisitos", " Modelado de Requisitos ", " Validación y administración de requisitos"]},
+  "tipo": "ISC",
+  "objetivo" : "El alumno obtendrá los requisitos de los sistemas informáticos mediante técnicas de obtención, modelación, prototipado y validación de requisitos para ser desarrollados con base en la necesidad real del usuario.",
+  "Unidades": ["Fundamentos de Ingeniería de Requisitos", "Obtención y Análisis de Requisitos", " Modelado de Requisitos ", " Validación y administración de requisitos"],
+  "atribucion": ["Ingeniería de Software"],
+  "contribuye": ["Diseño de Interfaces", "Sistemas Inteligentes", "Programación Móvil"]
+},
 
 {"title": "Estancia II",
-"tipo": "ISC",
-"objetivo" : "El alumno aplicará los conocimientos adquiridos durante el segundo ciclo de formación.",
-"Unidades": ["Diseño del proyecto", "Implementación del proyecto", "Evaluación del proyecto"]},
+  "tipo": "ISC",
+  "objetivo" : "",
+  "Unidades": [""],
+  "atribucion": ["Inglés I", "Inglés II", "Inglés III", "Inglés IV", "Inglés V", "Inglés VI", "Química Básica", "Desarrollo Humano y Valores", "Inteligencia Emocional", "Álgebra Lineal", "Funciones Matemáticas", "Cálculo Diferencial", "Introducción a la Programación", "Física", "Probabilidad y Estadística", "Introducción a las TI", "Electricidad y Magnetismo", "Programación", "Herramientas Ofimáticas", "Matemáticas Básicas para Computación", "Introducción a Redes", "Expresión Oral y Escrita", "Arquitectura de Computadoras", "Mantenimiento a Equipo de Cómputo", "Habilidades Cognitivas y Creatividad", "Cálculo Integral", "Ingeniería de Software", "Estructura de Datos", "Ruteo y Conmutación", "Estancia I", "Ética Profesional", "Matemáticas para Ingeniería I", "Física para Ingeniería", "Fundamentos de POO", "Escalamiento de Redes", "Base de Datos", "Habilidades Gerenciales", "Matemáticas para Ingeniería II", "Sistemas Operativos", "Programación Orientada a Objetos", "Interconexión de Redes", "Administración de Base de Datos"],
+  "contribuye": []
+},
 
 {"title": "Inglés VIII",
-"tipo": "IDI",
-"objetivo" : "El alumno expresará órdenes e instrucciones, información adicional, ventajas y desventajas de productos y servicios, situaciones hipotéticas y la relación entre dos situaciones a través de las técnicas de redacción y narración para justificar decisiones, redactar textos formales así como manuales detallados y complejos de su área de especialidad.",
-"Unidades": ["Planes y proyecciones", "El proceso de escritura"]},
+  "tipo": "IDI",
+  "objetivo" : "El alumno expresará órdenes e instrucciones, información adicional, ventajas y desventajas de productos y servicios, situaciones hipotéticas y la relación entre dos situaciones a través de las técnicas de redacción y narración para justificar decisiones, redactar textos formales así como manuales detallados y complejos de su área de especialidad.",
+  "Unidades": ["Planes y proyecciones", "El proceso de escritura"],
+  "atribucion": ["Inglés I", "Inglés II", "Inglés III", "Inglés IV", "Inglés V", "Inglés VI", "Inglés VII"],
+  "contribuye": ["Inglés IX"]
+},
 
 {"title": "Tecnologías de Virtualización",
-"tipo": "ISC",
-"objetivo" : "El alumno simulará entornos operativos computacionales heterogéneos en un mismo equipo de cómputo mediante tecnologías de virtualización para maximizar el aprovechamiento de los recursos computacionales de las organizaciones.",
-"Unidades": ["Introducción a la virtualización", "Máquinas virtuales (MV)", "Seguridad en entornos virtualizados", "Cómputo paralelo (clustering)"]},
+  "tipo": "ISC",
+  "objetivo" : "El alumno simulará entornos operativos computacionales heterogéneos en un mismo equipo de cómputo mediante tecnologías de virtualización para maximizar el aprovechamiento de los recursos computacionales de las organizaciones.",
+  "Unidades": ["Introducción a la virtualización", "Máquinas virtuales (MV)", "Seguridad en entornos virtualizados", "Cómputo paralelo (clustering)"],
+  "atribucion": ["Introducción a las TI", "Arquitectura de Computadoras", "Introducción a Redes", "Mantenimiento a Equipo de Cómputo", "Sistemas Operativos"],
+  "contribuye": ["Sistemas Embebidos", "Seguridad Informática"]
+},
 
 {"title": "Admon. de Proyectos de TI",
-"tipo": "ISC",
-"objetivo" : "El alumno administrará proyectos de TI mediante su organización, gestión, planeación y ejecución para asegurar la solución del problema consumiendo sólo los recursos justos.",
-"Unidades": ["Teoría de grafos", "Lenguajes regulares", "Lenguajes independientes del contexto"]},
+  "tipo": "ISC",
+  "objetivo" : "El alumno administrará proyectos de TI mediante su organización, gestión, planeación y ejecución para asegurar la solución del problema consumiendo sólo los recursos justos.",
+  "Unidades": ["Teoría de grafos", "Lenguajes regulares", "Lenguajes independientes del contexto"],
+  "atribucion": ["Introducción a la Programación", "Programación", "Ingeniería de Software", "Estructura de Datos", "Fundamentos de POO", "Base de Datos", "Programación Orientada a Objetos", "Administración de Base de Datos", "Formulación de Proyectos de TI"],
+  "contribuye": ["Desarrollo de Negocios para TI"]
+},
 
 {"title": "Tecnologías y Aplicaciones en Internet",
-"tipo": "ISC",
-"objetivo" : "El alumno implementará aplicaciones para internet mediante frameworks, librerías e interfaces de programación para satisfacer las necesidades del cliente",
-"Unidades": ["Introducción a la ingeniería de aplicaciones WEB", "WEB Framew", "Desarrollo de Interfaces de Programación de Aplicaciones"]},
+  "tipo": "ISC",
+  "objetivo" : "El alumno implementará aplicaciones para internet mediante frameworks, librerías e interfaces de programación para satisfacer las necesidades del cliente",
+  "Unidades": ["Introducción a la ingeniería de aplicaciones WEB", "WEB Framew", "Desarrollo de Interfaces de Programación de Aplicaciones"],
+  "atribucion": ["Introducción a la Programación", "Matemáticas Básicas para Computación", "Programación", "Ingeniería de Software", "Estructura de Datos", "Fundamentos de POO", "Programación Orientada a Objetos", "Lenguajes y Autómatas", "Programación WEB"],
+  "contribuye": ["Diseño de Interfaces", "Gestión de Desarrollo de SW", "Sistemas Embebidos", "Programación Móvil"]
+},
 
 {"title": "Diseño de Interfaces",
-"tipo": "ISC",
-"objetivo" : "El alumno implementará principios de interacción humano computadora, comunicación visual y usabilidad para la elaboración de prototipos de interfaces de usuario",
-"Unidades": ["Interacción Humano - Computadora", "Estilos de interacción", "Usabilidad"]},
+  "tipo": "ISC",
+  "objetivo" : "El alumno implementará principios de interacción humano computadora, comunicación visual y usabilidad para la elaboración de prototipos de interfaces de usuario",
+  "Unidades": ["Interacción Humano - Computadora", "Estilos de interacción", "Usabilidad"],
+  "atribucion": ["Introducción a la Programación", "Matemáticas Básicas para Computación", "Programación", "Estructura de Datos", "Fundamentos de POO", "Programación Orientada a Objetos", "Lenguajes y Autómatas", "Programación WEB", "Ingeniería de Requisitos"],
+  "contribuye": ["Tecnologías y Aplicaciones en Internet", "Sistemas Inteligentes", "Gestión de Desarrollo de SW", "Sistemas Embebidos", "Programación Móvil"]
+},
 
 {"title": "Sistemas Inteligentes",
-"tipo": "ISC",
-"objetivo" : "El alumno desarrollará programas de cómputo por medio de principios, técnicas, herramientas y modelos de inteligencia artificial para la solución de problemas complejos.",
-"Unidades": ["Introducción a la Inteligencia Artificial", "Técnicas básicas de aprendizaje", "Introducción a la percepción automática"]},
+  "tipo": "ISC",
+  "objetivo" : "El alumno desarrollará programas de cómputo por medio de principios, técnicas, herramientas y modelos de inteligencia artificial para la solución de problemas complejos.",
+  "Unidades": ["Introducción a la Inteligencia Artificial", "Técnicas básicas de aprendizaje", "Introducción a la percepción automática"],
+  "atribucion": ["Ingeniería de Requisitos"],
+  "contribuye": ["Diseño de Interfaces", "Programación Móvil"]
+},
 
 {"title": "Gestión de Desarrollo de SW",
-"tipo": "ISC",
-"objetivo" : "El alumno gestionará proyectos de desarrollo de software mediante procedimientos de diseño de software, pruebas de evaluación, técnicas, herramientas y modelos de calidad para responder a las necesidades de la organización.",
-"Unidades": ["Diseño e implementación de software", "Pruebas de software", "Gestionar de la calidad del proceso de desarrollo de software", "Técnicas de estimación de costos del software"]},
+  "tipo": "ISC",
+  "objetivo" : "El alumno gestionará proyectos de desarrollo de software mediante procedimientos de diseño de software, pruebas de evaluación, técnicas, herramientas y modelos de calidad para responder a las necesidades de la organización.",
+  "Unidades": ["Diseño e implementación de software", "Pruebas de software", "Gestionar de la calidad del proceso de desarrollo de software", "Técnicas de estimación de costos del software"],
+  "atribucion": ["Introducción a la Programación", "Programación", "Ingeniería de Software", "Estructura de Datos", "Fundamentos de POO", "Programación Orientada a Objetos", "Lenguajes y Autómatas", "Programación WEB"],
+  "contribuye": ["Tecnologías y Aplicaciones en Internet", "Diseño de Interfaces", "Sistemas Embebidos", "Programación Móvil"]
+},
 
 {"title": "Inglés IX",
   "tipo": "IDI",
   "objetivo" : "El alumno relatará anécdotas y descripciones detalladas, con ideas propias, expresiones complejas, y significados no literales, utilizando técnicas de redacción, patrones verbales, frases adverbiales para redactar y presentar puntos de vista personales y conclusiones fundamentadas sobre problemáticas sociales y personales",
-  "Unidades": ["Revisión entre pares y End product","Estilo Indirecto", "Vague language", "Verb patterns y frases adverbiales", "Significados no literales, deseo y arrepentimiento." ]
+  "Unidades": ["Revisión entre pares y End product","Estilo Indirecto", "Vague language", "Verb patterns y frases adverbiales", "Significados no literales, deseo y arrepentimiento."],
+  "atribucion": ["Inglés I", "Inglés II", "Inglés III", "Inglés IV", "Inglés V", "Inglés VI", "Inglés VII", "Inglés VIII"],
+  "contribuye": []
 },
 
 {"title": "Inteligencia de Negocios",
-"tipo": "ISC",
-"objetivo" : "El alumno proveerá de conocimiento del negocio a partir de sistemas de planificación de recursos, inteligencia de negocios y técnicas de minería de datos para apoyar la toma de decisiones empresariales",
-"Unidades": ["Sistema de planificación de recursos empresariales", "Inteligencia de negocios", "Minería de datos"]},
+  "tipo": "ISC",
+  "objetivo" : "El alumno proveerá de conocimiento del negocio a partir de sistemas de planificación de recursos, inteligencia de negocios y técnicas de minería de datos para apoyar la toma de decisiones empresariales",
+  "Unidades": ["Sistema de planificación de recursos empresariales", "Inteligencia de negocios", "Minería de datos"],
+  "atribucion": ["Base de Datos", "Administración de Base de Datos"],
+  "contribuye": []
+},
 
 {"title": "Desarrollo de Negocios para TI",
-"tipo": "ISC",
-"objetivo" : "El alumno propondrá modelos de negocios de TI innovadores para integrarse en sectores productivos.",
-"Unidades": ["Emprendimiento e Innovación", "Negocios de Tecnologías de la Información", "Proceso de Mejora Continua en Negocios de Tecnologías de la Información"]},
+  "tipo": "ISC",
+  "objetivo" : "El alumno propondrá modelos de negocios de TI innovadores para integrarse en sectores productivos.",
+  "Unidades": ["Emprendimiento e Innovación", "Negocios de Tecnologías de la Información", "Proceso de Mejora Continua en Negocios de Tecnologías de la Información"],
+  "atribucion": ["Introducción a la Programación", "Programación", "Ingeniería de Software", "Estructura de Datos", "Fundamentos de POO", "Programación Orientada a Objetos", "Base de Datos", "Programación Orientada a Objetos", "Administración de Base de Datos", "Formulación de Proyectos de TI", "Admon. de Proyectos de TI"],
+  "contribuye": []
+},
 
 {"title": "Sistemas Embebidos",
-"tipo": "ISC",
-"objetivo" : "El alumno desarrollará aplicaciones con sistemas embebidos mediante herramientas y dispositivos electrónicos para la provisión de soluciones y  servicios tecnológicos.",
-"Unidades": [" Introducción a los sistemas embebidos.", " Internet de las cosas.", "Aplicaciones para sistemas embebidos."]},
+  "tipo": "ISC",
+  "objetivo" : "El alumno desarrollará aplicaciones con sistemas embebidos mediante herramientas y dispositivos electrónicos para la provisión de soluciones y  servicios tecnológicos.",
+  "Unidades": [" Introducción a los sistemas embebidos.", " Internet de las cosas.", "Aplicaciones para sistemas embebidos."],
+  "atribucion": ["Introducción a la Programación", "Introducción a las TI", "Matemáticas Básicas para Computación", "Arquitectura de Computadoras", "Programación", "Introducción a Redes", "Mantenimiento a Equipo de Cómputo", "Ingeniería de Software", "Estructura de Datos", "Fundamentos de POO", "Sistemas Operativos", "Programación Orientada a Objetos", "Lenguajes y Autómatas", "Programación WEB", "Tecnologías de Virtualización", "Tecnologías y Aplicaciones en Internet", "Diseño de Interfaces", "Gestión de Desarrollo de SW"],
+  "contribuye": ["Programación Móvil", "Seguridad Informática"]
+},
 
 {"title": "Programación Móvil",
-"tipo": "ISC",
-"objetivo" : "El alumno desarrollará aplicaciones innovadoras empleando técnicas y recursos de programación móvil para provisión de soluciones y servicios tecnológicos.",
-"Unidades": ["Introducción al cómputo móvil", "Diseño de aplicaciones móviles", "Empleo de sensores en dispositivos móviles"]},
+  "tipo": "ISC",
+  "objetivo" : "El alumno desarrollará aplicaciones innovadoras empleando técnicas y recursos de programación móvil para provisión de soluciones y servicios tecnológicos.",
+  "Unidades": ["Introducción al cómputo móvil", "Diseño de aplicaciones móviles", "Empleo de sensores en dispositivos móviles"],
+  "atribucion": ["Introducción a la Programación", "Matemáticas Básicas para Computación", "Programación", "Ingeniería de Software", "Estructura de Datos", "Fundamentos de POO", "Programación Orientada a Objetos", "Lenguajes y Autómatas", "Programación WEB", "Ingeniería de Requisitos", "Tecnologías y Aplicaciones en Internet", "Diseño de Interfaces", "Sistemas Inteligentes", "Gestión de Desarrollo de SW"],
+  "contribuye": ["Sistemas Embebidos"]
+},
 
 {"title": "Seguridad Informática",
-"tipo": "ISC",
-"objetivo" : "El alumno establecerá estrategias de protección de la información mediante el uso de métodos y estándares de seguridad informática para preservar los activos informáticos de la organización.",
-"Unidades": ["Fundamentos de seguridad", "Seguridad física y lógica", "Seguridad en redes e internet ", " Tendencias en la seguridad informática"]},
+  "tipo": "ISC",
+  "objetivo" : "El alumno establecerá estrategias de protección de la información mediante el uso de métodos y estándares de seguridad informática para preservar los activos informáticos de la organización.",
+  "Unidades": ["Fundamentos de seguridad", "Seguridad física y lógica", "Seguridad en redes e internet ", " Tendencias en la seguridad informática"],
+  "atribucion": ["Introducción a las TI", "Arquitectura de Computadoras", "Introducción a Redes", "Mantenimiento a Equipo de Cómputo", "Ruteo y Conmutación", "Escalamiento de Redes", "Sistemas Operativos", "Interconexión de Redes", "Tecnologías de Virtualización"],
+  "contribuye": ["Sistemas Embebidos"]
+},
 
 {"title": "Expresión Oral y Escrita II",
-"tipo": "ISC",
-"objetivo" : "El alumno sustentará proyectos escritos y orales con base en el proceso de la comunicación, la argumentación y los tipos de textos y documentos acorde al Nivel B2 del Marco Común Europeo de Referencia para lograr la comunicación efectiva en un contexto profesional y sociocultural.",
-"Unidades": ["El proceso de la comunicación", "La comunicación efectiva en las organizaciones"]},
+  "tipo": "ISC",
+  "objetivo" : "El alumno sustentará proyectos escritos y orales con base en el proceso de la comunicación, la argumentación y los tipos de textos y documentos acorde al Nivel B2 del Marco Común Europeo de Referencia para lograr la comunicación efectiva en un contexto profesional y sociocultural.",
+  "Unidades": ["El proceso de la comunicación", "La comunicación efectiva en las organizaciones"],
+  "atribucion": ["Expresión Oral y Escrita"],
+  "contribuye": []
+},
 
 {"title": "Estadía",
   "tipo": "ISC",
-  "objetivo" : "El alumno aplicará los conocimientos adquiridos durante el tercer ciclo de formación",
-  "Unidades": ["Diseño del proyecto", "Implementación del proyecto", "Evaluación del proyecto"]}
-
+  "objetivo":"",
+  "Unidades":[""],
+  "atribucion": ["Inglés I", "Inglés II", "Inglés III", "Inglés IV", "Inglés V", "Inglés VI", "Química Básica", "Desarrollo Humano y Valores", "Inteligencia Emocional", "Álgebra Lineal", "Funciones Matemáticas", "Cálculo Diferencial", "Introducción a la Programación", "Física", "Probabilidad y Estadística", "Introducción a las TI", "Electricidad y Magnetismo", "Programación", "Herramientas Ofimáticas", "Matemáticas Básicas para Computación", "Introducción a Redes", "Expresión Oral y Escrita", "Arquitectura de Computadoras", "Mantenimiento a Equipo de Cómputo", "Habilidades Cognitivas y Creatividad", "Cálculo Integral", "Ingeniería de Software", "Estructura de Datos", "Ruteo y Conmutación", "Estancia I", "Ética Profesional", "Matemáticas para Ingeniería I", "Física para Ingeniería", "Fundamentos de POO", "Escalamiento de Redes", "Base de Datos", "Habilidades Gerenciales", "Matemáticas para Ingeniería II", "Sistemas Operativos", "Programación Orientada a Objetos", "Interconexión de Redes", "Administración de Base de Datos", "Inglés VII", "Liderazgo de Equipos", "Formulación de Proyectos de TI", "Lenguajes y Autómatas", "Programación WEB", "Ingeniería de Requisitos", "Estancia II", "Inglés VIII", "Tecnologías de Virtualización", "Admon. de Proyectos de TI", "Tecnologías y Aplicaciones en Internet", "Diseño de Interfaces", "Sistemas Inteligentes", "Gestión de Desarrollo de SW", "Inglés IX", "Inteligencia de Negocios", "Desarrollo de Negocios para TI", "Sistemas Embebidos", "Programación Móvil", "Seguridad Informática", "Expresión Oral y Escrita II"],
+  "contribuye":[]
+}
 ]
 
 
