@@ -36,6 +36,8 @@ function Footer() {
                 <li><a href='https://www.facebook.com/ingenieria.isei' target='_blank' rel='noreferrer'><Facebook /> Ingeniería en Sistemas Computacionales</a> </li>
                 <li><a href='https://www.facebook.com/UniversidadPolitecnicaAguascalientes' target='_blank' rel='noreferrer'><Facebook /> Universidad Politécnica de Aguascalientes</a></li>
                 <li><a href='https://www.upa.edu.mx/' target='_blank' rel='noreferrer'>www.upa.edu.mx </a></li>
+                <li><a href='https://sii.upa.edu.mx/index.php' target='_blank' rel='noreferrer'>Sistema Integral de Información UPA</a></li>
+                <li><a href='http://mi-escuelamx.com:8888/upa/acceso.asp' target='_blank' rel='noreferrer'>Sistema de pagos</a></li>
               </ul>
             </Col>
             

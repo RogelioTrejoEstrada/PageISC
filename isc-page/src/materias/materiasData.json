@@ -2,84 +2,105 @@
   {"title": "Inglés I",
      "tipo": "IDI",
     "objetivo": "El alumno será capaz de manejar, comunicar y comprender ideas y/o textos simples abordando eventos cotidianos con bajo nivel de complejidad haciendo uso de la información de su entorno",
-    "Unidades": ["Introducción: Interacción en el aula" , "Descripción y ubicación de lugares y objetos", "Habilidades y acciones cotidianas", "Comunicar opiniones" ]
+    "Unidades": ["Introducción: Interacción en el aula" , "Descripción y ubicación de lugares y objetos", "Habilidades y acciones cotidianas", "Comunicar opiniones" ],
+    "contribuye": ["Inglés II", "Inglés III", "Inglés IV", "Inglés V", "Inglés VI", "Inglés VII", "Inglés VIII", "Inglés IX"]
   },
      
   {"title": "Expresión Oral y Escrita",
     "tipo": "FIT",
     "objetivo": "El alumno redactará proyectos basados en el Nivel B2 del Marco Común Europeo de Referencia, considerando las bases gramaticales, la organización y estructuración de ideas, la expresión de puntos de vista y posturas propias y de otros autores, para contribuir a solucionar problemáticas actuales vinculadas a su contexto profesional y sociocultural.",
-    "Unidades": ["Bases gramaticales para la construcción de ideas", "Organización y estructuración de ideas", "Introducción a la redacción"]},
+    "Unidades": ["Bases gramaticales para la construcción de ideas", "Organización y estructuración de ideas", "Introducción a la redacción"]
+  },
 
   {"title": "Química Básica",
     "tipo": "CCBB",
     "objetivo" : "El alumno interpretará fenómenos químicos con base en las leyes, teorías y técnicas de la química para contribuir al desarrollo de los procesos industriales.",
-    "Unidades": ["Principios básicos de Química", "Nomenclatura de compuestos químicos y estequiometría", "Soluciones y cinética química", "Electroquímica y termoquímica"]},
+    "Unidades": ["Principios básicos de Química", "Nomenclatura de compuestos químicos y estequiometría", "Soluciones y cinética química", "Electroquímica y termoquímica"],
+    "contribuye": ["Física","Electricidad y Magnetismo"]
+  },
    
   {"title": "Álgebra Lineal",
     "tipo": "CCBB",
     "objetivo" : "El alumno resolverá problemas matemáticos a través del uso del álgebra, matrices y sistemas de ecuaciones para contribuir en la toma de decisiones en su entorno profesional y cotidiano.",
-    "Unidades": ["Sistemas de numeración", "Álgebra", "Ecuaciones e inecuaciones", "Álgebra lineal"]},
+    "Unidades": ["Sistemas de numeración", "Álgebra", "Ecuaciones e inecuaciones", "Álgebra lineal"]
+  },
 
   {"title": "Introducción a la Programación",
     "tipo": "ISC",
 "objetivo" : "El alumno implementará programas mediante metodologías y herramientas de programación para visualizar las aplicaciones de tecnologías de la información en la solución de problemas.",
-    "Unidades": ["Algoritmos", "Estructuras de control en algoritmos", "Metodología del desarrollo de programas"]},
+    "Unidades": ["Algoritmos", "Estructuras de control en algoritmos", "Metodología del desarrollo de programas"]
+  },
 
 
-  {"title": "Introducción a las Tecnologías de Información",
+  {"title": "Introducción a las TI",
     "tipo": "ISC",
  "objetivo" : "El alumno visualizará la pertinencia de las tecnologías de la información, a través de los componentes de un sistema de información, tecnologías emergentes, campos profesionales y certificaciones tecnológicas, para proponer un plan de desarrollo profesional propio y contribuir al fortalecimiento de las Tecnologías de la Información a nivel regional y nacional.",
-    "Unidades": ["Fundamentos de Tecnologías de la Información (TI).", "Tecnologías emergentes.", "Pertinencia de profesionalización en TI."]},
+    "Unidades": ["Fundamentos de Tecnologías de la Información (TI).", "Tecnologías emergentes.", "Pertinencia de profesionalización en TI."]
+  },
 
   {"title": "Herramientas Ofimáticas",
     "tipo": "ISC",
  "objetivo" : "El alumno generará soluciones a necesidades informáticas mediante herramientas ofimáticas e Internet, para el tratamiento de la información. ",
-    "Unidades": ["Interfaz de usuario.", "Ofimática", "Internet"]},
+    "Unidades": ["Interfaz de usuario.", "Ofimática", "Internet"]
+  },
 
   {"title": "Inglés II", 
     "tipo": "IDI",
     "objetivo" : "El alumno será capaz de dar y solicitar información personal y del entorno con acciones simples, de textos  breves y sencillos, a través de la práctica de las cuatro habilidades comunicativas haciendo uso de las funciones gramaticales del idioma inglés",
-    "Unidades": ["Interactuando y emitiendo opinión", "Contrastando", "Planeando", "Selección y emisión de información y opinión"]},
+    "Unidades": ["Interactuando y emitiendo opinión", "Contrastando", "Planeando", "Selección y emisión de información y opinión"],
+    "contribuye": ["Inglés III", "Inglés IV", "Inglés V", "Inglés VI", "Inglés VII", "Inglés VIII", "Inglés IX"],
+    "atribucion" : ["Inglés I"]
+  },
 
   {"title": "Desarrollo Humano y Valores",
     "tipo": "FIT",
     "objetivo" : "El alumno determinará el curso de sus acciones con base en la reflexión, un sistema de valores personal, profesional y social, con responsabilidad social y el respeto a la diversidad y los derechos humanos, para contribuir a su desarrollo humano y el mejoramiento de su entorno.",
-    "Unidades": ["Desarrollo humano y axiología", "Derechos Humanos y diversidad"]},
+    "Unidades": ["Desarrollo humano y axiología", "Derechos Humanos y diversidad"]
+  },
 
   {"title": "Funciones Matemáticas",
     "tipo": "CCBB",
     "objetivo" : "El alumno desarrollará modelos matemáticos empleando las herramientas de geometría, trigonometría, geometría analítica y álgebra vectorial para contribuir a la solución de problemas de su entorno y las ciencias básicas.",
-    "Unidades": ["Geometría y Trigonometría", "Geometría Analítica", "Funciones", "Álgebra Vectorial"]},
+    "Unidades": ["Geometría y Trigonometría", "Geometría Analítica", "Funciones", "Álgebra Vectorial"]
+  },
 
   {"title": "Física",
-"tipo": "CCBB",
-"objetivo" : "El alumno interpretará fenómenos físicos que representan un proceso, con base en la metodología científica y las leyes y teorías de la física, para determinar su comportamiento.",
-"Unidades": ["Introducción a la Física", "Estática", "Dinámica y Cinemática"]},
+    "tipo": "CCBB",
+    "objetivo" : "El alumno interpretará fenómenos físicos que representan un proceso, con base en la metodología científica y las leyes y teorías de la física, para determinar su comportamiento.",
+    "Unidades": ["Introducción a la Física", "Estática", "Dinámica y Cinemática"]
+  },
 
   {"title": "Electricidad y Magnetismo",
 "tipo": "CCBB",
 "objetivo" : "El alumno describirá el comportamiento de fenómenos eléctricos y magnéticos con base en las leyes y teorías de la física que los sustentan para comprender los principios de operación de los sistemas eléctricos.",
-"Unidades": ["Principios de electricidad y magnetismo", "Electrostática", "Electrocinética", "Fuentes de campo magnético"]},
+"Unidades": ["Principios de electricidad y magnetismo", "Electrostática", "Electrocinética", "Fuentes de campo magnético"]
+  },
 
   {"title": "Matemáticas Básicas para Computación",
 "tipo": "ISC",
 "objetivo" : "El alumno evaluará modelos abstractos de objetos y problemas reales mediante principios y teoremas de lógica computacional para la validación y solución de problemas computacionales.",
-"Unidades": ["Introducción a las matemáticas para Computación", "Álgebra Booleana", "Lógica", "Métodos demostrativos"]},
+"Unidades": ["Introducción a las matemáticas para Computación", "Álgebra Booleana", "Lógica", "Métodos demostrativos"]
+  },
 
   {"title": "Arquitectura de Computadoras",
 "tipo": "ISC",
 "objetivo" : "El alumno determinará arquitecturas de equipos de cómputo  mediante  el análisis de  componentes y periféricos  para satisfacer requerimientos de funcionalidad",
-"Unidades": ["Introducción a la Electrónica Digital", "Electrónica digital aplicada a computadoras", "Organización de la Computadora", "Periféricos", "Arquitectura de procesadores"]},
+"Unidades": ["Introducción a la Electrónica Digital", "Electrónica digital aplicada a computadoras", "Organización de la Computadora", "Periféricos", "Arquitectura de procesadores"]
+  },
 
   {"title": "Inglés III",
-"tipo": "IDI",
-"objetivo" : "El alumno será capaz de dar y solicitar información personal y del entorno con acciones simples, de textos  breves y sencillos, a través de la práctica de las cuatro habilidades comunicativas haciendo uso de las funciones gramaticales del idioma inglés de acuerdo al nivel A1 del marco común Europeo.",
-"Unidades": ["Interactuando y emitiendo opinión", "Contrastando", "Planeando", "Selección y emisión de información y opinión"]},
+    "tipo": "IDI",
+    "objetivo" : "El alumno será capaz de dar y solicitar información personal y del entorno con acciones simples, de textos  breves y sencillos, a través de la práctica de las cuatro habilidades comunicativas haciendo uso de las funciones gramaticales del idioma inglés de acuerdo al nivel A1 del marco común Europeo.",
+    "Unidades": ["Interactuando y emitiendo opinión", "Contrastando", "Planeando", "Selección y emisión de información y opinión"],
+    "contribuye": ["Inglés IV", "Inglés V", "Inglés VI", "Inglés VII", "Inglés VIII", "Inglés IX"],
+    "atribucion" : ["Inglés I", "Inglés II"]
+  },
 
   {"title": "Inteligencia Emocional",
 "tipo": "FIT", 
 "objetivo" : "El alumno planeará el logro de sus objetivos y metas personales, mediante los principios teóricos de la motivación, la Inteligencia emocional, solución de conflictos para contribur a su desarrollo personal y social.",
-"Unidades": ["Ciclo vital y motivación", "Inteligencia emocional", "Comunicación asertiva y manejo de conflictos"]},
+    "Unidades": ["Ciclo vital y motivación", "Inteligencia emocional", "Comunicación asertiva y manejo de conflictos"]
+  },
 
   {"title": "Cálculo Diferencial",
 "tipo": "CCBB", 
@@ -138,8 +159,8 @@
 
 {"title": "Estancia I",
 "tipo": "ISC", 
-"objetivo" : "",
-"Unidades": [""]},
+"objetivo" : "El alumno aplicará los conocimientos adquiridos durante el primer ciclo de formación.",
+"Unidades": ["Diseño del proyecto", "Implementación del proyecto", "Evaluación del proyecto"]},
 
 {"title": "Inglés V",
 "tipo": "IDI", 
@@ -216,7 +237,7 @@
 "objetivo" : "El alumno expresará órdenes e instrucciones, información adicional, ventajas y desventajas de productos y servicios, situaciones hipotéticas y la relación entre dos situaciones a través de las técnicas de redacción y narración para justificar decisiones, redactar textos formales así como manuales detallados y complejos de su área de especialidad.",
 "Unidades": ["Relative clauses, comparative patterns and causatives", "Voz pasiva, conjunciones y condicionales combinados en la narrativa."]},
 
-{"title": "Liderazgo de Equipos de Alto Desempeño",
+{"title": "Liderazgo de Equipos",
 "tipo": "FIT",
 "objetivo" : "El alumno integrará equipos de trabajo de alto desempeño mediante las estrategias de liderazgo, de decisiones, motivación, técnicas de integración de equipos de trabajo, asignación de roles y resolución de conflictos, para el alcance exitoso de los objetivos planteados a nivel organizacional, profesional y personal.",
 "Unidades": ["Introducción a las relaciones humanas y Liderazgo", "Liderazgo y trabajo en equipo"]},
@@ -243,8 +264,8 @@
 
 {"title": "Estancia II",
 "tipo": "ISC",
-"objetivo" : "",
-"Unidades": [""]},
+"objetivo" : "El alumno aplicará los conocimientos adquiridos durante el segundo ciclo de formación.",
+"Unidades": ["Diseño del proyecto", "Implementación del proyecto", "Evaluación del proyecto"]},
 
 {"title": "Inglés VIII",
 "tipo": "IDI",
@@ -282,9 +303,10 @@
 "Unidades": ["Diseño e implementación de software", "Pruebas de software", "Gestionar de la calidad del proceso de desarrollo de software", "Técnicas de estimación de costos del software"]},
 
 {"title": "Inglés IX",
-"tipo": "IDI",
-"objetivo" : "El alumno relatará anécdotas y descripciones detalladas, con ideas propias, expresiones complejas, y significados no literales, utilizando técnicas de redacción, patrones verbales, frases adverbiales para redactar y presentar puntos de vista personales y conclusiones fundamentadas sobre problemáticas sociales y personales",
-"Unidades": ["Revisión entre pares y End product","Estilo Indirecto", "Vague language", "Verb patterns y frases adverbiales", "Significados no literales, deseo y arrepentimiento." ]},
+  "tipo": "IDI",
+  "objetivo" : "El alumno relatará anécdotas y descripciones detalladas, con ideas propias, expresiones complejas, y significados no literales, utilizando técnicas de redacción, patrones verbales, frases adverbiales para redactar y presentar puntos de vista personales y conclusiones fundamentadas sobre problemáticas sociales y personales",
+  "Unidades": ["Revisión entre pares y End product","Estilo Indirecto", "Vague language", "Verb patterns y frases adverbiales", "Significados no literales, deseo y arrepentimiento." ]
+},
 
 {"title": "Inteligencia de Negocios",
 "tipo": "ISC",
@@ -314,7 +336,13 @@
 {"title": "Expresión Oral y Escrita II",
 "tipo": "ISC",
 "objetivo" : "El alumno sustentará proyectos escritos y orales con base en el proceso de la comunicación, la argumentación y los tipos de textos y documentos acorde al Nivel B2 del Marco Común Europeo de Referencia para lograr la comunicación efectiva en un contexto profesional y sociocultural.",
-"Unidades": ["El proceso de la comunicación", "La comunicación efectiva en las organizaciones"]}
+"Unidades": ["El proceso de la comunicación", "La comunicación efectiva en las organizaciones"]},
+
+{"title": "Estadía",
+  "tipo": "ISC",
+  "objetivo" : "El alumno aplicará los conocimientos adquiridos durante el tercer ciclo de formación",
+  "Unidades": ["Diseño del proyecto", "Implementación del proyecto", "Evaluación del proyecto"]}
+
 ]
 
 

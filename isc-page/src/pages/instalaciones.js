@@ -12,7 +12,7 @@ export default function Instalaciones({data}) {
   const tarjetasLabs = data.thumbLabs.nodes
   const tarjetasCampus = data.thumbCampus.nodes
 
-  console.log(data)
+  //console.log(data)
 
   return (
     <Layout>
@@ -27,7 +27,29 @@ export default function Instalaciones({data}) {
         <div className="subTitulo">
           <h3>Laboratorios</h3>
         </div>
-         <div className="image-container">
+
+        <Row>
+         {tarjetasLabs.map(tarjeta => (
+            <Col
+              md={4}
+              sm={12}
+              className="mb-3 mt-4"
+              key={tarjeta.frontmatter.stack}
+            >
+              <h5>{tarjeta.frontmatter.title}</h5>
+              <div className="cardImagen">
+                <Img
+                  fluid={tarjeta.frontmatter.thumb.childImageSharp.fluid}
+                  alt={tarjeta.frontmatter.stack}
+                  className="image-zoom"
+                  style={{ height: "10rem", width: "100%" }}
+                />
+              </div>
+            </Col>
+          ))} 
+        </Row>
+        
+         {/* <div className="image-container">
           <div className="image-grid">
             {tarjetasLabs.map(tarjeta => (
               <Img
@@ -37,7 +59,7 @@ export default function Instalaciones({data}) {
               />
             ))}
           </div>
-        </div> 
+        </div>  */}
       </Container>
       
       <Container className="justify-content-center text-center mt-4 mb-5">
@@ -57,7 +79,8 @@ export default function Instalaciones({data}) {
                 <Img
                   fluid={tarjeta.frontmatter.thumb.childImageSharp.fluid}
                   alt={tarjeta.frontmatter.stack}
-                  style={{ height: "100%", width: "100%" }}
+                  className="image-zoom"
+                  style={{ height: "10rem", width: "100%" }}
                 />
               </div>
             </Col>

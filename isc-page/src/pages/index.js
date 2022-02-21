@@ -51,59 +51,81 @@ import { graphql } from 'gatsby'
            </Col> */}
          </Row>
        </Container>
+
+       <Container className="mt-3 mb-3">
+         <Row className="justify-content-md-center">
+           <Col md={11} className="text-center">
+             <h3>Perfil de egreso</h3>
+             <p className="textoJustificado">
+               
+               El Ingeniero o Ingeniera en Sistemas Computacionales es un 
+             profesionista competente que podrá insertarse en los sectores industrial, 
+             comercial y de servicios para proporcionar soporte a procesos informáticos
+            (programación, instalación y mantenimiento), así como administrar, desarrollar 
+            y actualizar bases de datos y redes de comunicaciones, proponiendo estrategias
+             y soluciones integrales de TIC´s.
+             </p>
+           </Col>
+         </Row>
+
+         
+       </Container>
+
        <Container className="mt-3 mb-3">
          <Row className="justify-content-md-center">
            <Col md={11} className="text-center">
              <h3>Campo laboral</h3>
              <p className="textoJustificado">
-               El Ingeniero o la Ingeniera en Sistemas Computacionales cuenta
+             El Ingeniero o la Ingeniera en Sistemas Computacionales cuenta
                con las competencias profesionales necesarias para alcanzar el
                mejor desempeño en el campo laboral, en el ámbito local, nacional
                e internacional. Pudiendo desarrollarse como:
              </p>
            </Col>
          </Row>
-         <ul>
-           <Row>
-             <Col>
+
+         <Row className="justify-content-md-center">
+           <Col md={6}>
+             <ul className="no-bullet">
                <li>Administrador de Bases de Datos</li>
                <li>
-                 Administrador de Calidad de Servicios de Tecnologías de la
-                 Información
+                 Administrador de Calidad de Servicios de TI
                </li>
                <li>
-                 Administrador de proyectos de Tecnologías de la Información
+                 Administrador de proyectos de TI
                </li>
                <li>Administrador de Redes</li>
                <li>Analista de procesos</li>
                <li>Analista de sistemas</li>
                <li>Arquitecto de redes de computadoras</li>
                <li>Arquitecto de software</li>
-               <li>Consultor en nuevas Tecnologías de la Información</li>
-               <li>Consultor de servicios de Tecnologías de la Información</li>
-               <li>Desarrollador de software</li>
-             </Col>
-             <Col>
-               <li>Director de innovación en Tecnologías de la Información</li>
+             </ul>
+           </Col>
+           <Col md={4}>
+             <ul className="no-bullet">
+               <li>Director de innovación en TI</li>
                <li>Diseñador web</li>
                <li>Documentador de procesos</li>
                <li>Gerente de sistemas</li>
-               <li>Gestor de proyectos de Tecnologías de la Información</li>
+               <li>Gestor de proyectos de TI</li>
                <li>Gerente de mantenimiento y soporte técnico</li>
                <li>
-                 Gerente del departamento de Tecnologías de la Información
+                 Gerente del departamento de TI
                </li>
-               <li>Líder de proyectos en Tecnologías de la Información</li>
+             </ul>
+           </Col>
+           <Col md={4}>
+             <ul className="no-bullet">
+               <li>Consultor en nuevas TI</li>
+               <li>Consultor de servicios de TI</li>
+               <li>Desarrollador de software</li>
+               <li>Líder de proyectos en TI</li>
                <li>Programador</li>
                <li>Tester</li>
-               <li>Web master</li>
-               <li>
-                 Desarrollador de proyectos de Tecnologías de Información
-                 propios
-               </li>
-             </Col>
-           </Row>
-         </ul>
+               <li> Desarrollador de proyectos de TI propios </li>
+             </ul>
+           </Col>
+         </Row>
        </Container>
      </Layout>
    )

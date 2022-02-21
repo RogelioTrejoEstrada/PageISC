@@ -10,13 +10,13 @@ import {navbarBrand, navbarLink, navbarColor} from '../styles/Header.module.css'
 
 export default function Header({pagina}) {
   const [active, setActive] = useState(pagina);
-  
+  console.log('pagina; ', pagina)
   return (
     <Container>
       
       <Navbar className={navbarColor} expand="lg">
         <Navbar.Brand className={navbarBrand} style={{ color: "#fff" }}>
-          <StaticImage src="../images/UPA_Logo.png" width={100} alt="UPA"
+          <StaticImage src="../images/UPA_logo.png" width={100} alt="UPA"
           placeholder="tracedSVG" />
 
         </Navbar.Brand>
@@ -27,14 +27,14 @@ export default function Header({pagina}) {
             activeKey={active}
             onSelect={selectedKey => setActive(selectedKey)}
           >
-            <Nav.Link as={Link} to={"/"} className={navbarLink} eventKey="inicio">
+            <Nav.Link as={Link} to={"/"} className={navbarLink} eventKey="ISC">
               Inicio
             </Nav.Link>
             <Nav.Link
               as={Link}
               to={"/about"}
               className={navbarLink}
-              eventKey="nosotros"
+              eventKey="Nosotros"
             >
               Nosotros
             </Nav.Link>
@@ -43,7 +43,7 @@ export default function Header({pagina}) {
               as={Link}
               to={"/instalaciones"}
               className={navbarLink}
-              eventKey="instalaciones"
+              eventKey="Instalaciones"
             >
               Instalaciones
             </Nav.Link>
@@ -51,7 +51,7 @@ export default function Header({pagina}) {
               as={Link}
               to={"/mapaCurricular"}
               className={navbarLink}
-              eventKey="mapaCurricular"
+              eventKey="Mapa Curricular"
             >
               Mapa Curricular
             </Nav.Link>
@@ -59,7 +59,7 @@ export default function Header({pagina}) {
               as={Link}
               to={"/contacto"}
               className={navbarLink}
-              eventKey="contacto"
+              eventKey="Contacto"
             >
               Contacto
             </Nav.Link>

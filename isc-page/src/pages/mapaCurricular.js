@@ -6,224 +6,262 @@ import { graphql } from 'gatsby'
 import ModalMateria from '../components/ModalMateria'
 import Seo from '../components/Seo'
 import materia from '../materias/materiasData.json'
+import materias from '../materias/materias.json'
 
 
-const materias = 
-  {primer: [
-    {title: 'Inglés I', tipo: 'IDI', archivo: 'inglesI.pdf'},
-    {title: 'Expresión Oral y Escrita',tipo: 'FIT', archivo: 'eoye.pdf'},
-    {title: 'Química Básica', tipo: 'CCBB'},
-    {title: 'Álgebra Lineal',tipo: 'CCBB'},
-    {title: 'Introducción a la Programación',tipo: 'ISC'},
-    {title: 'Introducción a las Tecnologías de Información',tipo: 'ISC'},
-    {title: 'Herramientas Ofimáticas',tipo: 'ISC'}
-  ],
-  segundo:[
-    {title: 'Inglés II', tipo: 'IDI'},
-    {title: 'Desarrollo Humano y Valores',tipo: 'FIT'},
-    {title: 'Funciones Matemáticas',tipo: 'CCBB'},
-    {title: 'Física',tipo: 'CCBB'},
-    {title: 'Electricidad y Magnetismo',tipo: 'CCBB'},
-    {title: 'Matemáticas Básicas para Computación',tipo: 'ISC'},
-    {title: 'Arquitectura de Computadoras',tipo: 'ISC'},
-  ],
-  tercer: [
-    {title: 'Inglés III',tipo: 'IDI'},
-    {title: 'Inteligencia Emocional',tipo: 'FIT'},
-    {title: 'Cálculo Diferencial',tipo: 'CCBB'},
-    {title: 'Probabilidad y Estadística',tipo: 'CCBB'},
-    {title: 'Programación',tipo: 'ISC'},
-    {title: 'Introducción a Redes',tipo: 'ISC'},
-    {title: 'Mantenimiento a Equipo de Cómputo',tipo: 'ISC'},
-  ],
- cuarto: [
-  {title: 'Inglés IV',tipo: 'IDI'},
-  {title: 'Habilidades Cognitivas y Creatividad',tipo: 'FIT'},
-  {title: 'Cálculo Integral',tipo: 'CCBB'},
-  {title: 'Ingeniería de Software',tipo: 'ISC'},
-  {title: 'Estructura de Datos',tipo: 'ISC'},
-  {title: 'Ruteo y Conmutación',tipo: 'ISC'},
-  {title: 'Estancia I',tipo: 'ISC'},
-],
-quinto :[
-  {title: 'Inglés V',tipo: 'IDI'},
-  {title: 'Ética Profesional',tipo: 'FIT'},
-  {title: 'Matemáticas para Ingeniería I',tipo: 'CCBB'},
-  {title: 'Física para Ingeniería',tipo: 'CCBB'},
-  {title: 'Fundamentos de POO',tipo: 'ISC'},
-  {title: 'Escalamiento de Redes',tipo: 'ISC'},
-  {title: 'Base de Datos',tipo: 'ISC'},
-],
- sexto:[
-  {title: 'Inglés VI',tipo: 'IDI'},
-  {title: 'Habilidades Gerenciales',tipo: 'FIT'},
-  {title: 'Matemáticas para Ingeniería II',tipo: 'CCBB'},
-  {title: 'Sistemas Operativos',tipo: 'ISC'},
-  {title: 'Programación Orientada a Objetos',tipo: 'ISC'},
-  {title: 'Interconexión de Redes',tipo: 'ISC'},
-  {title: 'Administración de Base de Datos',tipo: 'ISC'},
-],
-septimo: [
-  {title: 'Inglés VII',tipo: 'IDI'},
-  {title: 'Liderazgo de Equipos de Alto Desempeño',tipo: 'FIT'},
-  {title: 'Formulación de Proyectos de TI',tipo: 'ISC'},
-  {title: 'Lenguajes y Autómatas',tipo: 'ISC'},
-  {title: 'Programación WEB',tipo: 'ISC'},
-  {title: 'Ingeniería de Requisitos',tipo: 'ISC'},
-  {title: 'Estancia II',tipo: 'ISC'},
-],
-octavo: [
-  {title: 'Inglés VIII',tipo: 'IDI'},
-  {title: 'Tecnologías de Virtualización',tipo: 'ISC'},
-  {title: 'Admon. de Proyectos de TI',tipo: 'ISC'},
-  {title: 'Tecnologías y Aplicaciones en Internet',tipo: 'ISC'},
-  {title: 'Diseño de Interfaces',tipo: 'ISC'},
-  {title: 'Sistemas Inteligentes',tipo: 'ISC'},
-  {title: 'Gestión de Desarrollo de SW',tipo: 'ISC'},
-],
- noveno: [
-  {title: 'Inglés IX',tipo: 'IDI'},
-  {title: 'Inteligencia de Negocios',tipo: 'ISC'},
-  {title: 'Desarrollo de Negocios para TI',tipo: 'ISC'},
-  {title: 'Sistemas Embebidos',tipo: 'ISC'},
-  {title: 'Programación Móvil',tipo: 'ISC'},
-  {title: 'Seguridad Informática',tipo: 'ISC'},
-  {title: 'Expresión Oral y Escrita II',tipo: 'ISC'},
-]}
+export default function MapaCurricular({ data }) {
 
-export default function MapaCurricular({data}) {
+  function setColorMateria(tipo) {
+    var valor = 'btn-materia'
+    switch (tipo) {
+      case 'IDI': valor = 'btn-materia btn-idi'; break;
+      case 'FIT': valor = 'btn-materia btn-fit'; break;
+      case 'CCBB': valor = 'btn-materia btn-ccbb'; break;
+      case 'ISC': valor = 'btn-materia'; break;
+      default: valor = 'btn-materia;'
+    }
+    return valor;
+  }
 
-   function setColorMateria(tipo) {
-        var valor = 'btn-materia'
-      switch (tipo){
-        case 'IDI': valor = 'btn-materia btn-idi'; break;
-        case 'FIT': valor= 'btn-materia btn-fit'; break;
-        case 'CCBB': valor= 'btn-materia btn-ccbb'; break;
-        case 'ISC': valor = 'btn-materia'; break;
-        default: valor= 'btn-materia;'
-      }
-      return valor;
+  const [modalShow, setModalShow] = React.useState(false);
+
+  const [datosModal, setDatosModal] = React.useState({ title: "", tipo: "", creditos: "", objetivo: "", Unidades: "" })
+
+  const DatosMateria = (nombre) => {
+    const materiaDatos = (nombre !== "") ? materia.find(dato => dato.title === nombre) : { title: "No encontrado" }
+    //console.log("Materia: ", materiaDatos)
+    setDatosModal(materiaDatos)
+    setModalShow(true)
+  }
+
+  const agregarClase = (nombre) => {
+    const materiaExtras = (nombre !== "") ? materia.find(dato => dato.title === nombre) : { title: "No encontrado" }
+    //console.log("atrobuptp_ ", materiaExtras.contribuye)
+    let contribuye = ""
+    let atribucion = ""
+    if (materiaExtras.hasOwnProperty('contribuye')) {
+      materiaExtras.contribuye.forEach(mat => {
+        contribuye = document.getElementById(mat)
+        //console.log(contribuye)
+        contribuye.classList.add('btn-contribuye')
+      })
     }
 
-    const [modalShow, setModalShow] = React.useState(false);
-
-    const [datosModal, setDatosModal] = React.useState({title: "", tipo: "", creditos: "", objetivo: "", Unidades: ""})
-
-    
-
-    const DatosMateria = (nombre) => {
-      const materiaDatos = (nombre !== "") ? materia.find(dato => dato.title === nombre) : {title: "No encontrado"}
-      //console.log("Materia: ", materiaDatos)
-      setDatosModal(materiaDatos)
-      setModalShow(true)
+    if (materiaExtras.hasOwnProperty('atribucion')) {
+      materiaExtras.atribucion.forEach(mat => {
+        atribucion = document.getElementById(mat)
+        //console.log(atribucion)
+        atribucion.classList.add('btn-atribuye')
+      })
     }
-    
-    const AtribucionesMateria = (nombre) => {
-      console.log(nombre)
-    }
+  }
 
-    return (
-      <Layout>
-        <Seo title = "Mapa Curricular"/>
-        <div className="mapaCurricular"></div>
-        <Cabecera
-          titulo2="Mapa Curricular"
-          titulo1="Ingeniería en Sistemas Computacionales"
-          imagen={data.file.childImageSharp.fluid}
-        />
-        <Container className="justify-content-center text-center">
-          <div className="subTitulo">
-            <h3>Plan de estudios 2020</h3>
-          </div>
+  //Elimina las clases de contribución y atribución a
+  const eliminarClase = () => {
+    let contribuidores = document.getElementsByClassName('btn-contribuye')
+
+
+    while (contribuidores.length > 0)
+      contribuidores[0].classList.remove('btn-contribuye')
+
+    let atribuidores = document.getElementsByClassName('btn-atribuye')
+    while (atribuidores.length > 0)
+      atribuidores[0].classList.remove('btn-atribuye')
+
+
+    let actual = document.getElementsByClassName('btn-actual')
+    Array.prototype.forEach.call(actual, function (element) {
+      element.classList.remove('btn-atribuye')
+    })
+  }
+
+  return (
+    <Layout>
+      <Seo title="Mapa Curricular" />
+      <div className="mapaCurricular"></div>
+      <Cabecera
+        titulo2="Mapa Curricular"
+        titulo1="Ingeniería en Sistemas Computacionales"
+        imagen={data.file.childImageSharp.fluid}
+      />
+      <Container className="justify-content-center text-center">
+        <div className="subTitulo">
+          <h3>Plan de estudios 2020</h3>
+        </div>
+        <Row className='mt-1'>
+          <Col> <span className='caja-atribucion'></span>Materias que le contribuye(n)</Col>
+          <Col> <span className='caja-actual'></span>Materia actual</Col>
+          <Col> <span className='caja-contribucion'></span>Materias a la(s) que contribuye</Col>
+        </Row>
+      </Container>
+      <Container className="mt-4 mb-4 text-center ">
+
+
+        <ModalMateria show={modalShow} onHide={() => setModalShow(false)} materia={datosModal} />
+      
+        <Container fluid="md">
+          <Row>
+            {/*Primer ciclo */}
+            <Col md>
+              <Row>
+                <h5>Primer Ciclo</h5>
+                <Col  className='columna-materia' >
+                  <p>Primero</p>
+                  {materias.primer.map(materia => (
+                    <Button className={setColorMateria(materia.tipo)} key={materia.title} id={materia.title} onClick={() => DatosMateria(materia.title)}
+                      onMouseOver={() => agregarClase(materia.title)} onMouseLeave={() => eliminarClase()}>
+                      {materia.title}
+                    </Button>
+                  ))}
+                </Col>
+                <Col className='columna-materia'>
+                <p>Segundo</p>
+                  {materias.segundo.map(materia => (
+                    <Button className={setColorMateria(materia.tipo)} key={materia.title} id={materia.title} onClick={() => DatosMateria(materia.title)}
+                      onMouseOver={() => agregarClase(materia.title)} onMouseLeave={() => eliminarClase()}>
+                      {materia.title}
+                    </Button>
+                  ))}
+                </Col>
+                <Col  className='columna-materia'>
+                <p>Tercero</p>
+                  {materias.tercer.map(materia => (
+                    <Button className={setColorMateria(materia.tipo)} key={materia.title} id={materia.title} onClick={() => DatosMateria(materia.title)}
+                      onMouseOver={() => agregarClase(materia.title)} onMouseLeave={() => eliminarClase()}>
+                      {materia.title}
+                    </Button>
+                  ))}
+                </Col>
+                <Col xs={12} md={1} className = 'columna-materia'>
+                  <Button className="btn-materia btn-ciclo"><span className='txt-estadia'>Primer Ciclo</span></Button>
+                </Col>
+              </Row>
+            </Col>
+
+            {/*Segundo ciclo */}
+            <Col md>
+              <Row>
+                <h5>Segundo Ciclo</h5>
+                <Col className='columna-materia'>
+                <p>Cuarto</p>
+                  {materias.cuarto.map(materia => (
+                    <Button className={setColorMateria(materia.tipo)} key={materia.title} id={materia.title} onClick={() => DatosMateria(materia.title)}
+                      onMouseOver={() => agregarClase(materia.title)} onMouseLeave={() => eliminarClase()}>
+                      {materia.title}
+                    </Button>
+                  ))}
+                </Col>
+                <Col className='columna-materia'>
+                <p>Quinto</p>
+                  {materias.quinto.map(materia => (
+                    <Button className={setColorMateria(materia.tipo)} key={materia.title} id={materia.title} onClick={() => DatosMateria(materia.title)}
+                      onMouseOver={() => agregarClase(materia.title)} onMouseLeave={() => eliminarClase()}>
+                      {materia.title}
+                    </Button>
+                  ))}
+                </Col>
+                <Col  className='columna-materia'>
+                <p>Sexto</p>
+                  {materias.sexto.map(materia => (
+                    <Button className={setColorMateria(materia.tipo)} key={materia.title} id={materia.title} onClick={() => DatosMateria(materia.title)}
+                      onMouseOver={() => agregarClase(materia.title)} onMouseLeave={() => eliminarClase()}>
+                      {materia.title}
+                    </Button>
+                  ))}
+                  
+                </Col>
+                <Col xs={12} md={1} className = 'columna-materia'>
+                  <Button className="btn-materia btn-ciclo"><span className='txt-estadia'>Segundo Ciclo</span></Button>
+                </Col>
+              </Row>
+            </Col>
+
+            {/*Tercer ciclo */}
+            <Col md>
+              <Row>
+                <h5>Tercer Ciclo</h5>
+                <Col className='columna-materia'>
+                  <p>Séptimo</p>
+                  {materias.septimo.map(materia => (
+                    <Button className={setColorMateria(materia.tipo)} key={materia.title} id={materia.title} onClick={() => DatosMateria(materia.title)}
+                      onMouseOver={() => agregarClase(materia.title)} onMouseLeave={() => eliminarClase()}>
+                      {materia.title}
+                    </Button>
+                  ))}
+                </Col>
+                <Col className='columna-materia'>
+                  <p>Octavo</p>
+                  {materias.octavo.map(materia => (
+                    <Button className={setColorMateria(materia.tipo)} key={materia.title} id={materia.title} onClick={() => DatosMateria(materia.title)}
+                      onMouseOver={() => agregarClase(materia.title)} onMouseLeave={() => eliminarClase()}>
+                      {materia.title}
+                    </Button>
+                  ))}
+                </Col>
+                <Col className='columna-materia'>
+                  <p>Noveno</p>
+                  {materias.noveno.map(materia => (
+                    <Button className={setColorMateria(materia.tipo)} key={materia.title} id={materia.title} onClick={() => DatosMateria(materia.title)}
+                      onMouseOver={() => agregarClase(materia.title)} onMouseLeave={() => eliminarClase()}>
+                      {materia.title}
+                    </Button>
+                  ))}
+                </Col>
+                <Col xs={12} md={1} className='columna-materia'>
+                  <p>Décimo</p>
+                  <Button className="btn-materia btn-estadia"
+                  key = 'Estadia' id= 'Estadia' onClick={() => DatosMateria('Estadía')}
+                  onMouseOver={() => agregarClase('Estadía')} onMouseLeave={() => eliminarClase()}
+                  ><span className='txt-estadia'>Estadía</span></Button>
+                  
+                </Col>
+              </Row>
+            </Col>
+
+            
+          </Row>
+
         </Container>
-        <Container className="mt-4 mb-4 text-center ">
 
-       
-          <ModalMateria show ={modalShow} onHide={()=> setModalShow(false)} materia = {datosModal}/>
 
-          <Row className="mapaCurricular-tarjeta">
-            <Col md={12} sm={6} className="mapaCurricular-header">
-              <h4>Primer Ciclo de Formación</h4>
-            </Col>
-            <Col md={12} sm={8}>
-              <h5>Primer Cuatrimestre</h5>
-              {materias.primer.map(materia => (
-                <Button className={setColorMateria(materia.tipo)} key={materia.title} onClick={() => DatosMateria(materia.title)}
-                  onMouseOver = {() => AtribucionesMateria(materia.title)} >
-                  {materia.title}
-                </Button>
-              ))}
-              <h5>Segundo Cuatrimestre</h5>
-              {materias.segundo.map(materia => (
-                <Button className={setColorMateria(materia.tipo)} key={materia.title} onClick={() => DatosMateria(materia.title)} >
-                  {materia.title}
-                </Button>
-              ))}
-              <h5>Tercer Cuatrimestre</h5>
-              {materias.tercer.map(materia => (
-                <Button className={setColorMateria(materia.tipo)} key={materia.title} onClick={() => DatosMateria(materia.title)}>
-                  {materia.title}
-                </Button>
-              ))}
-            </Col>
-          </Row>
-          <Row className="mt-5 mapaCurricular-tarjeta">
-            <Col md={12} sm={6} className="mapaCurricular-header">
-              <h4>Segundo Ciclo de Formación</h4>
-            </Col>
-            <Col md={12} sm={8}>
-              <h5>Cuarto Cuatrimestre</h5>
-              {materias.cuarto.map(materia => (
-                <Button className={setColorMateria(materia.tipo)} key={materia.title} onClick={() => DatosMateria(materia.title)}>
-                  {materia.title}
-                </Button>
-              ))}
-              <h5>Quinto Cuatrimestre</h5>
-              {materias.quinto.map(materia => (
-                <Button className={setColorMateria(materia.tipo)} key={materia.title} onClick={() => DatosMateria(materia.title)}>
-                  {materia.title}
-                </Button>
-              ))}
-              <h5>Sexto Cuatrimestre</h5>
-              {materias.sexto.map(materia => (
-                <Button className={setColorMateria(materia.tipo)} key={materia.title} onClick={() => DatosMateria(materia.title)}>
-                  {materia.title}
-                </Button>
-              ))}
-            </Col>
-          </Row>
-          <Row className="mt-5 mapaCurricular-tarjeta">
-            <Col md={12} sm={6} className="mapaCurricular-header">
-              <h4>Tercer Ciclo de Formación</h4>
-            </Col>
-            <Col md={12} sm={8}>
-              <h5>Séptimo Cuatrimestre</h5>
-              {materias.septimo.map(materia => (
-                <Button className={setColorMateria(materia.tipo)} key={materia.title} onClick={() => DatosMateria(materia.title)}>
+        {/* 
+        <Row className="mt-5 mapaCurricular-tarjeta">
+          <Col md={12} sm={6} className="mapaCurricular-header">
+            <h4>Tercer Ciclo de Formación</h4>
+          </Col>
+          <Col md={12} sm={8}>
+            <h5>Séptimo Cuatrimestre</h5>
+            {materias.septimo.map(materia => (
+              <Button className={setColorMateria(materia.tipo)} id={materia.title} key={materia.title} onClick={() => DatosMateria(materia.title)}
+                onMouseOver={() => agregarClase(materia.title)} onMouseLeave={() => eliminarClase()}>
                 {materia.title}
               </Button>
-              ))}
-              <h5>Octavo Cuatrimestre</h5>
-              {materias.octavo.map(materia => (
-                <Button className={setColorMateria(materia.tipo)} key={materia.title} onClick={() => DatosMateria(materia.title)}>
+            ))}
+            <h5>Octavo Cuatrimestre</h5>
+            {materias.octavo.map(materia => (
+              <Button className={setColorMateria(materia.tipo)} id={materia.title} key={materia.title} onClick={() => DatosMateria(materia.title)}
+                onMouseOver={() => agregarClase(materia.title)} onMouseLeave={() => eliminarClase()}>
                 {materia.title}
               </Button>
-              ))}
-              <h5>Noveno Cuatrimestre</h5>
-              {materias.noveno.map(materia => (
-                <Button className={setColorMateria(materia.tipo)} key={materia.title} onClick={() => DatosMateria(materia.title)}>
+            ))}
+            <h5>Noveno Cuatrimestre</h5>
+            {materias.noveno.map(materia => (
+              <Button className={setColorMateria(materia.tipo)} id={materia.title} key={materia.title} onClick={() => DatosMateria(materia.title)}
+                onMouseOver={() => agregarClase(materia.title)} onMouseLeave={() => eliminarClase()}>
                 {materia.title}
               </Button>
-              ))}
-              <h5>Décimo Cuatrimestre</h5>
-              <Button className="btn-materia">Estadía</Button>
-            </Col>
-          </Row>
-         
-        </Container>
-      </Layout>
-    )
+            ))}
+            <h5>Décimo Cuatrimestre</h5>
+            <Button className="btn-materia">Estadía</Button>
+          </Col>
+        </Row>
+                */}
+      </Container>
+    </Layout>
+  )
 }
+
+
 
 export const query = graphql`
  query bannerMapa{
