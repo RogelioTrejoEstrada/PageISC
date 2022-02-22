@@ -30,8 +30,8 @@ export default function Contacto({data}) {
               <br/>
               <h5 className= 'texto-contacto'>Whatsapp:</h5>
               <h5 className= 'texto-contacto'><span><Whatsapp /></span> 449 341 24 09</h5>
-              <a href='https://wa.me/524492300927' target='_blank'> Yo</a>
-              <a href='https://wa.me/524493412409' target='_blank'> Yo2</a>
+              {/* <a href='https://wa.me/524492300927' target='_blank'> Yo</a>
+              <a href='https://wa.me/524493412409' target='_blank'> Yo2</a> */}
             </Col>
             
             <Col className='p-3 m-3 text-center mapaCurricular-tarjeta'>
