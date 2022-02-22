@@ -1,6 +1,6 @@
 {"primer": [
   {"title": "Inglés I", "tipo": "IDI", "archivo": "inglesI.pdf"},
-  {"title": "Expresión Oral y Escrita","tipo": "FIT", "archivo": "eoye.pdf"},
+  {"title": "Expresión Oral y Escrita I","tipo": "FIT", "archivo": "eoye.pdf"},
   {"title": "Química Básica", "tipo": "CCBB"},
   {"title": "Álgebra Lineal","tipo": "CCBB"},
   {"title": "Introducción a la Programación","tipo": "ISC"},
