@@ -1,6 +1,6 @@
 {"primer": [
-  {"title": "Inglés I", "tipo": "IDI", "archivo": "inglesI.pdf"},
-  {"title": "Expresión Oral y Escrita I","tipo": "FIT", "archivo": "eoye.pdf"},
+  {"title": "Inglés I", "tipo": "IDI"},
+  {"title": "Expresión Oral y Escrita I","tipo": "FIT"},
   {"title": "Química Básica", "tipo": "CCBB"},
   {"title": "Álgebra Lineal","tipo": "CCBB"},
   {"title": "Introducción a la Programación","tipo": "ISC"},
@@ -8,7 +8,7 @@
   {"title": "Herramientas Ofimáticas","tipo": "ISC"}
 ],
 "segundo":[
-  {"title": "Inglés II", "tipo": "IDI", "archivo": "inglesII.pdf"},
+  {"title": "Inglés II", "tipo": "IDI"},
   {"title": "Desarrollo Humano y Valores","tipo": "FIT"},
   {"title": "Funciones Matemáticas","tipo": "CCBB"},
   {"title": "Física","tipo": "CCBB"},
@@ -17,7 +17,7 @@
   {"title": "Arquitectura de Computadoras","tipo": "ISC"}
 ],
 "tercer": [
-  {"title": "Inglés III","tipo": "IDI", "archivo": "inglesIII.pdf"},
+  {"title": "Inglés III","tipo": "IDI"},
   {"title": "Inteligencia Emocional","tipo": "FIT"},
   {"title": "Cálculo Diferencial","tipo": "CCBB"},
   {"title": "Probabilidad y Estadística","tipo": "CCBB"},

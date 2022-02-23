@@ -26,6 +26,7 @@
   {"title": "Álgebra Lineal",
     "tipo": "CCBB",
     "creditos" : 6,
+    "archivo" : "algebra",
     "objetivo" : "El alumno resolverá problemas matemáticos a través del uso del álgebra, matrices y sistemas de ecuaciones para contribuir en la toma de decisiones en su entorno profesional y cotidiano.",
     "Unidades": ["Sistemas de numeración", "Álgebra", "Ecuaciones e inecuaciones", "Álgebra lineal"],
     "contribuye": ["Funciones Matemáticas", "Cálculo Diferencial","Cálculo Integral", "Matemáticas para Ingeniería I" ,"Matemáticas para Ingeniería II"]
@@ -53,7 +54,7 @@
     "creditos" : 4,
     "objetivo" : "El alumno generará soluciones a necesidades informáticas mediante herramientas ofimáticas e Internet, para el tratamiento de la información. ",
     "Unidades": ["Interfaz de usuario.", "Ofimática", "Internet"],
-    "contribuye": ["Estancia II", "Estancia I", "Estadía"]
+    "contribuye": ["Estancia II", "Estancia I"]
   },
 
   {"title": "Inglés II", 

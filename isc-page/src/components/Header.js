@@ -10,7 +10,7 @@ import {navbarBrand, navbarLink, navbarColor} from '../styles/Header.module.css'
 
 export default function Header({pagina}) {
   const [active, setActive] = useState(pagina);
-  console.log('pagina; ', pagina)
+  
   return (
     <Container>
       
