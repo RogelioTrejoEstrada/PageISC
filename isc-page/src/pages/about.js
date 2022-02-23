@@ -53,14 +53,14 @@ function About({data}) {
             <div className="textoJustificado">
               <h4>Reconocimientos:</h4>
               <ul>
-                <li>
+                {/* <li>
                   El programa académico de Ingeniería en Sistemas Estratégicos de
                   Información, desde 2016, ha formado parte del Padrón de
                   Programas de Licenciatura de Alto Rendimiento Académico de
                   CENEVAL, siendo uno de los pocos que programas académicos de Ingeniería en Software en todo el país dentro del padrón.
                 </li>
                 <li> Cuenta con los reconocimientos a la calidad educativa tanto de CIEES como  de CONAIC.
-                </li>
+                </li> */}
                 <li>
                   La UPA está certificada en ISO 9001:2014 (Sistemas de Gestión
                   de Calidad), ISO 14001:2014 (Sistema de Gestión Ambiental), NMX-R-025 (Igualdad laboral y no discriminación) lo cual
