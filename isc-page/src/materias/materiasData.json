@@ -26,7 +26,7 @@
   {"title": "Álgebra Lineal",
     "tipo": "CCBB",
     "creditos" : 6,
-    "archivo" : "algebra",
+    "archivo" : "1_algebra",
     "objetivo" : "El alumno resolverá problemas matemáticos a través del uso del álgebra, matrices y sistemas de ecuaciones para contribuir en la toma de decisiones en su entorno profesional y cotidiano.",
     "Unidades": ["Sistemas de numeración", "Álgebra", "Ecuaciones e inecuaciones", "Álgebra lineal"],
     "contribuye": ["Funciones Matemáticas", "Cálculo Diferencial","Cálculo Integral", "Matemáticas para Ingeniería I" ,"Matemáticas para Ingeniería II"]
