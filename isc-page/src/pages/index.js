@@ -23,6 +23,7 @@ import { graphql } from 'gatsby'
          <Row className="justify-content-md-center">
            <Col md={12}>
              <div className="textoJustificado">
+               <h2 className="text-center"> Ingeniería en Sistemas Computacionales</h2>
                <p>
                  El programa académico de Ingeniería en Sistemas Computacionales es la renovación y
                  actualización del programa anterior: Ingeniería en Sistemas Estratégicos de Información, que
@@ -53,8 +54,18 @@ import { graphql } from 'gatsby'
        </Container>
 
        <Container className="mt-3 mb-3">
-         <Row className="justify-content-md-center">
-           <Col md={11} className="text-center">
+       <Row className="justify-content-md-center">
+           <Col md={6} >
+             <h3 className="text-center">Perfil de ingreso</h3>
+            <ul>
+              <li>Haber aprobado el plan de estudios del nivel medio superior</li> 
+              <li>Tener afinidad por el uso de las tecnologías de información</li>
+              <li>Interés por la optimización de los procesos productivos a partir del manejo de la información</li>
+              
+            </ul>
+           </Col>
+
+           <Col md={6} className="text-center">
              <h3>Perfil de egreso</h3>
              <p className="textoJustificado">
                
@@ -68,12 +79,15 @@ import { graphql } from 'gatsby'
            </Col>
          </Row>
 
+          
+      
+
          
        </Container>
 
        <Container className="mt-3 mb-3">
          <Row className="justify-content-md-center">
-           <Col md={11} className="text-center">
+           <Col md={12} className="text-center">
              <h3>Campo laboral</h3>
              <p className="textoJustificado">
              El Ingeniero o la Ingeniera en Sistemas Computacionales cuenta

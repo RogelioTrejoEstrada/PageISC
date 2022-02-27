@@ -78,7 +78,9 @@ function About({data}) {
             <div className="textoJustificado">
               <h4>Academias</h4>
               <p>El programa académico participa activamente con las académias de CISCO Academy y
-                Huawei ICT, impartiendo cursos para certificación en estas tecnologías. </p>
+                Huawei ICT, impartiendo cursos para certificación en estas tecnologías incluidas dentro de la curricula, por lo que todos los estudiantes tienen
+                acceso a las mismas. Actualmente la academia de CISCO cuenta con instructores reconocidos por su participación dentro de los programas de acreditación.
+                 </p>
             </div>
           </Col>
 

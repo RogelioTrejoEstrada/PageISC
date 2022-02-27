@@ -25,7 +25,7 @@ export default function MapaCurricular({ data }) {
 
   const [modalShow, setModalShow] = React.useState(false);
 
-  const [datosModal, setDatosModal] = React.useState({ title: "", tipo: "", creditos: "", objetivo: "", Unidades: "" })
+  const [datosModal, setDatosModal] = React.useState({ title: "", tipo: "", creditos: "", objetivo: "", Unidades: "" , archivo: ""})
 
   const DatosMateria = (nombre) => {
     const materiaDatos = (nombre !== "") ? materia.find(dato => dato.title === nombre) : { title: "No encontrado" }

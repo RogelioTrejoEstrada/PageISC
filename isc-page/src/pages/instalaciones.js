@@ -5,12 +5,22 @@ import Layout from '../components/Layout'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import Seo from '../components/Seo'
-
+import ModalImagen from '../components/ModalImagen'
 
 
 export default function Instalaciones({data}) {
   const tarjetasLabs = data.thumbLabs.nodes
   const tarjetasCampus = data.thumbCampus.nodes
+
+  const [modalShow, setModalShow] = React.useState(false);
+
+  const [datosModal, setDatosModal] = React.useState({ title: "", imagenes: ""})
+
+  const DatosImagenes = (imagen) => {
+    setDatosModal({title: imagen})
+    console.log('clic')
+    setModalShow(true)
+  }
 
   //console.log(data)
 
@@ -27,6 +37,7 @@ export default function Instalaciones({data}) {
         <div className="subTitulo">
           <h3>Laboratorios</h3>
         </div>
+        <ModalImagen show={modalShow} onHide={() => setModalShow(false)} carrusel={datosModal} />
 
         <Row>
          {tarjetasLabs.map(tarjeta => (
@@ -37,14 +48,14 @@ export default function Instalaciones({data}) {
               key={tarjeta.frontmatter.stack}
             >
               <h5>{tarjeta.frontmatter.title}</h5>
-              <div className="cardImagen">
+              <button className="cardImagen" onClick ={() => DatosImagenes(tarjeta.frontmatter.title)}>
                 <Img
                   fluid={tarjeta.frontmatter.thumb.childImageSharp.fluid}
                   alt={tarjeta.frontmatter.stack}
                   className="image-zoom"
                   style={{ height: "10rem", width: "100%" }}
                 />
-              </div>
+              </button>
             </Col>
           ))} 
         </Row>
@@ -104,7 +115,8 @@ export const query = graphql`
      }
    }
 
-   thumbLabs: allMarkdownRemark(sort: {order: DESC, fields: frontmatter___date}
+   thumbLabs: allMarkdownRemark(sort: {
+    order: DESC, fields: frontmatter___date}
     filter: {fileAbsolutePath: {regex: "/(thumbLabs)/"}}) {
     nodes {
       frontmatter {

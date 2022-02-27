@@ -55,6 +55,16 @@ export default function Header({pagina}) {
             >
               Mapa Curricular
             </Nav.Link>
+
+            <Nav.Link
+              as={Link}
+              to={"/programasInstitucionales"}
+              className={navbarLink}
+              eventKey="Programas"
+            >
+              Programas Institucionales
+            </Nav.Link>
+
             <Nav.Link
               as={Link}
               to={"/contacto"}

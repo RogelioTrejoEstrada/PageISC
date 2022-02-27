@@ -7,3 +7,8 @@ thumb: ../images/upa_banner.JPG
 featuredImg: ../images/inicio.jpg
  
 ---
+
+```grid|2
+![](../images/infraestructura/redes.png)
+![](../images/infraestructura/redes.png)
+```

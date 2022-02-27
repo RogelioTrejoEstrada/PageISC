@@ -4,10 +4,11 @@ import { Modal } from 'react-bootstrap';
 
 function ModalMateria(props) {
 
+ 
+
   return (
     <Modal
       {...props}
-
       size="lg"
       aria-labelledby="contained-modal-title-vcenter"
       centered
@@ -31,7 +32,7 @@ function ModalMateria(props) {
       </Modal.Body>
       <Modal.Footer>
         {props.materia.archivo ?
-          <a className="modalObjetivo" href={'../pdf/' + props.materia.archivo + '.pdf'} target='_blank'  > {props.materia.title}</a>
+          <a className="modalObjetivo" href={'../pdf/' + props.materia.archivo + '.pdf'} target='_blank' rel='noreferrer' > {props.materia.title}</a>
           : null}
       </Modal.Footer>
     </Modal>

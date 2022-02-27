@@ -1,23 +1,25 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Modal, Button } from 'react-bootstrap'
 
-export default function ModalImagen() {
-    const [show, setShow] = useState(false);
+export default function ModalImagen(props) {
 
-  const handleClose = () => setShow(false);
  
 
     return (
-        <Modal show={show} onHide={handleClose}>
+        <Modal 
+          {...props}
+          size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered>
         <Modal.Header closeButton>
           <Modal.Title>Modal heading</Modal.Title>
         </Modal.Header>
         <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+          <Button variant="secondary" >
             Close
           </Button>
-          <Button variant="primary" onClick={handleClose}>
+          <Button variant="primary" >
             Save Changes
           </Button>
         </Modal.Footer>

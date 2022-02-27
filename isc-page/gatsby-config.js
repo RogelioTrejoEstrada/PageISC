@@ -31,6 +31,13 @@ module.exports = {
         path: `${__dirname}/src/thumbLabs/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `programas`,
+        path: `${__dirname}/src/programas/`,
+      },
+    },
 
     {
       resolve: `gatsby-source-filesystem`,

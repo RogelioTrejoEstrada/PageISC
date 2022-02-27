@@ -143,6 +143,13 @@
     cursor: pointer;
 }
 
+.image-contenedor{
+    width: 100%;
+    height: 20rem;
+    
+}
+
+
 .subTitulo{
     border-bottom: 2px solid ;
     border-color: #003464;
