@@ -48,14 +48,14 @@ export default function Instalaciones({data}) {
               key={tarjeta.frontmatter.stack}
             >
               <h5>{tarjeta.frontmatter.title}</h5>
-              <button className="cardImagen" onClick ={() => DatosImagenes(tarjeta.frontmatter.title)}>
+              {/* <button className="cardImagen" onClick ={() => DatosImagenes(tarjeta.frontmatter.title)}> */}
                 <Img
                   fluid={tarjeta.frontmatter.thumb.childImageSharp.fluid}
                   alt={tarjeta.frontmatter.stack}
                   className="image-zoom"
                   style={{ height: "10rem", width: "100%" }}
                 />
-              </button>
+              {/* </button> */}
             </Col>
           ))} 
         </Row>
