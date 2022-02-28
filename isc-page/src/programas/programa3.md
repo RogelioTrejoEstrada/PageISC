@@ -2,8 +2,12 @@
 title: Movilidad Internacional
 stack: movilidad
 date: 2022-02-20T00:00:00+00:00
-thumb: ../images/campus/campus01.JPG
+thumb: ../images/movilidad.jpeg
 ---
 
 
 
+La Universidad Politécnica de Aguascalientes cuenta con Convenios Internacionales de gran importancia con Universidades de diferentes partes del mundo. El programa académico ha tenido estudiantes en la Universidad de Nacional de Colombia, Algonquin College en Cánada y Lakehead University en Cánada.
+
+
+<a href="https://upa.edu.mx/vinculacion/movilidad-academica/#" target="_blank">Conocer mas</a>

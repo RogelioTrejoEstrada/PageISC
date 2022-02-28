@@ -37,8 +37,8 @@ function Programas({data}) {
                       <Img
                         fluid={programa.frontmatter.thumb.childImageSharp.fluid}
                         alt={programa.frontmatter.stack}
-                        className="image-zoom"
-                        style={{ height: "100%", width: "100%" }}
+                        className="image-escala image-zoom"
+                        //style={{ height: "100%", width: "100%" }}
                       />
                       </div>
                     </Col> : null}
