@@ -26,8 +26,8 @@ function Programas({ data }) {
           {programasInstitucionales.map((programa, index) => (
 
 
-            <Accordion.Item eventKey={index}>
-              <Row className="justify-content-md-center" key={programa.id}>
+            <Accordion.Item eventKey={index} key={programa.id}>
+              <Row className="justify-content-md-center" >
 
                 <Accordion.Header>
                   <h5 className="text-center"> {programa.frontmatter.title}</h5>
@@ -46,7 +46,7 @@ function Programas({ data }) {
                           <Img
                             fluid={programa.frontmatter.thumb.childImageSharp.fluid}
                             alt={programa.frontmatter.stack}
-                            className="image-escala image-zoom"
+                            className={programa.frontmatter.tam === "logo" ? "image-escala": "image-normal"}
                           //style={{ height: "100%", width: "100%" }}
                           />
                         </div>
@@ -88,6 +88,7 @@ export const query = graphql`
       frontmatter {
         stack
         title
+        tam
         thumb {
           childImageSharp {
             fluid {

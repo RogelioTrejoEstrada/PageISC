@@ -3,6 +3,7 @@ title: Huawei ICT Academy
 stack: huawei
 date: 2022-02-23T00:00:00+00:00
 thumb: ../images/huawei.png
+tam: logo
 ---
 
 
