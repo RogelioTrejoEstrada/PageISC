@@ -7,7 +7,7 @@ thumb: ../images/movilidad.jpeg
 
 
 
-La Universidad Politécnica de Aguascalientes cuenta con Convenios Internacionales de gran importancia con Universidades de diferentes partes del mundo. El programa académico ha tenido estudiantes en la Universidad de Nacional de Colombia, Algonquin College en Cánada y Lakehead University en Cánada.
+La Universidad Politécnica de Aguascalientes cuenta con Convenios Internacionales de gran importancia con Universidades de diferentes partes del mundo. El programa académico ha tenido estudiantes en la Universidad Nacional de Colombia, Algonquin College y Lakehead University en Cánada.
 
 
 <a href="https://upa.edu.mx/vinculacion/movilidad-academica/#" target="_blank">Conocer mas</a>

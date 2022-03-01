@@ -36,12 +36,12 @@ function Programas({ data }) {
 
                   <Row className="textoJustificado">
 
-                    <Col md={index % 2 === 0 ? { order: 1 } : null}>
+                    <Col  md={6} xs={12} >
                       <div dangerouslySetInnerHTML={{ __html: programa.html }} />
                     </Col>
 
                     {programa.frontmatter.thumb ?
-                      <Col>
+                      <Col md={index % 2 === 0 ? {order: "first" } : null} >
                         <div className="image-contenedor">
                           <Img
                             fluid={programa.frontmatter.thumb.childImageSharp.fluid}
@@ -61,6 +61,8 @@ function Programas({ data }) {
 
           ))}
         </Accordion>
+
+       
       </Container>
     </Layout>
   )

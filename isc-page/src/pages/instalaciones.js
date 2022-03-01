@@ -5,22 +5,22 @@ import Layout from '../components/Layout'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import Seo from '../components/Seo'
-import ModalImagen from '../components/ModalImagen'
+//import ModalImagen from '../components/ModalImagen'
 
 
 export default function Instalaciones({data}) {
   const tarjetasLabs = data.thumbLabs.nodes
   const tarjetasCampus = data.thumbCampus.nodes
 
-  const [modalShow, setModalShow] = React.useState(false);
+  //const [modalShow, setModalShow] = React.useState(false);
 
-  const [datosModal, setDatosModal] = React.useState({ title: "", imagenes: ""})
+  //const [datosModal, setDatosModal] = React.useState({ title: "", imagenes: ""})
 
-  const DatosImagenes = (imagen) => {
-    setDatosModal({title: imagen})
-    console.log('clic')
-    setModalShow(true)
-  }
+  // const DatosImagenes = (imagen) => {
+  //   setDatosModal({title: imagen})
+  //   console.log('clic')
+  //   setModalShow(true)
+  // }
 
   //console.log(data)
 
@@ -37,7 +37,7 @@ export default function Instalaciones({data}) {
         <div className="subTitulo">
           <h3>Laboratorios</h3>
         </div>
-        <ModalImagen show={modalShow} onHide={() => setModalShow(false)} carrusel={datosModal} />
+        {/* <ModalImagen show={modalShow} onHide={() => setModalShow(false)} carrusel={datosModal} /> */}
 
         <Row>
          {tarjetasLabs.map(tarjeta => (

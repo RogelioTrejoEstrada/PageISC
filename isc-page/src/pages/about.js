@@ -5,7 +5,7 @@ import Cabecera from '../components/Cabecera'
 import Layout from '../components/Layout'
 import { graphql } from 'gatsby'
 import Seo from '../components/Seo'
-import { StaticImage } from 'gatsby-plugin-image'
+
 
 function About({data}) {
   return (
@@ -73,27 +73,8 @@ function About({data}) {
             </div>
           </Col>
         </Row>
-        <Row>
-          <Col>
-            <div className="textoJustificado">
-              <h4>Academias</h4>
-              <p>El programa académico participa activamente con las académias de CISCO Academy y
-                Huawei ICT, impartiendo cursos para certificación en estas tecnologías incluidas dentro de la curricula, por lo que todos los estudiantes tienen
-                acceso a las mismas. Actualmente la academia de CISCO cuenta con instructores reconocidos por su participación dentro de los programas de acreditación.
-                 </p>
-            </div>
-          </Col>
-
-         
-        </Row>
-        <Row className="text-center">
-            <Col>
-              <StaticImage src="../images/huawei.png" alt="Huawei Logo" width={150}/>
-            </Col>
-            <Col>
-              <StaticImage src="../images/descarga.png" alt="Netacad Logo" height={150} />
-            </Col>
-          </Row>
+       
+     
       </Container>
     </Layout>
   )
