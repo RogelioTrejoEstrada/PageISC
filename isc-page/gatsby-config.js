@@ -60,7 +60,7 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: "gatsby-remark-images-grid",
+            resolve: "gatsby-remark-images",
             options: {
               
             },

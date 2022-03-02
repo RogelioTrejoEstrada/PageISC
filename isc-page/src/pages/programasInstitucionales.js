@@ -21,7 +21,9 @@ function Programas({ data }) {
         imagen={data.banner.childImageSharp.fluid}
       />
       <Container className='mb-5'>
-
+      <div className="subTitulo mb-4">
+          <h3 className="text-center">Ingeniería en Sistemas Computacionales</h3>
+        </div>
         <Accordion>
           {programasInstitucionales.map((programa, index) => (
 

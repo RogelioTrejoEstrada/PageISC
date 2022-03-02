@@ -7,18 +7,20 @@ import { graphql } from 'gatsby'
 import Seo from '../components/Seo'
 
 
-function About({data}) {
+function About({ data }) {
   return (
     <Layout>
-      <Seo title = "Nosotros"/>
+      <Seo title="Nosotros" />
       <div className='nosotros'></div>
       <Cabecera
-          titulo2="Nosotros"
-          titulo1="Ingeniería en Sistemas Computacionales"
-          imagen = {data.file.childImageSharp.fluid}
-        />
-      <Container className = 'mb-5'>
-
+        titulo2="Nosotros"
+        titulo1="Ingeniería en Sistemas Computacionales"
+        imagen={data.file.childImageSharp.fluid}
+      />
+      <Container className='mb-5'>
+        <div className="subTitulo mb-4">
+          <h3 className="text-center">Ingeniería en Sistemas Computacionales</h3>
+        </div>
         <Row className="justify-content-md-center">
           {/* <Col md={6} className="m-auto">
             <StaticImage src="../images/inicio.jpg" alt="UPA Logo" />
@@ -67,14 +69,14 @@ function About({data}) {
                   asegura la calidad de nuestros procesos.
                 </li>
                 <li>Además, la universidad se encuentra incorporada a ANUIES (Asociación Nacional de Universidades e Instituciones de Educación Superior).</li>
-                
-                
+
+
               </ul>
             </div>
           </Col>
         </Row>
-       
-     
+
+
       </Container>
     </Layout>
   )

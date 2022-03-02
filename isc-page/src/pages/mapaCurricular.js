@@ -102,7 +102,7 @@ export default function MapaCurricular({ data }) {
         <Container fluid="md">
           <Row>
             {/*Primer ciclo */}
-            <Col md>
+            <Col md >
               <Row>
                 <h5>Primer Ciclo</h5>
                 <Col  className='columna-materia' >

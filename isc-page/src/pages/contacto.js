@@ -16,10 +16,13 @@ export default function Contacto({data}) {
           titulo1="Ingeniería en Sistemas Computacionales"
           imagen={data.file.childImageSharp.fluid}
         />
-        <Container></Container>
+        
         <Container>
+         <div className="subTitulo mb-4">
+          <h3 className="text-center">Ingeniería en Sistemas Computacionales</h3>
+        </div> 
           <Row className="mb-5">
-            <Col className="p-3 m-3 mapaCurricular-tarjeta"  md={6}>
+            <Col className="p-3 m-3  text-center mapaCurricular-tarjeta"  xs = {11} md={6}>
               <h4 className=' mapaCurricular-header'>Contacto</h4>
               <br/>
               <h5 className= 'texto-contacto'>Correo electrónico:</h5>

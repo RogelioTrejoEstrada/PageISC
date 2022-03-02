@@ -20,10 +20,12 @@ import { graphql } from 'gatsby'
            imagen = {data.file.childImageSharp.fluid}
          />
        <Container>
+       <div className="subTitulo mb-4">
+          <h3 className="text-center">Ingeniería en Sistemas Computacionales</h3>
+        </div>
          <Row className="justify-content-md-center">
            <Col md={12}>
              <div className="textoJustificado">
-               <h2 className="text-center"> Ingeniería en Sistemas Computacionales</h2>
                <p>
                  El programa académico de Ingeniería en Sistemas Computacionales es la renovación y
                  actualización del programa anterior: Ingeniería en Sistemas Estratégicos de Información, que
