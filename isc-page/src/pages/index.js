@@ -62,7 +62,8 @@ import { graphql } from 'gatsby'
             <ul>
               <li>Haber aprobado el plan de estudios del nivel medio superior</li> 
               <li>Tener afinidad por el uso de las tecnologías de información</li>
-              <li>Interés por la optimización de los procesos productivos a partir del manejo de la información</li>
+              <li>Interés por la optimización de los procesos productivos a partir del manejo de la información y desarrollo de software</li>
+              <li>Criterio y razonamiento lógico en la solución de problemas</li>
               
             </ul>
            </Col>
@@ -80,11 +81,6 @@ import { graphql } from 'gatsby'
              </p>
            </Col>
          </Row>
-
-          
-      
-
-         
        </Container>
 
        <Container className="mt-3 mb-3">
@@ -114,7 +110,8 @@ import { graphql } from 'gatsby'
                <li>Analista de procesos</li>
                <li>Analista de sistemas</li>
                <li>Arquitecto de redes de computadoras</li>
-               <li>Arquitecto de software</li>
+               <li>Arquitecto o desarrollador de software</li>
+               <li>Líder de proyectos en TI</li>
              </ul>
            </Col>
            <Col md={4}>
@@ -128,19 +125,10 @@ import { graphql } from 'gatsby'
                <li>
                  Gerente del departamento de TI
                </li>
-             </ul>
-           </Col>
-           <Col md={4}>
-             <ul className="no-bullet">
-               <li>Consultor en nuevas TI</li>
                <li>Consultor de servicios de TI</li>
-               <li>Desarrollador de software</li>
-               <li>Líder de proyectos en TI</li>
-               <li>Programador</li>
-               <li>Tester</li>
-               <li> Desarrollador de proyectos de TI propios </li>
              </ul>
            </Col>
+           
          </Row>
        </Container>
      </Layout>
