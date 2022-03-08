@@ -69,7 +69,7 @@ export default function Home({ data }) {
             </ul> */}
 
             <Accordion>
-              <Accordion.Item >
+              <Accordion.Item eventKey="1" >
               <Accordion.Header><h3>Perfil de Ingreso</h3></Accordion.Header>
               <Accordion.Body>
                 <ul>
@@ -148,7 +148,7 @@ export default function Home({ data }) {
 
           <Col md={6} className="text-center">
           <Accordion>
-            <Accordion.Item>
+            <Accordion.Item eventKey="2">
               <Accordion.Header><h3>Perfil de Ingreso</h3></Accordion.Header>
               <Accordion.Body>
                 <p className="textoJustificado">
@@ -172,7 +172,7 @@ export default function Home({ data }) {
       <Container className="mt-3 mb-3">
 
         <Accordion>
-          <Accordion.Item>
+          <Accordion.Item eventKey="3">
           <Accordion.Header><h3>Campo laboral</h3></Accordion.Header>
           <Accordion.Body>
             <Row className="justify-content-md-center">
