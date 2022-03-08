@@ -30,7 +30,7 @@ function Programas({ data }) {
               <Row className="justify-content-md-center" >
 
                 <Accordion.Header>
-                  <h5 className="text-center"> {programa.frontmatter.title}</h5>
+                   {programa.frontmatter.title}
                 </Accordion.Header>
                 <Accordion.Body>
 
