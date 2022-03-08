@@ -92,7 +92,7 @@ module.exports = {
     description: 'Sitio WEB del programa académico ISC de la Universidad Politécnica de Aguascalientes',
     url: "http://isc.upa.edu.mx/",
     copyright: 'Copyright 2021 ISC UPA',
-    contact: 'isc@upa.edu.mx',
+    contact: 'isei@upa.edu.mx',
     image: '/images/UPA_Logo.png'
   },
 }

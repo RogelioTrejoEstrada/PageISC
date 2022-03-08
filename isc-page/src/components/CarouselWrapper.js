@@ -2,13 +2,12 @@ import React from 'react'
 import Carousel from 'react-bootstrap/Carousel'
 
 class CarouselWrapper extends React.Component {
-
 	constructor(props) {
 		super(props);
 		this.titles = props.titles;
 		this.descriptions = props.descriptions;
 		this.images = props.images;
-		this.interval = props.interval == undefined ? 500 : props.interval;
+		this.interval = props.interval === undefined ? 500 : props.interval;
 	}
 
 	ConvertDataToCarousel() {
@@ -39,3 +38,5 @@ class CarouselWrapper extends React.Component {
 	}
 
 }
+
+export default CarouselWrapper;

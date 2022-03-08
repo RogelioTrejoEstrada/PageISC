@@ -26,7 +26,7 @@ export default function Contacto({data}) {
               <h4 className=' mapaCurricular-header'>Contacto</h4>
               <br/>
               <h5 className= 'texto-contacto'>Correo electrónico:</h5>
-              <h5 className= 'texto-contacto'><span><Envelope /></span> isc@upa.edu.mx</h5>
+              <h5 className= 'texto-contacto'><span><Envelope /></span> isei@upa.edu.mx</h5>
               <br/>
               <h5 className= 'texto-contacto'>Teléfono de oficina:</h5>
               <h5 className= 'texto-contacto'><span><Telephone /></span> 449 442 14 00 ext 1426</h5>

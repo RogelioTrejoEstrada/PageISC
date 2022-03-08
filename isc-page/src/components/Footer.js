@@ -15,7 +15,7 @@ function Footer() {
               <ul className="list-unstyled pl-1">
                 <li><span><GeoAltFill /></span> Calle Paseo San Gerardo 207, San Gerardo</li>
                 <li> C.P. 20342 Aguascalientes, Ags</li>
-                <li><span><EnvelopeFill /></span> isc@upa.edu.mx </li>
+                <li><span><EnvelopeFill /></span> isei@upa.edu.mx </li>
                 <li><span><TelephoneFill /></span> 449 442 14 00 ext 1426</li>
                 <li><span><Whatsapp /></span> 449 341 24 09</li>
               </ul>

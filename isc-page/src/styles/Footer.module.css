@@ -1,9 +1,9 @@
 .footer {
     bottom: 0;
     width: 100%;
-    background-color: #003464;
+    background-color: #302e2e; /*#003464; */
     padding-top: 2rem;
-    color: #dfdfdf;
+    color: #ddd;
     padding-bottom: 1rem;
     font-size: 10px;
 }

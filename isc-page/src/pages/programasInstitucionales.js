@@ -26,9 +26,7 @@ function Programas({ data }) {
         </div>
         <Accordion>
           {programasInstitucionales.map((programa, index) => (
-
-
-            <Accordion.Item eventKey={index} key={programa.id}>
+            <Accordion.Item eventKey={index} key={programa.id} className="mb-3">
               <Row className="justify-content-md-center" >
 
                 <Accordion.Header>
