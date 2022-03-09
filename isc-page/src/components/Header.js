@@ -30,14 +30,14 @@ export default function Header({pagina}) {
             <Nav.Link as={Link} to={"/"} className={navbarLink} eventKey="ISC">
               Inicio
             </Nav.Link>
-            <Nav.Link
+            {/* <Nav.Link
               as={Link}
               to={"/about"}
               className={navbarLink}
               eventKey="Nosotros"
             >
               Nosotros
-            </Nav.Link>
+            </Nav.Link> */}
 
             <Nav.Link
               as={Link}
