@@ -3,7 +3,7 @@ title: Misión
 stack: mision
 order: 4
 date: 2022-02-20T00:00:00+00:00
-thumb: ../../images/ISEI_Logo.png
+thumb: ../../images/vida.jpg
 tam: logo
 ---
 <p class="textoJustificado">

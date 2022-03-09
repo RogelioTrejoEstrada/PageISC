@@ -3,7 +3,7 @@ title: Visión
 stack: vision
 order: 5
 date: 2022-02-19T00:00:00+00:00
-thumb: ../../images/ISEI_Logo.png
+thumb: ../../images/Hackaton.jpg
 tam: logo
 ---
 <p class="textoJustificado">

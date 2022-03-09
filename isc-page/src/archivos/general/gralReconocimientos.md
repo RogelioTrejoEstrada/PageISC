@@ -3,7 +3,7 @@ title: Reconocimientos
 stack: reconocimientos
 order: 6
 date: 2022-02-18T00:00:00+00:00
-thumb: ../../images/ISEI_Logo.png
+thumb: ../../images/UPA_logo.png
 tam: logo
 ---
 <p class="textoJustificado">

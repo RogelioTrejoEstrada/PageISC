@@ -3,7 +3,7 @@ title: Perfil de Egreso
 stack: egreso
 order: 2
 date: 2022-02-20T00:00:00+00:00
-thumb: ../../images/idiomas.jpeg
+thumb: ../../images/vida02.png
 tam: logo
 ---
 <p class="textoJustificado">

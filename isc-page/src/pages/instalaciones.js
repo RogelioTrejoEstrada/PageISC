@@ -63,9 +63,9 @@ export default function Instalaciones({data}) {
          
       </Container>
 
-      <CarouselWrapper titles = {['uno', 'dos']}
+      {/* <CarouselWrapper titles = {['uno', 'dos']}
         images = {[tarjetasLabs[0].frontmatter.thumb.childImageSharp.fluid, tarjetasLabs[1].frontmatter.thumb.childImageSharp.fluid]}
-        descriptions = {['uno', 'dos']} /> 
+        descriptions = {['uno', 'dos']} />  */}
       
       <Container className="justify-content-center text-center mt-4 mb-5">
         <div className="subTitulo">
