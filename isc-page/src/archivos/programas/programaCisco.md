@@ -2,7 +2,7 @@
 title: CISCO Academy
 stack: cisco
 date: 2022-02-24T00:00:00+00:00
-thumb: ../images/netacad.png
+thumb: ../../images/netacad.png
 tam: logo
 ---
 

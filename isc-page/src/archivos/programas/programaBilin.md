@@ -2,7 +2,7 @@
 title: Bilingüismo
 stack: bilinguismo
 date: 2022-02-21T00:00:00+00:00
-thumb: ../images/idiomas.jpeg
+thumb: ../../images/idiomas.jpeg
 tam: logo
 ---
 
