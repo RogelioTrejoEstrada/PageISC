@@ -1,6 +1,6 @@
 ---
 title: Misión
-stack: mision
+stack: Misión
 order: 4
 date: 2022-02-20T00:00:00+00:00
 thumb: ../../images/vida.jpg

@@ -1,6 +1,6 @@
 ---
 title: Reconocimientos
-stack: reconocimientos
+stack: Reconocimientos
 order: 6
 date: 2022-02-18T00:00:00+00:00
 thumb: ../../images/UPA_logo.png

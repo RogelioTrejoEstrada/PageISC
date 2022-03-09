@@ -6,7 +6,7 @@ import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import Seo from '../components/Seo'
 //import ModalImagen from '../components/ModalImagen'
-import CarouselWrapper from '../components/CarouselWrapper'
+//import CarouselWrapper from '../components/CarouselWrapper'
 
 export default function Instalaciones({data}) {
   const tarjetasLabs = data.thumbLabs.nodes

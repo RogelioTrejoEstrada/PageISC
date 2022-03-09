@@ -1,6 +1,6 @@
 ---
-title: Perfil de Egreso
-stack: egreso
+title: Egreso
+stack: Perfil de Egreso
 order: 2
 date: 2022-02-20T00:00:00+00:00
 thumb: ../../images/vida02.png

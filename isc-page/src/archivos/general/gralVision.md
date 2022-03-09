@@ -1,6 +1,6 @@
 ---
 title: Visión
-stack: vision
+stack: Visión
 order: 5
 date: 2022-02-19T00:00:00+00:00
 thumb: ../../images/Hackaton.jpg

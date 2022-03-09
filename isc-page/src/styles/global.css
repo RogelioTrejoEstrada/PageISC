@@ -375,6 +375,7 @@ ul li {
     text-align: center;
     color:rgb(78 ,78, 78);
     font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .accordion-button:hover{
@@ -387,7 +388,9 @@ ul li {
     color: black;
     font-size: 1rem;
     border: none;
+    font-weight: bold;
 }
+
 
 .titulo-tabs > .nav-item > button.active, button:hover{
     color: var(--azul-upa);
@@ -395,8 +398,57 @@ ul li {
     font-weight: bold;
     background-color:transparent;
     border: none;
-    border-bottom: 2px solid var(--azul-upa);
+    border-bottom: 4px solid var(--azul-upa);
+}
+
+.titulo-tabs {
+    border-bottom: 1px solid var(--azul-upa);
+}
+
+.titulo-tabs .nav-item{
+    margin-bottom: 0;
+    position: relative;
 }
 
 
+.titulo-tabs .nav-item .nav-link::before{
+    content: '';
+    position: absolute;
+    width:0;
+    height:3px;
+    background: var(--azul-upa);
+    position:absolute;
+    left: 50%;
+    bottom: 0px;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
 
+.titulo-tabs .nav-item .nav-link.active{
+    border-bottom: 3px solid var(--azul-upa);
+  }
+  
+  .titulo-tabs .nav-item .nav-link:hover::before{
+    left: 0;
+    width: 100%;
+  }
+  
+  .titulo-tabs .nav-item .nav-link.active::before{
+    width: 0;
+  }
+  
+  .titulo-tabs .tab-content{
+    padding: 10px;
+  }
+  
+  .titulo-tabs .tab-pane{
+    display: block;
+    position: relative;
+    left: 100%;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  
+  .titulo-tabs .tab-pane.active{
+    left: 0;
+  } 

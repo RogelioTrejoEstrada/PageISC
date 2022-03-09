@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 
-import { Col, Fade, Container, Row, Tab, Tabs } from "react-bootstrap";
+import { Col, Container, Fade, Row, Tab, Tabs } from "react-bootstrap";
 import Layout from "../components/Layout";
 import Cabecera from "../components/Cabecera";
 import Seo from "../components/Seo";
@@ -56,9 +56,10 @@ export default function Home({ data }) {
             transition={Fade}
           >
             {generales.map((gral, index) => (
-              <Tab eventKey={index} title={gral.frontmatter.title} key={gral.id} className="">
+              <Tab eventKey={index} title={gral.frontmatter.title} key={gral.id} className="tab-content">
                 <Row>
                   <Col md={gral.frontmatter.thumb ? 6: 12} xs={12}>
+                    <div className="mb-5"><h4>{gral.frontmatter.stack}</h4></div>
                     <div dangerouslySetInnerHTML={{ __html: gral.html }} />
                   </Col>
                   {gral.frontmatter.thumb ?

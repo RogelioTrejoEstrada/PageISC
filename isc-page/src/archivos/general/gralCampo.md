@@ -1,6 +1,6 @@
 ---
-title: Campo Laboral
-stack: campo
+title: Trabajo
+stack: Campo Laboral
 date: 2022-02-20T00:00:00+00:00
 order: 3
 tam: logo
