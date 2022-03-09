@@ -9,6 +9,7 @@
     --bg-materia-color: #365CA8;
     --bg-atribuye-color: #8FD680;
     --bg-contribuye-color: #d4d24f;
+    --azul-upa: #003464;
 }
 
 * {
@@ -71,11 +72,12 @@
 }
 
 .layout {
-    background-color: #efefef;
+    background-color: #F7F7F7;
     margin: 0 auto;
 }
+
 .content{
-    background-color: #efefef;
+    background-color: #F7F7F7;
 }
 
 .navbar-light .navbar-nav .nav-link{
@@ -372,10 +374,29 @@ ul li {
 .accordion-button {
     text-align: center;
     color:rgb(78 ,78, 78);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .accordion-button:hover{
     background-color: rgb(230, 230, 230);
     color: #003464;
+
 }
+
+.titulo-tabs > .nav-item > button{
+    color: black;
+    font-size: 1rem;
+    border: none;
+}
+
+.titulo-tabs > .nav-item > button.active, button:hover{
+    color: var(--azul-upa);
+    font-size: 1rem;
+    font-weight: bold;
+    background-color:transparent;
+    border: none;
+    border-bottom: 2px solid var(--azul-upa);
+}
+
+
+

@@ -81,7 +81,7 @@ export const query = graphql`
    }
    programas: allMarkdownRemark(sort: {
     order: DESC, fields: frontmatter___date}
-    filter: {fileAbsolutePath: {regex: "/(programas)/"}}) {
+    filter: {fileAbsolutePath: {regex: "/archivos/(programas)/"}}) {
     nodes {
       html
       id

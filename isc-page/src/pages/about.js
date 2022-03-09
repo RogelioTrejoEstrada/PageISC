@@ -78,6 +78,8 @@ function About({ data }) {
 
 
       </Container>
+
+      
     </Layout>
   )
 }
