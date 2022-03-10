@@ -265,7 +265,7 @@ export default function MapaCurricular({ data }) {
 
 export const query = graphql`
  query bannerMapa{
-   file(relativePath: {eq: "inicio.jpg"}){
+   file(relativePath: {eq: "nosotros/inicio.jpg"}){
      childImageSharp {
        fluid(maxWidth: 1800) {
          ...GatsbyImageSharpFluid

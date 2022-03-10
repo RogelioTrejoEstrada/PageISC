@@ -34,6 +34,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `thumbNosotros`,
+        path: `${__dirname}/src/thumbNosotros/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `archivos`,
         path: `${__dirname}/src/archivos/`,
       },

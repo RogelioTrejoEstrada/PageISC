@@ -72,7 +72,7 @@ export default Programas;
 
 export const query = graphql`
  query {
-  banner: file(relativePath: {eq: "inicio.jpg"}){
+  banner: file(relativePath: {eq: "nosotros/inicio.jpg"}){
      childImageSharp {
        fluid(maxWidth: 1800) {
          ...GatsbyImageSharpFluid

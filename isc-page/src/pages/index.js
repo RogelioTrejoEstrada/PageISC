@@ -1,17 +1,21 @@
 import React, { useState } from "react"
 
-import { Col, Container, Fade, Row, Tab, Tabs } from "react-bootstrap";
+import { Carousel, Col, Container, Fade, Row, Tab, Tabs } from "react-bootstrap";
 import Layout from "../components/Layout";
 import Cabecera from "../components/Cabecera";
 import Seo from "../components/Seo";
 import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
+import { GatsbyImage } from "gatsby-plugin-image";
+import {Telephone, Envelope, Whatsapp} from 'react-bootstrap-icons'
 
-//import Img from 'gatsby-image'
 
 export default function Home({ data }) {
 
   const generales = data.generalesISC.nodes
+  const thumb = data.thumbNosotros.nodes
+
+  //console.log(thumb)
   const [key, setKey] = useState('0');
 
   return (
@@ -45,8 +49,8 @@ export default function Home({ data }) {
         </Row>
       </Container>
 
+      {/* Tabulador general*/}
       <Container className="mb-5 mt-5">
-
         <Col md={{ span: 10, offset: 1 }} >
           <Tabs
             id="controlled-tab-example"
@@ -58,7 +62,7 @@ export default function Home({ data }) {
             {generales.map((gral, index) => (
               <Tab eventKey={index} title={gral.frontmatter.title} key={gral.id} className="tab-content">
                 <Row>
-                  <Col md={gral.frontmatter.thumb ? 6: 12} xs={12}>
+                  <Col md={gral.frontmatter.thumb ? 6 : 12} xs={12}>
                     <div className="mb-5"><h4>{gral.frontmatter.stack}</h4></div>
                     <div dangerouslySetInnerHTML={{ __html: gral.html }} />
                   </Col>
@@ -78,19 +82,77 @@ export default function Home({ data }) {
           </Tabs>
         </Col>
       </Container>
+
+      {/* <Container className="general">
+            <Col className="text-center"  xs = {11} md={11}>
+              <h4 className=' mapaCurricular-header'>Contacto</h4>
+              <h5 className= 'texto-contacto'>Correo electrónico:</h5>
+              <h5 className= 'texto-contacto'><span><Envelope /></span> isei@upa.edu.mx</h5>
+              <h5 className= 'texto-contacto'>Teléfono de oficina:</h5>
+              <h5 className= 'texto-contacto'><span><Telephone /></span> 449 442 14 00 ext 1426</h5>
+              <h5 className= 'texto-contacto'>Whatsapp:</h5>
+              <h5 className= 'texto-contacto'><span><Whatsapp /></span> 449 341 24 09</h5>
+            </Col>
+        </Container> */}
+
+      <Container className="mb-5 mt-5" >
+      <div className="subTitulo mb-4">
+          <h3 className="text-center">Nosotros</h3>
+        </div>
+        <Carousel className=" text-center" fade>
+          {thumb.map((imagen) => (
+            <Carousel.Item key={imagen.id}  className="carrusel">
+              <GatsbyImage image={imagen.frontmatter.thumb.childImageSharp.gatsbyImageData}
+                alt={imagen.frontmatter.stack}
+              />
+              <Carousel.Caption >
+                <div dangerouslySetInnerHTML={{ __html: imagen.html }} />
+              </Carousel.Caption>
+            </Carousel.Item>
+          ))}
+        </Carousel>
+      </Container>
+
     </Layout>
   )
 }
 
 export const query = graphql`
  query {
-  bannerInicio: file(relativePath: {eq: "upa_banner.JPG"}){
+  bannerInicio: file(relativePath: {eq: "nosotros/upa_banner.JPG"}){
      childImageSharp {
        fluid(maxWidth: 1800) {
          ...GatsbyImageSharpFluid
        }
      }
    }
+
+   thumbNosotros: allMarkdownRemark(sort: {order: DESC, fields: frontmatter___date}
+    filter: {fileAbsolutePath: {regex: "/(thumbNosotros)/"}}) {
+    nodes {
+      id
+      html
+      frontmatter {
+        slug
+        stack
+        title
+        
+        thumb {
+          childImageSharp {
+            gatsbyImageData(
+              height: 400
+              width: 1000
+              placeholder: BLURRED
+              quality: 70
+              blurredOptions: {width:50}
+              transformOptions: {cropFocus: CENTER, fit: COVER}
+            )
+          }
+        }
+      }
+    }
+  }
+
 
    generalesISC: allMarkdownRemark(sort: {
     order: ASC, fields: frontmatter___order}

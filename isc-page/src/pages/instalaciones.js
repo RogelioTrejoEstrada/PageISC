@@ -6,7 +6,7 @@ import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import Seo from '../components/Seo'
 //import ModalImagen from '../components/ModalImagen'
-//import CarouselWrapper from '../components/CarouselWrapper'
+
 
 export default function Instalaciones({data}) {
   const tarjetasLabs = data.thumbLabs.nodes
@@ -22,7 +22,7 @@ export default function Instalaciones({data}) {
   //   setModalShow(true)
   // }
 
-  console.log(tarjetasLabs)
+  //console.log(tarjetasLabs)
 
   return (
     <Layout>
@@ -62,10 +62,6 @@ export default function Instalaciones({data}) {
         
          
       </Container>
-
-      {/* <CarouselWrapper titles = {['uno', 'dos']}
-        images = {[tarjetasLabs[0].frontmatter.thumb.childImageSharp.fluid, tarjetasLabs[1].frontmatter.thumb.childImageSharp.fluid]}
-        descriptions = {['uno', 'dos']} />  */}
       
       <Container className="justify-content-center text-center mt-4 mb-5">
         <div className="subTitulo">
@@ -101,7 +97,7 @@ export default function Instalaciones({data}) {
 
 export const query = graphql`
  query {
-  banner: file(relativePath: {eq: "inicio.jpg"}){
+  banner: file(relativePath: {eq: "nosotros/inicio.jpg"}){
      childImageSharp {
        fluid(maxWidth: 1800) {
          ...GatsbyImageSharpFluid
