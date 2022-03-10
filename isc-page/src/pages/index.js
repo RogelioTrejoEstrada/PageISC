@@ -7,7 +7,7 @@ import Seo from "../components/Seo";
 import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
 import { GatsbyImage } from "gatsby-plugin-image";
-import {Telephone, Envelope, Whatsapp} from 'react-bootstrap-icons'
+//import {Telephone, Envelope, Whatsapp} from 'react-bootstrap-icons'
 
 
 export default function Home({ data }) {

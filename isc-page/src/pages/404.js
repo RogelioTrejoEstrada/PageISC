@@ -36,7 +36,7 @@ export default function NotFound({data}) {
 
 export const query = graphql`
  query banner404{
-   file(relativePath: {eq: "inicio.jpg"}){
+   file(relativePath: {eq: "nosotros/inicio.jpg"}){
      childImageSharp {
        fluid(maxWidth: 1800) {
          ...GatsbyImageSharpFluid

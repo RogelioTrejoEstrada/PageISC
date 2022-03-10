@@ -88,7 +88,7 @@ export default About;
 
 export const query = graphql`
 query bannerAbout{
-  file(relativePath: {eq: "inicio.jpg"}){
+  file(relativePath: {eq: "nosotros/inicio.jpg"}){
     childImageSharp {
       fluid(maxWidth: 1800) {
         ...GatsbyImageSharpFluid
