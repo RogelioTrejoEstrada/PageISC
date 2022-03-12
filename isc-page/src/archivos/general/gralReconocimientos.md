@@ -6,10 +6,10 @@ date: 2022-02-18T00:00:00+00:00
 thumb: ../../images/UPA_logo.png
 tam: logo
 ---
-<p class="textoJustificado">
+<p class="textoJustificado tab-general">
 Como derivado el programa académico de Ingeniería en Sistemas Estratégicos de Información, el programa académico de ISC cuenta con los siguientes reconocimientos:
 </p>
-<div class="textoJustificado">
+<div class="textoJustificado tab-general">
  
   <ul>
      <li> 

@@ -5,6 +5,7 @@ date: 2022-02-20T00:00:00+00:00
 order: 3
 tam: logo
 ---
+<div class = "tab-general">
 <Row class="justify-content-md-center">
     <Col md={12} class="text-center">
      <p class="textoJustificado">
@@ -44,5 +45,6 @@ tam: logo
         <li>Consultor de servicios de TI</li>
         </ul>
     </div>
-    </div>
+</div>
+</div>
              

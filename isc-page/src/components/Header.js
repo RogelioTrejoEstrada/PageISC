@@ -2,23 +2,19 @@
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image';
 import React, { useState } from 'react'
-import { Container, Nav, Navbar} from 'react-bootstrap'
-import {navbarBrand, navbarLink, navbarColor} from '../styles/Header.module.css'
+import { Container, Nav, Navbar } from 'react-bootstrap'
 
 
-
-
-export default function Header({pagina}) {
+export default function Header({ pagina }) {
   const [active, setActive] = useState(pagina);
-  
-  return (
-    <Container>
-      
-      <Navbar className={navbarColor} expand="lg">
-        <Navbar.Brand className={navbarBrand} style={{ color: "#fff" }}>
-          <StaticImage src="../images/UPA_logo.png" width={100} alt="UPA"
-          placeholder="tracedSVG" />
 
+  return (
+
+    <Container>
+      <Navbar className="navbarColor" expand="lg">
+        <Navbar.Brand className="navbarBrand" style={{ color: "#fff" }}>
+          <StaticImage src="../images/UPA_logo.png" width={100} alt="UPA"
+            placeholder="tracedSVG" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -27,7 +23,7 @@ export default function Header({pagina}) {
             activeKey={active}
             onSelect={selectedKey => setActive(selectedKey)}
           >
-            <Nav.Link as={Link} to={"/"} className={navbarLink} eventKey="ISC">
+            <Nav.Link as={Link} to={"/"} className="navbarLink" eventKey="ISC">
               Inicio
             </Nav.Link>
             {/* <Nav.Link
@@ -42,16 +38,16 @@ export default function Header({pagina}) {
             <Nav.Link
               as={Link}
               to={"/instalaciones"}
-              className={navbarLink}
+              className="navbarLink"
               eventKey="Instalaciones"
-            > 
+            >
               Instalaciones
             </Nav.Link>
 
             <Nav.Link
               as={Link}
               to={"/mapaCurricular"}
-              className={navbarLink}
+              className="navbarLink"
               eventKey="Mapa Curricular"
             >
               Mapa Curricular
@@ -60,7 +56,7 @@ export default function Header({pagina}) {
             <Nav.Link
               as={Link}
               to={"/programasInstitucionales"}
-              className={navbarLink}
+              className="navbarLink"
               eventKey="Programas"
             >
               Programas Institucionales
@@ -69,7 +65,7 @@ export default function Header({pagina}) {
             <Nav.Link
               as={Link}
               to={"/contacto"}
-              className={navbarLink}
+              className="navbarLink"
               eventKey="Contacto"
             >
               Contacto
@@ -77,6 +73,7 @@ export default function Header({pagina}) {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
+
     </Container>
   )
 }

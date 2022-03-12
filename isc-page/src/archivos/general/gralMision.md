@@ -6,7 +6,7 @@ date: 2022-02-20T00:00:00+00:00
 thumb: ../../images/vida.jpg
 tam: logo
 ---
-<p class="textoJustificado">
+<p class="textoJustificado tab-general">
 Formar profesionistas capaces de resolver problemas mediante el pensamiento crítico, ético y novedoso, con un sistema integrado
 de innovación tecnológica y de investigación a través de la
 ingeniería de software y/o la gestión de redes de comunicación,

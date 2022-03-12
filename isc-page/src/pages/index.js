@@ -6,8 +6,8 @@ import Cabecera from "../components/Cabecera";
 import Seo from "../components/Seo";
 import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
-import { GatsbyImage } from "gatsby-plugin-image";
-//import {Telephone, Envelope, Whatsapp} from 'react-bootstrap-icons'
+import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
+import {Telephone, Envelope, Whatsapp} from 'react-bootstrap-icons'
 
 
 export default function Home({ data }) {
@@ -27,13 +27,11 @@ export default function Home({ data }) {
         titulo1="Ingeniería en Sistemas Computacionales"
         imagen={data.bannerInicio.childImageSharp.fluid}
       />
-      <Container>
-        <div className="subTitulo mb-4">
-          <h3 className="text-center">Ingeniería en Sistemas Computacionales</h3>
-        </div>
-        <Row className="justify-content-md-center">
-          <Col md={12}>
-            <div className="textoJustificado">
+      <Container className="p-5">
+        <Row className="justify-content-md-center ">
+          <Col md={5}>
+            <div className="textoJustificado presentacion">
+              <h4>Ingeniería en Sistemas Computacionales</h4>
               <p>
                 El programa académico de Ingeniería en Sistemas Computacionales es la renovación y
                 actualización del programa anterior: Ingeniería en Sistemas Estratégicos de Información, que
@@ -42,10 +40,17 @@ export default function Home({ data }) {
                 de información y de las comunicaciones para asegurar la
                 eficiencia en los procesos productivos.
               </p>
-
             </div>
           </Col>
-
+          <Col md ={6} className="text-center">
+            <StaticImage
+              src="../images/cara.jpg"
+              alt="ISC"
+              width={500}
+              height={500}
+              //aspectRatio={16/9}
+            />
+          </Col>
         </Row>
       </Container>
 
@@ -60,10 +65,10 @@ export default function Home({ data }) {
             transition={Fade}
           >
             {generales.map((gral, index) => (
-              <Tab eventKey={index} title={gral.frontmatter.title} key={gral.id} className="tab-content">
+              <Tab eventKey={index} title={gral.frontmatter.title} key={gral.id} >
                 <Row>
-                  <Col md={gral.frontmatter.thumb ? 6 : 12} xs={12}>
-                    <div className="mb-5"><h4>{gral.frontmatter.stack}</h4></div>
+                  <Col md={gral.frontmatter.thumb ? 6 : 12} xs={12} className="tab-content">
+                    <div className="mb-2"><h4>{gral.frontmatter.stack}</h4></div>
                     <div dangerouslySetInnerHTML={{ __html: gral.html }} />
                   </Col>
                   {gral.frontmatter.thumb ?
@@ -83,23 +88,24 @@ export default function Home({ data }) {
         </Col>
       </Container>
 
-      {/* <Container className="general">
-            <Col className="text-center"  xs = {11} md={11}>
-              <h4 className=' mapaCurricular-header'>Contacto</h4>
-              <h5 className= 'texto-contacto'>Correo electrónico:</h5>
-              <h5 className= 'texto-contacto'><span><Envelope /></span> isei@upa.edu.mx</h5>
-              <h5 className= 'texto-contacto'>Teléfono de oficina:</h5>
-              <h5 className= 'texto-contacto'><span><Telephone /></span> 449 442 14 00 ext 1426</h5>
-              <h5 className= 'texto-contacto'>Whatsapp:</h5>
-              <h5 className= 'texto-contacto'><span><Whatsapp /></span> 449 341 24 09</h5>
-            </Col>
-        </Container> */}
+      <Row className="general mt-3 mb-5">
+        <Col className="text-center" xs={12} md={12}>
+          <h4 className=''>Contacto</h4>
+          <h5 className='texto-contacto'>Correo electrónico:</h5>
+          <h5 className='texto-contacto'><span><Envelope /></span> isei@upa.edu.mx</h5>
+          <h5 className='texto-contacto'>Teléfono de oficina:</h5>
+          <h5 className='texto-contacto'><span><Telephone /></span> 449 442 14 00 ext 1426</h5>
+          <h5 className='texto-contacto'>Whatsapp:</h5>
+          <h5 className='texto-contacto'><span><Whatsapp /></span> 449 341 24 09</h5>
+        </Col>
+      </Row>
+     
 
       <Container className="mb-5 mt-5" >
-      <div className="subTitulo mb-4">
+      {/* <div className="subTitulo mb-4">
           <h3 className="text-center">Nosotros</h3>
-        </div>
-        <Carousel className=" text-center" fade>
+        </div> */}
+        <Carousel className=" text-center" >
           {thumb.map((imagen) => (
             <Carousel.Item key={imagen.id}  className="carrusel">
               <GatsbyImage image={imagen.frontmatter.thumb.childImageSharp.gatsbyImageData}

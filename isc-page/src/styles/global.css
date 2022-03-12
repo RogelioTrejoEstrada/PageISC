@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,400;1,100;1,400&display=swap');
 
 :root{
     --bg-idi-color: #0F0F0F;
@@ -10,16 +11,17 @@
     --bg-atribuye-color: #8FD680;
     --bg-contribuye-color: #d4d24f;
     --azul-upa: #003464;
+    --fondo: #F7F7F7;
 }
 
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 18px;
 }
 
 .masthead {
     width: 100%;
-    height: 40vh;
+    height: 50vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -37,14 +39,15 @@
 }
 
 .tituloPrincipal {
-    font-weight: 500;
-    color: rgba(212, 206, 206, 0.8);/*#003464;*/
-    margin-top: 2rem;
+    font-weight: 200;
+    color: rgba(235, 230, 230, 0.8);/*#003464;*/
+    margin-top: 20rem;
     margin-bottom: 2rem;
     max-width: 100%;
     letter-spacing: 3px;
     word-spacing: 6px;
     text-align: center;
+
 }
 
 .tituloPrincipal h1{
@@ -72,13 +75,29 @@
 }
 
 .layout {
-    background-color: #F7F7F7;
+    background-color: var(--fondo);
     margin: 0 auto;
 }
 
 .content{
-    background-color: #F7F7F7;
+    background-color: var(--fondo);
 }
+
+.navbarColor{
+    background-color: var(--fondo);
+    
+}
+
+.navbarBrand{
+    font-size: 2rem;
+}
+
+
+.navbarLink:hover{
+    border-color: #b11b1b;
+    text-decoration: none;
+}
+
 
 .navbar-light .navbar-nav .nav-link{
     color: #003464;
@@ -403,6 +422,7 @@ ul li {
 
 .titulo-tabs {
     border-bottom: 1px solid var(--azul-upa);
+    
 }
 
 .titulo-tabs .nav-item{
@@ -410,6 +430,9 @@ ul li {
     position: relative;
 }
 
+.titulo-tabs .nav-item .nav-link{
+    font-size: 1.2rem;
+}
 
 .titulo-tabs .nav-item .nav-link::before{
     content: '';
@@ -422,10 +445,12 @@ ul li {
     bottom: 0px;
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
+    
 }
 
 .titulo-tabs .nav-item .nav-link.active{
     border-bottom: 3px solid var(--azul-upa);
+    font-size: 1.2rem;
   }
   
   .titulo-tabs .nav-item .nav-link:hover::before{
@@ -437,8 +462,15 @@ ul li {
     width: 0;
   }
   
-  .titulo-tabs .tab-content{
-    padding: 10px;
+  .tab-content div h4{
+    font-weight: bold;
+    color: var(--azul-upa);
+  }
+
+  .tab-general
+  {
+      font-size: 1.1rem;
+      line-height: 2rem;
   }
   
   .titulo-tabs .tab-pane{
@@ -460,7 +492,18 @@ ul li {
  }
  
  .general {
-     background-color: rgb(228, 222, 222);
+     background-color: rgb(238, 234, 234);
      /* margin-left: 0rem; */
      width: 100%;
+ }
+
+ .presentacion h4{
+    /*background-color: red;*/
+    font-weight: bold;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+ }
+
+ .presentacion p{
+     font-size: 1.2rem;
  }
