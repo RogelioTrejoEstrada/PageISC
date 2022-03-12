@@ -10,7 +10,7 @@ import Img from 'gatsby-image'
 
 function Programas({ data }) {
   const programasInstitucionales = data.programas.nodes
-  console.log(programasInstitucionales)
+  //console.log(programasInstitucionales)
   return (
     <Layout>
       <Seo title="Programas" />
@@ -22,7 +22,7 @@ function Programas({ data }) {
       />
       <Container className='mb-5'>
       <div className="subTitulo mb-4">
-          <h3 className="text-center">Ingeniería en Sistemas Computacionales</h3>
+          <h3 className="text-center">Programas específicos</h3>
         </div>
         <Accordion>
           {programasInstitucionales.map((programa, index) => (

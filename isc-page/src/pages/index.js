@@ -1,19 +1,20 @@
 import React, { useState } from "react"
 
-import { Carousel, Col, Container, Fade, Row, Tab, Tabs } from "react-bootstrap";
+import { Card, Carousel, Col, Container, Fade, Row, Tab, Tabs } from "react-bootstrap";
 import Layout from "../components/Layout";
 import Cabecera from "../components/Cabecera";
 import Seo from "../components/Seo";
 import Img from 'gatsby-image'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
-import {Telephone, Envelope, Whatsapp} from 'react-bootstrap-icons'
+
 
 
 export default function Home({ data }) {
 
   const generales = data.generalesISC.nodes
   const thumb = data.thumbNosotros.nodes
+  const programas = data.programas.nodes
 
   //console.log(thumb)
   const [key, setKey] = useState('0');
@@ -88,18 +89,36 @@ export default function Home({ data }) {
         </Col>
       </Container>
 
-      <Row className="general mt-3 mb-5">
-        <Col className="text-center" xs={12} md={12}>
-          <h4 className=''>Contacto</h4>
-          <h5 className='texto-contacto'>Correo electrónico:</h5>
-          <h5 className='texto-contacto'><span><Envelope /></span> isei@upa.edu.mx</h5>
-          <h5 className='texto-contacto'>Teléfono de oficina:</h5>
-          <h5 className='texto-contacto'><span><Telephone /></span> 449 442 14 00 ext 1426</h5>
-          <h5 className='texto-contacto'>Whatsapp:</h5>
-          <h5 className='texto-contacto'><span><Whatsapp /></span> 449 341 24 09</h5>
-        </Col>
+                    
+      <Row className="general mt-5 mb-5">
+        <Container className="mt-5 mb-5  text-center">
+          <Row className="text-center" style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+            <h4 style={{fontWeight: "bold"}} className= "mb-3">Programas específicos</h4>
+            {programas.map((programa) => (
+              <Col className="text-center" xs={6} md={2}>
+                <Card style={{ height: '10rem' }}>
+                  <Link to="/programasInstitucionales">
+                  <div className="image-contenedor">
+                    <Img
+                      fluid={programa.frontmatter.thumb.childImageSharp.fluid}
+                      alt={programa.frontmatter.stack}
+                      className={programa.frontmatter.tam === "logo" ? "image-escala image-zoom" : "image-normal image-zoom"}
+                    />
+                  </div>
+                  </Link>
+                  <Card.Body>
+                    <Card.Title style= {{fontWeight: "bold"}}>{programa.frontmatter.title}</Card.Title>
+                    <Card.Text>
+
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))}
+          </Row>
+        </Container>
       </Row>
-     
+         
 
       <Container className="mb-5 mt-5" >
       {/* <div className="subTitulo mb-4">
@@ -153,6 +172,27 @@ export const query = graphql`
               blurredOptions: {width:50}
               transformOptions: {cropFocus: CENTER, fit: COVER}
             )
+          }
+        }
+      }
+    }
+  }
+
+  programas: allMarkdownRemark(sort: {
+    order: DESC, fields: frontmatter___date}
+    filter: {fileAbsolutePath: {regex: "/archivos/(programas)/"}}) {
+    nodes {
+      html
+      id
+      frontmatter {
+        stack
+        title
+        tam
+        thumb {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
           }
         }
       }
