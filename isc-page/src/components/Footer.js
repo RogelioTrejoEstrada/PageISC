@@ -24,7 +24,7 @@ function Footer() {
               <h6 className='text-center'>Mapa del sitio</h6>
               <ul className="list-unstyled pl-5">
                 <li><Link to='/'>Inicio</Link></li>
-                <li><Link to='/about'>Nosotros</Link></li>
+                {/* <li><Link to='/about'>Nosotros</Link></li> */}
                 <li><Link to='/instalaciones'>Instalaciones</Link> </li>
                 <li><Link to='/mapaCurricular'>Mapa Curricular</Link></li>
                 <li><Link to='/contactanos'>Contáctanos</Link></li>

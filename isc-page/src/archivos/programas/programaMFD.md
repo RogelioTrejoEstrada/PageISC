@@ -1,5 +1,5 @@
 ---
-title: Modelo de Formación Dual
+title: MFD
 stack: mfd
 date: 2022-02-22T00:00:00+00:00
 thumb: ../../images/mfd.jpg

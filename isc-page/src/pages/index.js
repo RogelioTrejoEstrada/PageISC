@@ -32,7 +32,7 @@ export default function Home({ data }) {
         <Row className="justify-content-md-center ">
           <Col md={5}>
             <div className="textoJustificado presentacion">
-              <h4>Ingeniería en Sistemas Computacionales</h4>
+              <h4>Nosotros</h4>
               <p>
                 El programa académico de Ingeniería en Sistemas Computacionales es la renovación y
                 actualización del programa anterior: Ingeniería en Sistemas Estratégicos de Información, que
@@ -93,10 +93,10 @@ export default function Home({ data }) {
       <Row className="general mt-5 mb-5">
         <Container className="mt-5 mb-5  text-center">
           <Row className="text-center" style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-            <h4 style={{fontWeight: "bold"}} className= "mb-3">Programas específicos</h4>
+            <h4 className= "mb-5">Programas específicos</h4>
             {programas.map((programa) => (
               <Col className="text-center" xs={6} md={2}>
-                <Card style={{ height: '10rem' }}>
+                <Card style={{ height: '10rem', marginBottom: "1rem" }}>
                   <Link to="/programasInstitucionales">
                   <div className="image-contenedor">
                     <Img
@@ -107,10 +107,8 @@ export default function Home({ data }) {
                   </div>
                   </Link>
                   <Card.Body>
-                    <Card.Title style= {{fontWeight: "bold"}}>{programa.frontmatter.title}</Card.Title>
-                    <Card.Text>
-
-                    </Card.Text>
+                    <Card.Title >{programa.frontmatter.title}</Card.Title>
+              
                   </Card.Body>
                 </Card>
               </Col>
@@ -121,18 +119,18 @@ export default function Home({ data }) {
          
 
       <Container className="mb-5 mt-5" >
-      {/* <div className="subTitulo mb-4">
-          <h3 className="text-center">Nosotros</h3>
-        </div> */}
+      <div className="subTitulo mb-4">
+          <h3 className="text-center">Nuestras instalaciones</h3>
+        </div> 
         <Carousel className=" text-center" >
           {thumb.map((imagen) => (
-            <Carousel.Item key={imagen.id}  className="carrusel">
+            <Carousel.Item key={imagen.id}  className="carusel">
               <GatsbyImage image={imagen.frontmatter.thumb.childImageSharp.gatsbyImageData}
                 alt={imagen.frontmatter.stack}
               />
-              <Carousel.Caption >
+              {/* <Carousel.Caption >
                 <div dangerouslySetInnerHTML={{ __html: imagen.html }} />
-              </Carousel.Caption>
+              </Carousel.Caption> */}
             </Carousel.Item>
           ))}
         </Carousel>
