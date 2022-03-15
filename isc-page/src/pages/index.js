@@ -90,7 +90,7 @@ export default function Home({ data }) {
       </Container>
 
                     
-      <Row className="general mt-5 mb-5">
+      <Row className="general mt-5 mb-5 m-auto">
         <Container className="mt-5 mb-5  text-center">
           <Row className="text-center" style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
             <h4 className= "mb-5">Programas específicos</h4>
