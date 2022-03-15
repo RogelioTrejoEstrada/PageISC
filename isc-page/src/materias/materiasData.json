@@ -10,6 +10,7 @@
   {"title": "Expresión Oral y Escrita I",
     "tipo": "FIT",
     "creditos" : 5,
+    "archivo": "1_expresion",
     "objetivo": "El alumno redactará proyectos basados en el Nivel B2 del Marco Común Europeo de Referencia, considerando las bases gramaticales, la organización y estructuración de ideas, la expresión de puntos de vista y posturas propias y de otros autores, para contribuir a solucionar problemáticas actuales vinculadas a su contexto profesional y sociocultural.",
     "Unidades": ["Bases gramaticales para la construcción de ideas", "Organización y estructuración de ideas", "Introducción a la redacción"],
     "contribuye": ["Expresión Oral y Escrita II"]
@@ -18,6 +19,7 @@
   {"title": "Química Básica",
     "tipo": "CCBB",
     "creditos" : 5,
+    "archivo": "1_quimica",
     "objetivo" : "El alumno interpretará fenómenos químicos con base en las leyes, teorías y técnicas de la química para contribuir al desarrollo de los procesos industriales.",
     "Unidades": ["Principios básicos de Química", "Nomenclatura de compuestos químicos y estequiometría", "Soluciones y cinética química", "Electroquímica y termoquímica"],
     "contribuye": ["Física", "Electricidad y Magnetismo", "Mantenimiento a Equipo de Cómputo", "Física para Ingeniería"]
@@ -35,6 +37,7 @@
   {"title": "Introducción a la Programación",
     "tipo": "ISC",
     "creditos" : 6,
+    "archivo": "1_programacion",
     "objetivo" : "El alumno implementará programas mediante metodologías y herramientas de programación para visualizar las aplicaciones de tecnologías de la información en la solución de problemas.",
     "Unidades": ["Algoritmos", "Estructuras de control en algoritmos", "Metodología del desarrollo de programas"],
     "contribuye": ["Matemáticas Básicas para Computación", "Programación" , "Estructura de Datos", "Fundamentos de POO", "Programación Orientada a Objetos", "Lenguajes y Autómatas", "Programación WEB", "Tecnologías y Aplicaciones en Internet", "Diseño de Interfaces" , "Gestión de Desarrollo de SW", "Sistemas Embebidos" , "Programación Móvil"]
@@ -44,6 +47,7 @@
   {"title": "Introducción a las TI",
     "tipo": "ISC",
     "creditos" : 4,
+    "archivo": "1_tics",
     "objetivo" : "El alumno visualizará la pertinencia de las tecnologías de la información, a través de los componentes de un sistema de información, tecnologías emergentes, campos profesionales y certificaciones tecnológicas, para proponer un plan de desarrollo profesional propio y contribuir al fortalecimiento de las Tecnologías de la Información a nivel regional y nacional.",
     "Unidades": ["Fundamentos de Tecnologías de la Información (TI).", "Tecnologías emergentes.", "Pertinencia de profesionalización en TI."],
     "contribuye": ["Arquitectura de Computadoras", "Introducción a Redes", "Mantenimiento a Equipo de Cómputo", "Sistemas Operativos", "Tecnologías de Virtualización", "Sistemas Embebidos" ,"Seguridad Informática"]
@@ -52,6 +56,7 @@
   {"title": "Herramientas Ofimáticas",
     "tipo": "ISC",
     "creditos" : 4,
+    "archivo": "1_herramientas",
     "objetivo" : "El alumno generará soluciones a necesidades informáticas mediante herramientas ofimáticas e Internet, para el tratamiento de la información. ",
     "Unidades": ["Interfaz de usuario.", "Ofimática", "Internet"],
     "contribuye": ["Estancia II", "Estancia I"]
