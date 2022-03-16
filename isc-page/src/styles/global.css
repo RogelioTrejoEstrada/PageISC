@@ -518,3 +518,46 @@ ul li {
     font-size: 1rem;
     font-weight: 400;
 }
+
+
+.liga-convocatoria{
+    text-decoration: none;
+}
+
+.convocatoria-zoom{
+    transition: 0.5s ease;
+ 	-moz-transition: 0.5s ease; /* Firefox */
+ 	-webkit-transition: 0.5s ease; /* Chrome - Safari */
+ 	-o-transition: 0.5s ease; /* Opera */
+}
+
+.convocatoria-zoom:hover{
+    transform : scale(1.1);
+	-moz-transform : scale(1.1); /* Firefox */
+	-webkit-transform : scale(1.1); /* Chrome - Safari */
+	-o-transform : scale(1.1); /* Opera */
+	-ms-transform : scale(1.1); /* IE9 */
+
+}
+
+.convocatoria{
+    text-decoration: none;
+    /* border: 1px solid var(--fondo); */
+    border-radius: 10px;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--azul-upa); 
+
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100 */
+background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+}
+
+.convocatoria:hover{
+    color: var(--azul-upa);
+}
