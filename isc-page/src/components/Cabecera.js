@@ -17,10 +17,9 @@ function Cabecera(props) {
               <h2>{titulo1}</h2>
               <h1>{titulo2}</h1>
               <div className='mt-5'>
-                <h3 className='convocatoria-zoom'>
-                <a href='https://upa.edu.mx/oferta-educativa/convocatoria-2022/' target="_blank" className='convocatoria'>
+                <a href='https://upa.edu.mx/oferta-educativa/convocatoria-2022/' target="_blank" className='btn outline-primary convocatoria-zoom'>
                   Estudia con nosotros
-                </a></h3>
+                </a>
               </div>
             </Col>           
           </Row>

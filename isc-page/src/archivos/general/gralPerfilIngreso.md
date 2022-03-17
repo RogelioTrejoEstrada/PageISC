@@ -9,8 +9,6 @@ tam: logo
 
 
 
-
-
 <ul class="textoJustificado tab-general">
   <li>Haber aprobado el plan de estudios del nivel medio superior</li>
   <li>Tener afinidad por el uso de las tecnologías de información</li>

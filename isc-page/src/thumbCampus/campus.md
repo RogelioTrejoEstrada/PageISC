@@ -9,7 +9,6 @@ thumb: ../images/nosotros/campus01.JPG
 
 hola
 
-```grid|2
+
 ![](../images/infraestructura/redes.png)
-![](../images/infraestructura/redes.png)
-```
+
