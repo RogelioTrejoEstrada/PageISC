@@ -9,7 +9,6 @@ import { graphql, Link } from 'gatsby'
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
 
 
-
 export default function Home({ data }) {
 
   const generales = data.generalesISC.nodes
@@ -116,7 +115,6 @@ export default function Home({ data }) {
           </Row>
         </Container>
       </Row>
-         
 
       <Container className="mb-5 mt-5" >
       <div className="subTitulo mb-4">
@@ -134,9 +132,18 @@ export default function Home({ data }) {
             </Carousel.Item>
           ))}
         </Carousel>
-      </Container>
-
+        <div className="mb-5 mt-5" className="subTitulo mb-4" class="videoContainer">
+          <h3 className="text-center">Video Informativo</h3>
+          <iframe 
+            title="Video upa" 
+            class="video" 
+            src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fweb.facebook.com%2FUniversidadPolitecnicaAguascalientes%2Fvideos%2F483975670068669%2F&width=500&show_text=false&height=282&appId" 
+            allowFullScreen="true">
+          </iframe>
+          </div>
+      </Container>  
     </Layout>
+    
   )
 }
 

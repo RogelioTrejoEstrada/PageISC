@@ -84,6 +84,7 @@ function About({ data }) {
   )
 }
 
+
 export default About;
 
 export const query = graphql`
