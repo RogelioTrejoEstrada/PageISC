@@ -132,14 +132,14 @@ export default function MapaCurricular({ data }) {
                     </Button>
                   ))}
                 </Col>
-                <Col xs={12} md={1} className = 'columna-materia'>
+                {/* <Col xs={12} md={1} className = 'columna-materia'>
                   <Button className="btn-materia btn-ciclo"><span className='txt-estadia'>Primer Ciclo</span></Button>
-                </Col>
+                </Col> */}
               </Row>
             </Col>
 
             {/*Segundo ciclo */}
-            <Col md>
+            <Col md className='bg-inf'>
               <Row>
                 <h5>Segundo Ciclo</h5>
                 <Col className='columna-materia'>
@@ -170,14 +170,14 @@ export default function MapaCurricular({ data }) {
                   ))}
                   
                 </Col>
-                <Col xs={12} md={1} className = 'columna-materia'>
+                {/* <Col xs={12} md={1} className = 'columna-materia'>
                   <Button className="btn-materia btn-ciclo"><span className='txt-estadia'>Segundo Ciclo</span></Button>
-                </Col>
+                </Col> */}
               </Row>
             </Col>
 
             {/*Tercer ciclo */}
-            <Col md>
+            <Col md className='bg-primay'>
               <Row>
                 <h5>Tercer Ciclo</h5>
                 <Col className='columna-materia'>

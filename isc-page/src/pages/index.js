@@ -42,13 +42,13 @@ export default function Home({ data }) {
               </p>
             </div>
           </Col>
-          <Col md ={6} className="text-center">
+          <Col md={6} className="text-center">
             <StaticImage
               src="../images/cara.jpg"
               alt="ISC"
               width={500}
               height={500}
-              //aspectRatio={16/9}
+            //aspectRatio={16/9}
             />
           </Col>
         </Row>
@@ -88,26 +88,26 @@ export default function Home({ data }) {
         </Col>
       </Container>
 
-                    
+
       <Row className="general mt-5 mb-5 m-auto">
         <Container className="mt-5 mb-5  text-center">
-          <Row className="text-center" style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-            <h4 className= "mb-5">Programas específicos</h4>
+          <Row className="text-center" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <h4 className="mb-5">Programas específicos</h4>
             {programas.map((programa) => (
-              <Col className="text-center" xs={6} md={2}>
-                <Card style={{ height: '10rem', marginBottom: "1rem" }}>
+              <Col className="text-center" xs={6} md={2} key={programa.id}>
+                <Card style={{ height: '10rem', marginBottom: "1rem" }} >
                   <Link to="/programasInstitucionales">
-                  <div className="image-contenedor">
-                    <Img
-                      fluid={programa.frontmatter.thumb.childImageSharp.fluid}
-                      alt={programa.frontmatter.stack}
-                      className={programa.frontmatter.tam === "logo" ? "image-escala image-zoom" : "image-normal image-zoom"}
-                    />
-                  </div>
+                    <div className="image-contenedor">
+                      <Img
+                        fluid={programa.frontmatter.thumb.childImageSharp.fluid}
+                        alt={programa.frontmatter.stack}
+                        className={programa.frontmatter.tam === "logo" ? "image-escala image-zoom" : "image-normal image-zoom"}
+                      />
+                    </div>
                   </Link>
                   <Card.Body>
                     <Card.Title >{programa.frontmatter.title}</Card.Title>
-              
+
                   </Card.Body>
                 </Card>
               </Col>
@@ -117,12 +117,12 @@ export default function Home({ data }) {
       </Row>
 
       <Container className="mb-5 mt-5" >
-      <div className="subTitulo mb-4">
+        <div className="subTitulo mb-4">
           <h3 className="text-center">Nuestras instalaciones</h3>
-        </div> 
+        </div>
         <Carousel className=" text-center" >
           {thumb.map((imagen) => (
-            <Carousel.Item key={imagen.id}  className="carusel">
+            <Carousel.Item key={imagen.id} className="carusel">
               <GatsbyImage image={imagen.frontmatter.thumb.childImageSharp.gatsbyImageData}
                 alt={imagen.frontmatter.stack}
               />
@@ -132,18 +132,22 @@ export default function Home({ data }) {
             </Carousel.Item>
           ))}
         </Carousel>
-        <div className="mb-5 mt-5" className="subTitulo mb-4" class="videoContainer">
-          <h3 className="text-center">Video Informativo</h3>
-          <iframe 
-            title="Video upa" 
-            class="video" 
-            src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fweb.facebook.com%2FUniversidadPolitecnicaAguascalientes%2Fvideos%2F483975670068669%2F&width=500&show_text=false&height=282&appId" 
-            allowFullScreen="true">
-          </iframe>
-          </div>
-      </Container>  
+      </Container>
+
+      {/* <Container className="mb-5 mt5 text-center ">
+        <div className="subTitulo mb-4">
+          <h3 className="text-center">Video Promocional</h3>
+        </div>
+        <iframe
+          title="Video upa"
+          className="video"
+          src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fweb.facebook.com%2FUniversidadPolitecnicaAguascalientes%2Fvideos%2F483975670068669%2F&width=500&show_text=false&height=282&appId"
+          allow="fullscreen">
+        </iframe>
+
+      </Container> */}
     </Layout>
-    
+
   )
 }
 
