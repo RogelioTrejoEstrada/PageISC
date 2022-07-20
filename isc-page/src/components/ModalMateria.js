@@ -30,11 +30,11 @@ function ModalMateria(props) {
 
 
       </Modal.Body>
-      <Modal.Footer>
+      {/* <Modal.Footer>
         {props.materia.archivo ?
           <a className="modalObjetivo" href={'../pdf/' + props.materia.archivo + '.pdf'} target='_blank' rel='noreferrer' > {props.materia.title}</a>
           : null}
-      </Modal.Footer>
+      </Modal.Footer> */}
     </Modal>
   );
 }
