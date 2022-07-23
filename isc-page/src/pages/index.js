@@ -54,6 +54,40 @@ export default function Home({ data }) {
         </Row>
       </Container>
 
+      <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+      <Row className="general mt-5 mb-5 m-auto">
+        <Container className="mt-5 mb-5  text-center">
+          <Row className="text-center" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <h4 className="mb-5">Egresados</h4>
+            <Col md={2} xs={6} className="tab-content">
+              <div class="badge-base LI-profile-badge"
+                data-locale="es_ES" data-size="medium" data-theme="dark"
+                data-type="VERTICAL" data-vanity="zaira-edith-macias-marin-a70a98203"
+                data-version="v1">
+              </div>
+            </Col>
+            <Col md={2} xs={6} className="tab-content">
+            <div class="badge-base LI-profile-badge" data-locale="es_ES" data-size="medium" 
+            data-theme="light" data-type="VERTICAL" data-vanity="crismatters" data-version="v1">
+              </div>
+            </Col>
+            <Col md={2} xs={6} className="tab-content">
+              <div class="badge-base LI-profile-badge"
+                data-locale="es_ES" data-size="medium" data-theme="light"
+                data-type="VERTICAL" data-vanity="zaira-edith-macias-marin-a70a98203"
+                data-version="v1">
+              </div>
+            </Col>
+            <Col md={2} xs={6} className="tab-content">
+            <div class="badge-base LI-profile-badge" data-locale="es_ES" data-size="medium" 
+            data-theme="light" data-type="VERTICAL" data-vanity="crismatters" data-version="v1">
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </Row>
+
+
       {/* Tabulador general*/}
       <Container className="mb-5 mt-5">
         <Col md={{ span: 10, offset: 1 }} >
@@ -134,6 +168,9 @@ export default function Home({ data }) {
         </Carousel>
       </Container>
 
+
+     
+     
       {/* <Container className="mb-5 mt5 text-center ">
         <div className="subTitulo mb-4">
           <h3 className="text-center">Video Promocional</h3>
