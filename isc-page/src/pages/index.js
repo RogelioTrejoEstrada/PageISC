@@ -55,31 +55,32 @@ export default function Home({ data }) {
       </Container>
 
       <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+     
       <Row className="general mt-5 mb-5 m-auto">
         <Container className="mt-5 mb-5  text-center">
           <Row className="text-center" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
           <h4 className="mb-5">Egresados</h4>
-            <Col md={1} xs={6} className="text-center">
-              <div class="badge-base LI-profile-badge"
+            <Col md={3} xs={1} className="text-center " >
+              <div className="badge-base LI-profile-badge"
                 data-locale="es_ES" data-size="medium" data-theme="light"
                 data-type="VERTICAL" data-vanity="zaira-edith-macias-marin-a70a98203"
                 data-version="v1">
               </div>
             </Col>
-            <Col md={1} xs={6} className="text-center">
-            <div class="badge-base LI-profile-badge" data-locale="es_ES" data-size="medium" 
+            <Col md={3} xs={1} className="text-center">
+            <div className="badge-base LI-profile-badge" data-locale="es_ES" data-size="medium" 
             data-theme="light" data-type="VERTICAL" data-vanity="crismatters" data-version="v1">
               </div>
             </Col>
-            <Col md={1} xs={6} className="text-center">
-              <div class="badge-base LI-profile-badge"
+            <Col md={3} xs={1} className="text-center">
+              <div className="badge-base LI-profile-badge"
                 data-locale="es_ES" data-size="medium" data-theme="light"
                 data-type="VERTICAL" data-vanity="zaira-edith-macias-marin-a70a98203"
                 data-version="v1">
               </div>
             </Col>
-            <Col md={1} xs={6} className="text-center">
-            <div class="badge-base LI-profile-badge" data-locale="es_ES" data-size="medium" 
+            <Col md={3} xs={1} className="text-center">
+            <div className="badge-base LI-profile-badge" data-locale="es_ES" data-size="medium" 
             data-theme="light" data-type="VERTICAL" data-vanity="crismatters" data-version="v1">
               </div>
             </Col>
