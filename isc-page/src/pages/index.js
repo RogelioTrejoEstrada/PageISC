@@ -61,7 +61,7 @@ export default function Home({ data }) {
           <h4 className="mb-5">Egresados</h4>
             <Col md={2} xs={6} className="tab-content">
               <div class="badge-base LI-profile-badge"
-                data-locale="es_ES" data-size="medium" data-theme="dark"
+                data-locale="es_ES" data-size="medium" data-theme="light"
                 data-type="VERTICAL" data-vanity="zaira-edith-macias-marin-a70a98203"
                 data-version="v1">
               </div>
