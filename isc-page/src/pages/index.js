@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 
 import { Card, Carousel, Col, Container, Fade, Row, Tab, Tabs } from "react-bootstrap";
 import Layout from "../components/Layout";
@@ -17,6 +17,21 @@ export default function Home({ data }) {
 
   //console.log(thumb)
   const [key, setKey] = useState('0');
+  useEffect(() => {
+    const script = document.createElement('script');
+
+    script.src = 'https://platform.linkedin.com/badges/js/profile.js';
+    script.async = true;
+    script.defer = true;
+
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
+
 
   return (
     <Layout>
@@ -52,38 +67,41 @@ export default function Home({ data }) {
             />
           </Col>
         </Row>
-      </Container>
-
-      <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+      </Container> 
      
       <Row className="general mt-5 mb-5 m-auto">
         <Container className="mt-5 mb-5  text-center">
-          <Row className="text-center" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <Row className="text-center" style={{ display: 'flex',alignItems: 'center', justifyContent: 'center' }}>
           <h4 className="mb-5">Egresados</h4>
-            <Col md={3} xs={1} className="text-center " >
-              <div className="badge-base LI-profile-badge"
-                data-locale="es_ES" data-size="medium" data-theme="light"
-                data-type="VERTICAL" data-vanity="zaira-edith-macias-marin-a70a98203"
-                data-version="v1">
-              </div>
+            <Col md={3} xs={12} className="text-center " style={{ marginBottom: "1rem" }}>
+              <a class="badge-base__link LI-simple-link" target="_blank" rel="noopener noreferrer"
+                href="https://mx.linkedin.com/in/zaira-edith-macias-marin-a70a98203?trk=public-profile-badge-profile-badge-view-profile-cta">
+
+                <StaticImage src="../images/egresados/zaira.png" alt="UPA" width={250}
+                  placeholder="tracedSVG" /></a>
+
+
             </Col>
-            <Col md={3} xs={1} className="text-center">
-            <div className="badge-base LI-profile-badge" data-locale="es_ES" data-size="medium" 
-            data-theme="light" data-type="VERTICAL" data-vanity="crismatters" data-version="v1">
-              </div>
+            <Col md={3} xs={12} className="text-center" style={{ marginBottom: "1rem" }}>
+
+              <a class="badge-base__link LI-simple-link" target="_blank" rel="noopener noreferrer"
+                href="https://www.linkedin.com/in/crismatters/">
+                <StaticImage src="../images/egresados/cristobal.png" alt="UPA" width={250}
+                  placeholder="tracedSVG" /></a>
+
             </Col>
-            <Col md={3} xs={1} className="text-center">
-              <div className="badge-base LI-profile-badge"
-                data-locale="es_ES" data-size="medium" data-theme="light"
-                data-type="VERTICAL" data-vanity="zaira-edith-macias-marin-a70a98203"
-                data-version="v1">
-              </div>
-            </Col>
-            <Col md={3} xs={1} className="text-center">
-            <div className="badge-base LI-profile-badge" data-locale="es_ES" data-size="medium" 
-            data-theme="light" data-type="VERTICAL" data-vanity="crismatters" data-version="v1">
-              </div>
-            </Col>
+            {/* <Col md={3} xs={12} className="text-center" style={{ marginBottom: "1rem" }}>
+              
+            
+<div class="badge-base LI-profile-badge" data-locale="es_ES"
+data-size="medium" data-theme="light" data-type="VERTICAL" 
+data-vanity="crismatters" data-version="v1">
+</div>
+
+            </Col> */}
+
+             
+            
           </Row>
         </Container>
       </Row>
@@ -140,10 +158,10 @@ export default function Home({ data }) {
                       />
                     </div>
                   </Link>
-                  <Card.Body>
+                  {/* <Card.Body>
                     <Card.Title >{programa.frontmatter.title}</Card.Title>
 
-                  </Card.Body>
+                  </Card.Body> */}
                 </Card>
               </Col>
             ))}
@@ -184,7 +202,11 @@ export default function Home({ data }) {
         </iframe>
 
       </Container> */}
+
+
     </Layout>
+
+    
 
   )
 }

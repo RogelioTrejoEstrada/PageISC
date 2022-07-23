@@ -13,7 +13,7 @@ export default function Layout({ children }) {
     <main className="layout">
       <Header pagina={pagina}/>
       <div className="content">{children}</div>
-      
+      {/* <script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script> */}
       <Footer />
     </main>
     </>
