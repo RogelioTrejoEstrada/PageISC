@@ -16,7 +16,7 @@ const LinkedInBadge = ({ user, theme }) => {
             xs={12}
             sm={3}
             md={3}
-            style={{ display: "table-cell", padding: "0rem", backgroundColor: "rgb(218, 216, 216)" }}
+            style={{ display: "table-cell", padding: "0.5rem", backgroundColor: "rgb(218, 216, 216)" }}
         >
         </Grid>
     );
