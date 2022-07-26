@@ -86,7 +86,7 @@ export default function Home({ data }) {
           <Grid xs={12} sm={3} style={{ display: "table" }} className="m-auto">
             <LinkedInBadge user="crismatters" theme="light"/>
             <LinkedInBadge user="zaira-edith-macias-marin-a70a98203" theme="light"/>
-            <LinkedInBadge user="zaira-edith-macias-marin-a70a98203" theme="light"/>
+            {/* <LinkedInBadge user="zaira-edith-macias-marin-a70a98203" theme="light"/> */}
             <LinkedInBadge user="leonardo-daniel-arévalo-pérez-2235321b1" theme="light"/> 
             {/* <LinkedInBadge user="melissa-vizcarra" theme="light"/>
             <LinkedInBadge user="jimena-velázquez-gómez-3703a7164" theme="light"/>
