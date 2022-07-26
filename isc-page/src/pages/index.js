@@ -7,7 +7,8 @@ import Seo from "../components/Seo";
 import Img from 'gatsby-image'
 import { graphql, Link } from 'gatsby'
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
-
+ import LinkedInBadge from "../components/linkedinBadge";
+ import {Grid} from '@material-ui/core'
 
 export default function Home({ data }) {
 
@@ -69,41 +70,29 @@ export default function Home({ data }) {
         </Row>
       </Container> 
      
-      <Row className="general mt-5 mb-5 m-auto">
-        <Container className="mt-5 mb-5  text-center">
-          <Row className="text-center" style={{ display: 'flex',alignItems: 'center', justifyContent: 'center' }}>
+      <Row className="general m-auto text-center">
+         <Container className="mb-5 mt-5 text-center"> 
+          {/* <Row className="text-center" style={{ display: 'flex',alignItems: 'center', justifyContent: 'center' }}>
           <h4 className="mb-5">Egresados</h4>
-            <Col md={3} xs={12} className="text-center " style={{ marginBottom: "1rem" }}>
+             <Col md={3} xs={12} className="text-center " style={{ marginBottom: "1rem" }}>
               <a class="badge-base__link LI-simple-link" target="_blank" rel="noopener noreferrer"
                 href="https://mx.linkedin.com/in/zaira-edith-macias-marin-a70a98203?trk=public-profile-badge-profile-badge-view-profile-cta">
-
                 <StaticImage src="../images/egresados/zaira.png" alt="UPA" width={250}
                   placeholder="tracedSVG" /></a>
-
-
             </Col>
-            <Col md={3} xs={12} className="text-center" style={{ marginBottom: "1rem" }}>
-
-              <a class="badge-base__link LI-simple-link" target="_blank" rel="noopener noreferrer"
-                href="https://www.linkedin.com/in/crismatters/">
-                <StaticImage src="../images/egresados/cristobal.png" alt="UPA" width={250}
-                  placeholder="tracedSVG" /></a>
-
-            </Col>
-            {/* <Col md={3} xs={12} className="text-center" style={{ marginBottom: "1rem" }}>
-              
             
-<div class="badge-base LI-profile-badge" data-locale="es_ES"
-data-size="medium" data-theme="light" data-type="VERTICAL" 
-data-vanity="crismatters" data-version="v1">
-</div>
-
-            </Col> */}
-
-             
-            
-          </Row>
-        </Container>
+          </Row> */}
+          <h4 className="mb-5">Egresados</h4>   
+          <Grid xs={12} sm={3} style={{ display: "table" }} className="m-auto">
+            <LinkedInBadge user="crismatters" theme="light"/>
+            <LinkedInBadge user="zaira-edith-macias-marin-a70a98203" theme="light"/>
+            <LinkedInBadge user="zaira-edith-macias-marin-a70a98203" theme="light"/>
+            <LinkedInBadge user="leonardo-daniel-arévalo-pérez-2235321b1" theme="light"/> 
+            {/* <LinkedInBadge user="melissa-vizcarra" theme="light"/>
+            <LinkedInBadge user="jimena-velázquez-gómez-3703a7164" theme="light"/>
+            <LinkedInBadge user="ing-maria-isabel-huerta-escobar-b9747a13b" theme="light"/> */}
+          </Grid>
+          </Container>
       </Row>
 
 
@@ -140,7 +129,6 @@ data-vanity="crismatters" data-version="v1">
           </Tabs>
         </Col>
       </Container>
-
 
       <Row className="general mt-5 mb-5 m-auto">
         <Container className="mt-5 mb-5  text-center">
