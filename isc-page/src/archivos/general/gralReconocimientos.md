@@ -6,15 +6,14 @@ date: 2022-02-18T00:00:00+00:00
 thumb: ../../images/UPA_logo.png
 tam: logo
 ---
-<p class="textoJustificado tab-general">
+<p class="tab-general textoJustificado">
 Como derivado el programa académico de Ingeniería en Sistemas Estratégicos de Información, el programa académico de ISC cuenta con los siguientes reconocimientos:
 </p>
-<div class="textoJustificado tab-general">
- 
-  <ul>
-     <li> 
+<div class="tab-general textoJustificado">
+  <ul class="textoJustificado">
+     <li class="textoJustificado tab-lista"> 
      La UPA está certificada en ISO 9001:2014 (Sistemas de Gestión de Calidad), ISO 14001:2014 (Sistema de Gestión Ambiental), NMX-R-025 (Igualdad laboral y no discriminación) lo cual asegura la calidad de nuestros procesos.
     </li>
-    <li>Además, la universidad se encuentra incorporada a ANUIES (Asociación Nacional de Universidades e Instituciones de Educación Superior).</li>
+    <li class="textoJustificado tab-lista">Además, la universidad se encuentra incorporada a ANUIES (Asociación Nacional de Universidades e Instituciones de Educación Superior).</li>
   </ul>
 </div>

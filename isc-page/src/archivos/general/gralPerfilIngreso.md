@@ -9,9 +9,9 @@ tam: logo
 
 
 
-<ul class="textoJustificado tab-general">
-  <li>Haber aprobado el plan de estudios del nivel medio superior</li>
-  <li>Tener afinidad por el uso de las tecnologías de información</li>
-  <li>Interés por la optimización de los procesos productivos a partir del manejo de la información y desarrollo de software</li>
-  <li>Criterio y razonamiento lógico en la solución de problemas</li>
+<ul class="tab-general tab-lista textoJustificado">
+  <li class="textoJustificado tab-lista">Haber aprobado el plan de estudios del nivel medio superior</li>
+  <li class="textoJustificado tab-lista">Tener afinidad por el uso de las tecnologías de información</li>
+  <li class="textoJustificado tab-lista">Interés por la optimización de los procesos productivos a partir del manejo de la información y desarrollo de software</li>
+  <li class="textoJustificado tab-lista">Criterio y razonamiento lógico en la solución de problemas</li>
 </ul>
