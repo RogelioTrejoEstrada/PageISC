@@ -71,7 +71,7 @@ export default function Home({ data }) {
       </Container> 
      
       <Row className="general m-auto text-center">
-         <Container className="mb-5 mt-5 text-center"> 
+         <Container className="mb-5 mt-5 text-center m-auto"> 
           {/* <Row className="text-center" style={{ display: 'flex',alignItems: 'center', justifyContent: 'center' }}>
           <h4 className="mb-5">Egresados</h4>
              <Col md={3} xs={12} className="text-center " style={{ marginBottom: "1rem" }}>
@@ -83,14 +83,16 @@ export default function Home({ data }) {
             
           </Row> */}
           <h4 className="mb-5">Egresados</h4>   
-          <Grid xs={12} sm={3} style={{ display: "table" }} className="m-auto">
+          {/* <Grid xs={12} sm={6} md={3} style={{ display: "table" }}  className="m-auto" spacing={2}> */}
+          <Grid container xs={12} md={12} className="m-auto" spacing={2} alignItems='center' justifyContent="center">
             <LinkedInBadge user="crismatters" theme="light"/>
             <LinkedInBadge user="zaira-edith-macias-marin-a70a98203" theme="light"/>
-            {/* <LinkedInBadge user="zaira-edith-macias-marin-a70a98203" theme="light"/> */}
-            <LinkedInBadge user="leonardo-daniel-arévalo-pérez-2235321b1" theme="light"/> 
-            {/* <LinkedInBadge user="melissa-vizcarra" theme="light"/>
+            <LinkedInBadge user="leonardo-daniel-arévalo-pérez-2235321b1" theme="light"/>
+            {/* <LinkedInBadge user="jimena-velázquez-gómez-3703a7164" theme="light"/> */}
+            {/* <LinkedInBadge user="ing-maria-isabel-huerta-escobar-b9747a13b" theme="light"/> */}
+            {/* <LinkedInBadge user="jimena-velázquez-gómez-3703a7164" theme="light"/>
             <LinkedInBadge user="jimena-velázquez-gómez-3703a7164" theme="light"/>
-            <LinkedInBadge user="ing-maria-isabel-huerta-escobar-b9747a13b" theme="light"/> */}
+            <LinkedInBadge user="jimena-velázquez-gómez-3703a7164" theme="light"/> */}
           </Grid>
           </Container>
       </Row>
@@ -136,7 +138,7 @@ export default function Home({ data }) {
             <h4 className="mb-5">Programas específicos</h4>
             {programas.map((programa) => (
               <Col className="text-center" xs={6} md={2} key={programa.id}>
-                <Card style={{ height: '10rem', marginBottom: "1rem" }} >
+                <Card style={{ height: '100%', marginBottom: "1rem" }} >
                   <Link to="/programasInstitucionales">
                     <div className="image-contenedor">
                       <Img

@@ -11,7 +11,7 @@ function Footer() {
         <Container>
           <Row className='mt-1 justify-content-center'>
             <Col md={4} className="ml-4">
-              <h6 className='text-center'>Contacto</h6>
+              <h6 className='text-center footer-titulo'>Contacto</h6>
               <ul className="list-unstyled pl-1">
                 <li><span><GeoAltFill /></span> Calle Paseo San Gerardo 207, San Gerardo</li>
                 <li> C.P. 20342 Aguascalientes, Ags</li>
@@ -21,7 +21,7 @@ function Footer() {
               </ul>
             </Col>
             <Col md={3} className="ml-4">
-              <h6 className='text-center'>Mapa del sitio</h6>
+              <h6 className='text-center footer-titulo'>Mapa del sitio</h6>
               <ul className="list-unstyled pl-5">
                 <li><Link to='/'>Inicio</Link></li>
                 {/* <li><Link to='/about'>Nosotros</Link></li> */}

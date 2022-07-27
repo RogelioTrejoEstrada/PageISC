@@ -2,37 +2,37 @@
     bottom: 0;
     width: 100%;
     background-color: #302e2e; /*#003464; */
-    padding-top: 2rem;
+    padding-top: 36px;
     color: #ddd;
-    padding-bottom: 1rem;
+    padding-bottom: 18px;
     font-size: 10px;
 }
 
-.copyright{
-    font-size: 0.7rem;
+.footer .copyright{
+    font-size: 90%;
 }
 
 
 .footer li a{
     color: #dfdfdf;
-    font-size: 0.8rem;
+    font-size: 80%;
     text-decoration: none;
 }
 
-.footer h6{
-    font-size: 0.9rem;
+.footer .footer-titulo{
+    font-size: 90%;
 }
 
 .footer li{
-    font-size: 0.8rem;
-    margin-bottom: 0.5rem;
+    font-size: 100%;
+    margin-bottom: 8px;
 }
 
 
 @media screen and (max-width: 768px) {
     .footer {
         bottom: 0;
-        font-size: 0.7rem;
+        font-size: 70%;
     }
     
     .copyright{

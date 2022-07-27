@@ -51,13 +51,15 @@
 }
 
 .tituloPrincipal h1{
-    font-size: 2rem;
+    font-size: 200%;
     font-family: 'Ubuntu', sans-serif;
+    color: rgba(235, 230, 230, 0.8);/*#003464;*/
 }
 
 .tituloPrincipal h2{
-    font-size: 2rem;
-    font-family:'Ubuntu', sans-serif
+    font-size: 200%;
+    font-family:'Ubuntu', sans-serif;
+    color: rgba(235, 230, 230, 0.8);/*#003464;*/
 }
 
 .textoJustificado {
@@ -66,11 +68,11 @@
 
 @media screen and (max-width: 992px) {
     .tituloPrincipal h1 {
-        font-size: 1rem;
+        font-size: 100%;
     }
 
     .tituloPrincipal h2 {
-        font-size: 1rem;
+        font-size: 100%;
     }
 }
 
@@ -89,7 +91,7 @@
 }
 
 .navbarBrand{
-    font-size: 2rem;
+    font-size: 200%;
 }
 
 
@@ -106,7 +108,7 @@
     margin-left: 20px;
     border-bottom: 3px solid transparent;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 100%;
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
@@ -187,7 +189,7 @@
 }
 
 .subTitulo h3{
-    font-size: 2rem; 
+    font-size: 200%; 
 }
 
 .mapaCurricular-tarjeta{
@@ -282,10 +284,9 @@
 
 
 .modalObjetivo {
-    font-size: 1.1rem;
+    font-size: 110%;
     font-weight: 400;
     text-align:justify;
-
 }
 
 
@@ -353,7 +354,7 @@ ul li {
     }
 
     .col-md .columna-materia p{
-        font-size: 0.6rem;
+        font-size: 60%;
     }
 
     .btn-estadia{
@@ -418,7 +419,7 @@ ul li {
 
 .titulo-tabs > .nav-item > button.active{
     color: var(--azul-upa);
-    font-size: 1rem;
+    font-size: 100%;
     font-weight: bold;
     background-color:transparent;
     border: none;
@@ -436,7 +437,7 @@ ul li {
 }
 
 .titulo-tabs .nav-item .nav-link{
-    font-size: 1.2rem;
+    font-size: 120%;
 }
 
 .titulo-tabs .nav-item .nav-link::before{
@@ -455,7 +456,7 @@ ul li {
 
 .titulo-tabs .nav-item .nav-link.active{
     border-bottom: 3px solid var(--azul-upa);
-    font-size: 1.2rem;
+    font-size: 120%;
   }
   
   .titulo-tabs .nav-item .nav-link:hover::before{
@@ -470,12 +471,19 @@ ul li {
   .tab-content div h4{
     font-weight: bold;
     color: var(--azul-upa);
+    font-size: 150%;
   }
 
   .tab-general
   {
-      font-size: 1.1rem;
-      line-height: 2rem;
+      font-size: 110%;
+      line-height: 110%;
+  }
+
+  .tab-general p
+  {
+      font-size: 110%;
+      line-height: 110%;
   }
   
   .titulo-tabs .tab-pane{
@@ -502,20 +510,24 @@ ul li {
      width: 100%;
  }
 
+ .general-titulo{
+    font-size: 150%;
+ }
+
  .presentacion h4{
     /*background-color: red;*/
     font-weight: bold;
     margin-bottom: 2rem;
-    font-size: 1.5rem;
+    font-size: 150%;
     text-align: center;
  }
 
  .presentacion p{
-     font-size: 1.2rem;
+     font-size: 120%;
  }
 
  .card-title{
-    font-size: 1rem;
+    font-size: 100%;
     font-weight: 400;
 }
 
@@ -531,7 +543,7 @@ ul li {
  	-o-transition: 0.5s ease; /* Opera */
      border: 1px solid var(--fondo); 
      padding: 1rem;
-     font-size: 1.2rem;
+     font-size: 120%;
      font-weight: bold;
      color: var(--azul-upa);
 
@@ -558,7 +570,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
      border: 1px solid var(--fondo); 
     border-radius: 10px;
     
-    font-size: 1.2rem;
+    font-size: 120%;
     font-weight: bold;
     color: var(--azul-upa);     
       
