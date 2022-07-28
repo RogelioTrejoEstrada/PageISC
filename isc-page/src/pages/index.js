@@ -91,8 +91,8 @@ export default function Home({ data }) {
             <LinkedInBadge user="esteban-uscanga-olea-862aba64" theme="light"/>
             {/* <LinkedInBadge user="ing-maria-isabel-huerta-escobar-b9747a13b" theme="light"/> */}
              <LinkedInBadge user="paola-sánchez-gándara-5709411b9" theme="light"/>
-            {/*<LinkedInBadge user="jimena-velázquez-gómez-3703a7164" theme="light"/>
-            <LinkedInBadge user="jimena-velázquez-gómez-3703a7164" theme="light"/> */}
+            <LinkedInBadge user="mauricioalcala" theme="light"/>
+            {/*<LinkedInBadge user="jimena-velázquez-gómez-3703a7164" theme="light"/> */}
           </Grid>
           </Container>
       </Row>
