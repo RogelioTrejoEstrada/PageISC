@@ -71,30 +71,37 @@ export default function Home({ data }) {
       </Container> 
      
       <Row className="general m-auto text-center">
-         <Container className="mb-5 mt-5 text-center m-auto"> 
-          {/* <Row className="text-center" style={{ display: 'flex',alignItems: 'center', justifyContent: 'center' }}>
-          <h4 className="mb-5">Egresados</h4>
-             <Col md={3} xs={12} className="text-center " style={{ marginBottom: "1rem" }}>
-              <a class="badge-base__link LI-simple-link" target="_blank" rel="noopener noreferrer"
-                href="https://mx.linkedin.com/in/zaira-edith-macias-marin-a70a98203?trk=public-profile-badge-profile-badge-view-profile-cta">
-                <StaticImage src="../images/egresados/zaira.png" alt="UPA" width={250}
-                  placeholder="tracedSVG" /></a>
-            </Col>
-            
-          </Row> */}
-          <h4 className="mb-5">Egresados</h4>   
+         <Container className="mb-3 mt-3 text-center m-auto"> 
+          <h4 className="mb-2">Egresados</h4>   
           {/* <Grid xs={12} sm={6} md={3} style={{ display: "table" }}  className="m-auto" spacing={2}> */}
-          <Grid container xs={12} md={12} className="m-auto" spacing={2} alignItems='center' justifyContent="center">
+          {/* <Grid container xs={12} md={12} className="m-auto" spacing={2} alignItems='center' justifyContent="center">
             <LinkedInBadge user="crismatters" theme="light"/>
             <LinkedInBadge user="zaira-edith-macias-marin-a70a98203" theme="light"/>
             <LinkedInBadge user="leonardo-daniel-arévalo-pérez-2235321b1" theme="light"/>
             <LinkedInBadge user="esteban-uscanga-olea-862aba64" theme="light"/>
             <LinkedInBadge user="francisco-javier-salas-martinez-ab2078152" theme="light"/>
-             {/* <LinkedInBadge user="paola-sánchez-gándara-5709411b9" theme="light"/> */}
-            {/* <LinkedInBadge user="mauricioalcala" theme="light"/> */}
-            {/*<LinkedInBadge user="jimena-velázquez-gómez-3703a7164" theme="light"/> */}
-          </Grid>
-          </Container>
+             {/* <LinkedInBadge user="paola-sánchez-gándara-5709411b9" theme="light"/> 
+             <LinkedInBadge user="mauricioalcala" theme="light"/> 
+            <LinkedInBadge user="jimena-velázquez-gómez-3703a7164" theme="light"/>
+          </Grid> */}
+          <Carousel className=" text-center" >
+            <Carousel.Item className="carusel">
+              <Grid container xs={12} md={12} className="m-auto" spacing={1} alignItems='center' justifyContent="center">
+                <LinkedInBadge user="crismatters" theme="light" />
+                <LinkedInBadge user="zaira-edith-macias-marin-a70a98203" theme="light" />
+                <LinkedInBadge user="leonardo-daniel-arévalo-pérez-2235321b1" theme="light" />
+                <LinkedInBadge user="esteban-uscanga-olea-862aba64" theme="light" />
+              </Grid>
+            </Carousel.Item>
+            <Carousel.Item className="carusel">
+              <Grid container xs={12} md={12} className="m-auto" spacing={1} alignItems='center' justifyContent="center">
+                <LinkedInBadge user="francisco-javier-salas-martinez-ab2078152" theme="light" />
+                <LinkedInBadge user="paola-sánchez-gándara-5709411b9" theme="light" />
+                <LinkedInBadge user="mauricioalcala" theme="light" />
+              </Grid>
+            </Carousel.Item>
+          </Carousel>
+        </Container>
       </Row>
 
 
