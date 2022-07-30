@@ -71,7 +71,7 @@ export default function Home({ data }) {
       </Container> 
      
       <Row className="general m-auto text-center">
-         <Container className="mb-3 mt-3 text-center m-auto" autoplay = {true} interval={4000}> 
+         <Container className="mb-3 mt-3 text-center m-auto" autoplay = {true} interval={6000}> 
           <h4 className="mb-2">Egresados</h4>   
           {/* <Grid xs={12} sm={6} md={3} style={{ display: "table" }}  className="m-auto" spacing={2}> */}
           {/* <Grid container xs={12} md={12} className="m-auto" spacing={2} alignItems='center' justifyContent="center">
