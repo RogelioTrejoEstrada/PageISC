@@ -71,7 +71,7 @@ export default function Home({ data }) {
       </Container> 
      
       <Row className="general m-auto text-center">
-         <Container className="mb-3 mt-3 text-center m-auto"> 
+         <Container className="mb-3 mt-3 text-center m-auto" autoplay = {true} interval={4000}> 
           <h4 className="mb-2">Egresados</h4>   
           {/* <Grid xs={12} sm={6} md={3} style={{ display: "table" }}  className="m-auto" spacing={2}> */}
           {/* <Grid container xs={12} md={12} className="m-auto" spacing={2} alignItems='center' justifyContent="center">
@@ -140,9 +140,9 @@ export default function Home({ data }) {
       </Container>
 
       <Row className="general mt-5 mb-5 m-auto">
-        <Container className="mt-5 mb-5  text-center">
+        <Container className="mt-3 mb-3  text-center">
           <Row className="text-center" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <h4 className="mb-5">Programas específicos</h4>
+            <h4 className="mb-3">Programas específicos</h4>
             {programas.map((programa) => (
               <Col className="text-center" xs={6} md={2} key={programa.id}>
                 <Card style={{ height: '100%', marginBottom: "1rem" }} >
