@@ -36,13 +36,14 @@ export default function MapaCurricular({ data }) {
 
   const agregarClase = (nombre) => {
     const materiaExtras = (nombre !== "") ? materia.find(dato => dato.title === nombre) : { title: "No encontrado" }
-    //console.log("atrobuptp_ ", materiaExtras.contribuye)
+    //console.log("atrobuptp_ ", materiaExtras)
+
     let contribuye = ""
     let atribucion = ""
     if (materiaExtras.hasOwnProperty('contribuye')) {
       materiaExtras.contribuye.forEach(mat => {
         contribuye = document.getElementById(mat)
-        //console.log(contribuye)
+        console.log(mat, contribuye)
         contribuye.classList.add('btn-contribuye')
       })
     }
@@ -210,7 +211,7 @@ export default function MapaCurricular({ data }) {
                 <Col xs={12} md={1} className='columna-materia'>
                   <p>Décimo</p>
                   <Button className="btn-materia btn-estadia"
-                  key = 'Estadia' id= 'Estadia' onClick={() => DatosMateria('Estadía')}
+                  key = 'Estadia' id= 'Estadía' onClick={() => DatosMateria('Estadía')}
                   onMouseOver={() => agregarClase('Estadía')} onMouseLeave={() => eliminarClase()}
                   ><span className='txt-estadia'>Estadía</span></Button>
                   

@@ -166,7 +166,7 @@
     "objetivo" : "El alumno resolverá problemas estadísticos mediante el procesamiento de datos, así como el análisis y estimación de parámetros para fundamentar la toma de decisiones.",
     "Unidades": ["Estadística Descriptiva", "Probabilidad", "Estadística Inferencial"],
     "atribucion": [],
-    "contribuye": ["Sistemas Inteligentes"]
+    "contribuye": ["Sistemas Inteligentes", "Inteligencia de Negocios"]
   },
 
   {"title": "Programación",
@@ -351,7 +351,7 @@
   "objetivo" : "El alumno resolverá ecuaciones diferenciales a través de métodos analíticos, transformadas de Laplace y métodos numéricos para contribuir a la solución de problemas en ingeniería.",
   "Unidades": ["Ecuaciones diferenciales", "Transformadas de Laplace", "Métodos numéricos"],
   "atribucion":["Álgebra Lineal", "Funciones Matemáticas", "Cálculo Diferencial", "Cálculo Integral", "Matemáticas para Ingeniería I"],
-  "contribuye":[]
+  "contribuye":["Sistemas Inteligentes"]
 },
 
 {"title": "Sistemas Operativos",
@@ -587,7 +587,7 @@
     "Herramientas Ofimáticas", "Matemáticas Básicas para Computación", "Introducción a Redes", "Expresión Oral y Escrita I", 
     "Arquitectura de Computadoras", "Mantenimiento a Equipo de Cómputo", "Habilidades Cognitivas y Creatividad", "Cálculo Integral", "Ingeniería de Software", "Estructura de Datos", "Ruteo y Conmutación", "Estancia I", "Ética Profesional", "Matemáticas para Ingeniería I", "Física para Ingeniería", "Fundamentos de POO", "Escalamiento de Redes", "Base de Datos", "Habilidades Gerenciales", "Matemáticas para Ingeniería II", "Sistemas Operativos", "Programación Orientada a Objetos", "Interconexión de Redes", "Administración de Base de Datos", "Inglés VII", "Liderazgo de Equipos", "Formulación de Proyectos de TI", "Lenguajes y Autómatas", "Programación WEB", "Ingeniería de Requisitos", "Estancia II", "Inglés VIII", "Tecnologías de Virtualización", "Admon. de Proyectos de TI", "Tecnologías y Aplicaciones en Internet", "Diseño de Interfaces", "Sistemas Inteligentes", "Gestión de Desarrollo de SW", "Inglés IX", "Inteligencia de Negocios", "Desarrollo de Negocios para TI", "Sistemas Embebidos", "Programación Móvil", "Seguridad Informática", "Expresión Oral y Escrita II"],
   "contribuye":[]
-}
+  }
 ]
 
 
