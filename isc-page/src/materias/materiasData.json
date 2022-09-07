@@ -166,7 +166,7 @@
     "objetivo" : "El alumno resolverá problemas estadísticos mediante el procesamiento de datos, así como el análisis y estimación de parámetros para fundamentar la toma de decisiones.",
     "Unidades": ["Estadística Descriptiva", "Probabilidad", "Estadística Inferencial"],
     "atribucion": [],
-    "contribuye": []
+    "contribuye": ["Sistemas Inteligentes"]
   },
 
   {"title": "Programación",
@@ -261,7 +261,7 @@
     "Álgebra Lineal", "Funciones Matemáticas", "Cálculo Diferencial", "Introducción a la Programación", "Física", "Probabilidad y Estadística", 
     "Introducción a las TI", "Electricidad y Magnetismo", "Programación", "Herramientas Ofimáticas", "Matemáticas Básicas para Computación", 
     "Introducción a Redes", "Expresión Oral y Escrita I", "Arquitectura de Computadoras", "Mantenimiento a Equipo de Cómputo"],
-  "contribuye": ["Estancia II"]
+  "contribuye": ["Estancia II", "Estadía"]
 },
 
 {"title": "Inglés V",
@@ -450,7 +450,7 @@
   "objetivo" : "El alumno aplicará los conocimientos adquiridos durante el segundo ciclo de formación.",
   "Unidades": ["Diseño del proyecto", "Desarrollo del proyecto", "Implementación del proyecto", "Evaluación del proyecto"],
   "atribucion": ["Inglés I", "Inglés II", "Inglés III", "Inglés IV", "Inglés V", "Inglés VI", "Química Básica", "Desarrollo Humano y Valores", "Inteligencia Emocional", "Álgebra Lineal", "Funciones Matemáticas", "Cálculo Diferencial", "Introducción a la Programación", "Física", "Probabilidad y Estadística", "Introducción a las TI", "Electricidad y Magnetismo", "Programación", "Herramientas Ofimáticas", "Matemáticas Básicas para Computación", "Introducción a Redes", "Expresión Oral y Escrita I", "Arquitectura de Computadoras", "Mantenimiento a Equipo de Cómputo", "Habilidades Cognitivas y Creatividad", "Cálculo Integral", "Ingeniería de Software", "Estructura de Datos", "Ruteo y Conmutación", "Estancia I", "Ética Profesional", "Matemáticas para Ingeniería I", "Física para Ingeniería", "Fundamentos de POO", "Escalamiento de Redes", "Base de Datos", "Habilidades Gerenciales", "Matemáticas para Ingeniería II", "Sistemas Operativos", "Programación Orientada a Objetos", "Interconexión de Redes", "Administración de Base de Datos"],
-  "contribuye": []
+  "contribuye": ["Estadía"]
 },
 
 {"title": "Inglés VIII",
