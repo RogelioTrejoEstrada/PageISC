@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Button, Row, Col } from 'react-bootstrap'
+import { Container, Button, Row, Col, Accordion } from 'react-bootstrap'
 import Cabecera from '../components/Cabecera'
 import Layout from '../components/Layout'
 import { graphql } from 'gatsby'
@@ -25,7 +25,7 @@ export default function MapaCurricular({ data }) {
 
   const [modalShow, setModalShow] = React.useState(false);
 
-  const [datosModal, setDatosModal] = React.useState({ title: "", tipo: "", creditos: "", objetivo: "", Unidades: "" , archivo: ""})
+  const [datosModal, setDatosModal] = React.useState({ title: "", tipo: "", creditos: "", objetivo: "", Unidades: "", archivo: "" })
 
   const DatosMateria = (nombre) => {
     const materiaDatos = (nombre !== "") ? materia.find(dato => dato.title === nombre) : { title: "No encontrado" }
@@ -99,14 +99,14 @@ export default function MapaCurricular({ data }) {
 
 
         <ModalMateria show={modalShow} onHide={() => setModalShow(false)} materia={datosModal} />
-      
+
         <Container fluid="md">
           <Row>
             {/*Primer ciclo */}
             <Col md >
               <Row>
                 <h5>Primer Ciclo</h5>
-                <Col  className='columna-materia' >
+                <Col className='columna-materia' >
                   <p>Primero</p>
                   {materias.primer.map(materia => (
                     <Button className={setColorMateria(materia.tipo)} key={materia.title} id={materia.title} onClick={() => DatosMateria(materia.title)}
@@ -116,7 +116,7 @@ export default function MapaCurricular({ data }) {
                   ))}
                 </Col>
                 <Col className='columna-materia'>
-                <p>Segundo</p>
+                  <p>Segundo</p>
                   {materias.segundo.map(materia => (
                     <Button className={setColorMateria(materia.tipo)} key={materia.title} id={materia.title} onClick={() => DatosMateria(materia.title)}
                       onMouseOver={() => agregarClase(materia.title)} onMouseLeave={() => eliminarClase()}>
@@ -124,8 +124,8 @@ export default function MapaCurricular({ data }) {
                     </Button>
                   ))}
                 </Col>
-                <Col  className='columna-materia'>
-                <p>Tercero</p>
+                <Col className='columna-materia'>
+                  <p>Tercero</p>
                   {materias.tercer.map(materia => (
                     <Button className={setColorMateria(materia.tipo)} key={materia.title} id={materia.title} onClick={() => DatosMateria(materia.title)}
                       onMouseOver={() => agregarClase(materia.title)} onMouseLeave={() => eliminarClase()}>
@@ -144,7 +144,7 @@ export default function MapaCurricular({ data }) {
               <Row>
                 <h5>Segundo Ciclo</h5>
                 <Col className='columna-materia'>
-                <p>Cuarto</p>
+                  <p>Cuarto</p>
                   {materias.cuarto.map(materia => (
                     <Button className={setColorMateria(materia.tipo)} key={materia.title} id={materia.title} onClick={() => DatosMateria(materia.title)}
                       onMouseOver={() => agregarClase(materia.title)} onMouseLeave={() => eliminarClase()}>
@@ -153,7 +153,7 @@ export default function MapaCurricular({ data }) {
                   ))}
                 </Col>
                 <Col className='columna-materia'>
-                <p>Quinto</p>
+                  <p>Quinto</p>
                   {materias.quinto.map(materia => (
                     <Button className={setColorMateria(materia.tipo)} key={materia.title} id={materia.title} onClick={() => DatosMateria(materia.title)}
                       onMouseOver={() => agregarClase(materia.title)} onMouseLeave={() => eliminarClase()}>
@@ -161,15 +161,15 @@ export default function MapaCurricular({ data }) {
                     </Button>
                   ))}
                 </Col>
-                <Col  className='columna-materia'>
-                <p>Sexto</p>
+                <Col className='columna-materia'>
+                  <p>Sexto</p>
                   {materias.sexto.map(materia => (
                     <Button className={setColorMateria(materia.tipo)} key={materia.title} id={materia.title} onClick={() => DatosMateria(materia.title)}
                       onMouseOver={() => agregarClase(materia.title)} onMouseLeave={() => eliminarClase()}>
                       {materia.title}
                     </Button>
                   ))}
-                  
+
                 </Col>
                 {/* <Col xs={12} md={1} className = 'columna-materia'>
                   <Button className="btn-materia btn-ciclo"><span className='txt-estadia'>Segundo Ciclo</span></Button>
@@ -211,52 +211,63 @@ export default function MapaCurricular({ data }) {
                 <Col xs={12} md={1} className='columna-materia'>
                   <p>Décimo</p>
                   <Button className="btn-materia btn-estadia"
-                  key = 'Estadia' id= 'Estadía' onClick={() => DatosMateria('Estadía')}
-                  onMouseOver={() => agregarClase('Estadía')} onMouseLeave={() => eliminarClase()}
+                    key='Estadia' id='Estadía' onClick={() => DatosMateria('Estadía')}
+                    onMouseOver={() => agregarClase('Estadía')} onMouseLeave={() => eliminarClase()}
                   ><span className='txt-estadia'>Estadía</span></Button>
-                  
+
                 </Col>
               </Row>
             </Col>
 
-            
-          </Row>
 
+          </Row>
+ 
+        </Container>
+        <Container className='mt-5 mb-5'>
+          <div className="subTitulo mb-4">
+            <h3 className="text-center">Competencias por ciclo de formación</h3>
+          </div>
+          <Accordion>
+            <Accordion.Item eventKey='primer' key='primer' className='mb-3'>
+              <Accordion.Header>Primer Ciclo de Formación</Accordion.Header>
+              <Accordion.Body>
+                <Row className="textoJustificado">
+                  <p>Administrar la infraestructura tecnológica mediante el mantenimiento y soporte técnico,
+                    técnicas de diseño y administración de redes para optimizar el desempeño, garantizando la operación física y lógica de los equipos de cómputo y redes de
+                    área local con el fin de contribuir al logro de los objetivos de la organización.</p>
+
+                  <li>Realizar mantenimiento y soporte técnico a equipo de cómputo y sistemas con base en un plan y en respuesta a las contingencias, empleando
+                    procedimientos y técnicas para garantizar la disponibilidad y optimizar los recursos de la organización.</li>
+                </Row></Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey='segundo' key='segundo' className='mb-3'>
+              <Accordion.Header>Segundo Ciclo de Formación</Accordion.Header>
+              <Accordion.Body>
+                <Row className="textoJustificado">
+                  <p>Administrar la infraestructura tecnológica mediante el mantenimiento y soporte técnico,
+                    técnicas de diseño y administración de redes para optimizar el desempeño, garantizando la operación física y lógica de los equipos de cómputo y redes de
+                    área local con el fin de contribuir al logro de los objetivos de la organización.</p>
+
+                  <li>Administrar redes de datos mediante el análisis del entorno y de los requerimientos, con base en procedimientos, herramientas, estándares y polí ticas aplicables para garantizar la seguridad y operatividad de la red.</li>
+                </Row></Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey='tercer' key='tercer' className='mb-3'>
+              <Accordion.Header>Tercer Ciclo de Formación</Accordion.Header>
+              <Accordion.Body>
+                <Row className="textoJustificado">
+                  <p>Desarrollar soluciones innovadoras de integración de tecnologías de la información mediante metodologías de desarrollo de software, diseño de base de datos, seguridad de la información y administración de proyectos; con
+                    base en los estándares aplicables para atender las áreas de oportunidad, resolver las necesidades y optimizar los procesos y recursos de la organización.</p>
+
+                  <li>Modelar software con base en los requerimientos usando est á ndares y técnicas para desarrollar una solución que satisfaga las necesidades específicas de la organización.</li>
+
+                  <li>Desarrollar soluciones de software con base en metodologías, procedimientos y técnicas para satisfacer las necesidades específicas de la organización.</li>
+                  <li>Gestiona sistemas de bases de datos utilizando técnicas, métodos y herramientas de desarrollo de bases de datos para garantizar la seguridad de la información y consistencia de los datos.</li>
+                  <li>Gestionar proyectos innovadores de integración de tecnologías de la información mediante metodología de investigación, herramientas administrativas y estándares aplicables para la optimización de procesos y recursos. </li>
+                </Row></Accordion.Body>
+            </Accordion.Item>
+          </Accordion>
         </Container>
 
-
-        {/* 
-        <Row className="mt-5 mapaCurricular-tarjeta">
-          <Col md={12} sm={6} className="mapaCurricular-header">
-            <h4>Tercer Ciclo de Formación</h4>
-          </Col>
-          <Col md={12} sm={8}>
-            <h5>Séptimo Cuatrimestre</h5>
-            {materias.septimo.map(materia => (
-              <Button className={setColorMateria(materia.tipo)} id={materia.title} key={materia.title} onClick={() => DatosMateria(materia.title)}
-                onMouseOver={() => agregarClase(materia.title)} onMouseLeave={() => eliminarClase()}>
-                {materia.title}
-              </Button>
-            ))}
-            <h5>Octavo Cuatrimestre</h5>
-            {materias.octavo.map(materia => (
-              <Button className={setColorMateria(materia.tipo)} id={materia.title} key={materia.title} onClick={() => DatosMateria(materia.title)}
-                onMouseOver={() => agregarClase(materia.title)} onMouseLeave={() => eliminarClase()}>
-                {materia.title}
-              </Button>
-            ))}
-            <h5>Noveno Cuatrimestre</h5>
-            {materias.noveno.map(materia => (
-              <Button className={setColorMateria(materia.tipo)} id={materia.title} key={materia.title} onClick={() => DatosMateria(materia.title)}
-                onMouseOver={() => agregarClase(materia.title)} onMouseLeave={() => eliminarClase()}>
-                {materia.title}
-              </Button>
-            ))}
-            <h5>Décimo Cuatrimestre</h5>
-            <Button className="btn-materia">Estadía</Button>
-          </Col>
-        </Row>
-                */}
       </Container>
     </Layout>
   )
