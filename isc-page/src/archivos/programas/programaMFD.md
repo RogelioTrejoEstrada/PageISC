@@ -6,7 +6,7 @@ thumb: ../../images/mfd.jpg
 tam: normal
 ---
 
-El MFD (Modelo de Formación Dual) es un programa de insersión temprana de los estudiantes en el ámbito laboral. Los estudiantes que ingresan a este modelo pueden 
+El MFD (Modelo de Formación Dual) es un programa de inserción temprana de los estudiantes en el ámbito laboral. Los estudiantes que ingresan a este modelo pueden 
 validar materias de su plan de estudio a partir de su aprendizaje adquirido en la empresa.
 
 El propósito principal de la formación dual está orientado a un proceso educativo integral, a través de una alianza estratégica entre la empresa y la academia.

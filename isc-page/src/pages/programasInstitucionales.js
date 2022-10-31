@@ -61,8 +61,6 @@ function Programas({ data }) {
 
           ))}
         </Accordion>
-
-       
       </Container>
     </Layout>
   )
