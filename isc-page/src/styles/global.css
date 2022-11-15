@@ -215,6 +215,7 @@
 
 .subTituloImagen{
     color: #cfc8c8;
+    font-size: 1rem;
 }
 
 .mapaCurricular-tarjeta{
@@ -401,6 +402,11 @@ ul li {
 
     .subTituloGris{
         font-size: 120%;
+    }
+
+    .image-prepas{
+        height: 100%;
+        width: 60%;
     }
   
 }
