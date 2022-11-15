@@ -7,14 +7,15 @@ import Seo from "../components/Seo";
 import Img from 'gatsby-image'
 import { graphql, Link } from 'gatsby'
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
- import LinkedInBadge from "../components/linkedinBadge";
- import {Grid} from '@material-ui/core'
+import LinkedInBadge from "../components/linkedinBadge";
+import { Grid } from '@material-ui/core'
 
 export default function Home({ data }) {
 
   const generales = data.generalesISC.nodes
   const thumb = data.thumbNosotros.nodes
   const programas = data.programas.nodes
+  const visitas = data.visitas.nodes
 
   //console.log(thumb)
   const [key, setKey] = useState('0');
@@ -68,11 +69,11 @@ export default function Home({ data }) {
             />
           </Col>
         </Row>
-      </Container> 
-     
+      </Container>
+
       <Row className="general m-auto text-center">
-         <Container className="mb-3 mt-3 text-center m-auto" autoplay = {true} interval={6000}> 
-          <h4 className="mb-2">Egresados</h4>   
+        <Container className="mb-3 mt-3 text-center m-auto" autoplay={true} interval={6000}>
+          <h4 className="mb-2 subTituloGris">Egresados</h4>
           {/* <Grid xs={12} sm={6} md={3} style={{ display: "table" }}  className="m-auto" spacing={2}> */}
           {/* <Grid container xs={12} md={12} className="m-auto" spacing={2} alignItems='center' justifyContent="center">
             <LinkedInBadge user="crismatters" theme="light"/>
@@ -142,7 +143,7 @@ export default function Home({ data }) {
       <Row className="general mt-5 mb-5 m-auto">
         <Container className="mt-3 mb-3  text-center">
           <Row className="text-center" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <h4 className="mb-3">Programas específicos</h4>
+            <h4 className="mb-3 subTituloGris">Programas específicos</h4>
             {programas.map((programa) => (
               <Col className="text-center" xs={6} md={2} key={programa.id}>
                 <Card style={{ height: '100%', marginBottom: "1rem" }} >
@@ -176,34 +177,48 @@ export default function Home({ data }) {
               <GatsbyImage image={imagen.frontmatter.thumb.childImageSharp.gatsbyImageData}
                 alt={imagen.frontmatter.stack}
               />
-              {/* <Carousel.Caption >
+              <Carousel.Caption >
                 <div dangerouslySetInnerHTML={{ __html: imagen.html }} />
-              </Carousel.Caption> */}
+              </Carousel.Caption>
             </Carousel.Item>
           ))}
         </Carousel>
       </Container>
 
+      <Row className="general mt-5 mb-5 m-auto">
+        <Container className="mt-3 mb-3  text-center">
+          <Row className="text-center" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <h4 className="mb-3 subTituloGris">Gracias por su visita</h4>
 
-     
-     
-      {/* <Container className="mb-5 mt5 text-center ">
-        <div className="subTitulo mb-4">
-          <h3 className="text-center">Video Promocional</h3>
-        </div>
-        <iframe
-          title="Video upa"
-          className="video"
-          src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fweb.facebook.com%2FUniversidadPolitecnicaAguascalientes%2Fvideos%2F483975670068669%2F&width=500&show_text=false&height=282&appId"
-          allow="fullscreen">
-        </iframe>
+            <Carousel className=" text-center" >
+              {visitas.map((visita) => (
+                <Carousel.Item key={visita.id} className="carusel">
 
-      </Container> */}
+                  <div className="image-contenedor">
+                    <Img
+                      fluid={visita.frontmatter.thumb.childImageSharp.fluid}
+                      alt={visita.frontmatter.stack}
+                      className="image-escala image-zoom image-prepas"
+                    />
+                  </div>
+                  <Carousel.Caption>
+                    <div className="captionImagen">
+                      <h2 className="subTituloImagen">{visita.frontmatter.stack}</h2>
+                    </div>
+                  </Carousel.Caption>
+                </Carousel.Item>
+              ))}
+            </Carousel>
 
+          </Row>
+
+
+        </Container>
+      </Row>
 
     </Layout>
 
-    
+
 
   )
 }
@@ -247,6 +262,27 @@ export const query = graphql`
   programas: allMarkdownRemark(sort: {
     order: DESC, fields: frontmatter___date}
     filter: {fileAbsolutePath: {regex: "/archivos/(programas)/"}}) {
+    nodes {
+      html
+      id
+      frontmatter {
+        stack
+        title
+        tam
+        thumb {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  }
+
+  visitas: allMarkdownRemark(sort: {
+    order: DESC, fields: frontmatter___date}
+    filter: {fileAbsolutePath: {regex: "/archivos/(visitasPrepas)/"}}) {
     nodes {
       html
       id
