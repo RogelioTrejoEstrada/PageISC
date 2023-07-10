@@ -4,16 +4,14 @@ import { StaticImage } from 'gatsby-plugin-image';
 import React, { useState } from 'react'
 import { Container, Nav, Navbar } from 'react-bootstrap'
 
-
 export default function Header({ pagina }) {
   const [active, setActive] = useState(pagina);
 
   return (
-
     <Container>
       <Navbar className="navbarColor" expand="lg">
         <Navbar.Brand className="navbarBrand" style={{ color: "#fff" }}>
-          <StaticImage src="../images/UPA_logo.png" width={100} alt="UPA"
+          <StaticImage src="../images/UPA_ISC-logo.png" width={100} alt="UPA"
             placeholder="tracedSVG" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -73,7 +71,6 @@ export default function Header({ pagina }) {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-
     </Container>
   )
 }
