@@ -7,10 +7,5 @@ thumb: ../../images/vida.jpg
 tam: logo
 ---
 <p class="textoJustificado tab-general">
-Formar profesionistas capaces de resolver problemas mediante el pensamiento crítico, ético y novedoso, con un sistema integrado
-de innovación tecnológica y de investigación a través de la
-ingeniería de software y/o la gestión de redes de comunicación,
-capaces de interactuar en proyectos multidisciplinarios
-orientados a la adecuada toma de decisiones, ofreciendo
-soluciones para la mejora de la comunidad y su entorno.
+Formar profesionistas en sistemas computacionales, integrales y preparados para desempeñarse con excelencia en escenarios globales de gestión de redes informáticas y de ingeniería de software, para beneficio de la sociedad. 
 </p>

@@ -7,5 +7,5 @@ thumb: ../../images/Hackaton.jpg
 tam: logo
 ---
 <p class="textoJustificado tab-general">
-La carrera de ISC es reconocida como una comunidad profesional y académica con altos estándares orientados a la vanguardia, comprometidos con la investigación, el desarrollo tecnológico y humano, en la búsqueda de la mejora de su entorno mediante una formación por competencias.
+Somos un programa académico de excelencia, reconocido en la sociedad y el entorno laboral, por su calidad educativa. 
 </p>
